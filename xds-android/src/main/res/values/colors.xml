@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--    Primary-->
-
+    <!--Primary-->
     <color name="primary_0">#FF000000</color>
     <color name="primary_10">#FF1D0D33</color>
     <color name="primary_20">#FF35185C</color>
@@ -17,8 +16,7 @@
     <color name="primary_99">#FFFAF6FF</color>
     <color name="primary_100">#FFFFFFFF</color>
 
-    <!--    Secondary-->
-
+    <!--Secondary-->
     <color name="secondary_0">#FF000000</color>
     <color name="secondary_10">#FF130C33</color>
     <color name="secondary_20">#FF22175B</color>
@@ -33,8 +31,7 @@
     <color name="secondary_99">#FFF8F6FE</color>
     <color name="secondary_100">#FFFFFFFF</color>
 
-    <!--    Tertiary-->
-
+    <!--Tertiary-->
     <color name="tertiary_0">#FF000000</color>
     <color name="tertiary_10">#FF121531</color>
     <color name="tertiary_20">#FF212658</color>
@@ -49,8 +46,7 @@
     <color name="tertiary_99">#FFF7F8FE</color>
     <color name="tertiary_100">#FFFFFFFF</color>
 
-    <!--    Error-->
-
+    <!--Error-->
     <color name="error_0">#FF000000</color>
     <color name="error_10">#FF410E0B</color>
     <color name="error_20">#FF601410</color>
@@ -65,8 +61,7 @@
     <color name="error_99">#FFFFFBF9</color>
     <color name="error_100">#FFFFFFFF</color>
 
-    <!--    Neutral-->
-
+    <!--Neutral-->
     <color name="neutral_0">#FF000000</color>
     <color name="neutral_10">#FF1C1B1F</color>
     <color name="neutral_20">#FF313033</color>
@@ -81,8 +76,7 @@
     <color name="neutral_99">#FFFFFBFE</color>
     <color name="neutral_100">#FFFFFFFF</color>
 
-    <!--    Neutral Variant-->
-
+    <!--Neutral Variant-->
     <color name="neutral_variant_0">#FF000000</color>
     <color name="neutral_variant_10">#FF1D1A22</color>
     <color name="neutral_variant_20">#FF322F37</color>
@@ -96,5 +90,10 @@
     <color name="neutral_variant_95">#FFF5FEFA</color>
     <color name="neutral_variant_99">#FFFFFBFE</color>
     <color name="neutral_variant_100">#FFFFFFFF</color>
+
+    <!--Common-->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="test">#FF3D8AFF</color>
 
 </resources>
