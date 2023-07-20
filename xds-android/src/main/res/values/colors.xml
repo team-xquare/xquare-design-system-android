@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Primary-->
+    <color name="primary_0">#FF000000</color>
+    <color name="primary_10">#FF1D0D33</color>
+    <color name="primary_20">#FF35185C</color>
+    <color name="primary_30">#FF4D2485</color>
+    <color name="primary_40">#FF6532AD</color>
+    <color name="primary_50">#FF7E40D5</color>
+    <color name="primary_60">#FF9650FA</color>
+    <color name="primary_70">#FFAA71FB</color>
+    <color name="primary_80">#FFBE93FC</color>
+    <color name="primary_90">#FFD2B4FD</color>
+    <color name="primary_95">#FFE6D5FE</color>
+    <color name="primary_99">#FFFAF6FF</color>
+    <color name="primary_100">#FFFFFFFF</color>
+
+    <!--Secondary-->
+    <color name="secondary_0">#FF000000</color>
+    <color name="secondary_10">#FF130C33</color>
+    <color name="secondary_20">#FF22175B</color>
+    <color name="secondary_30">#FF332382</color>
+    <color name="secondary_40">#FF4430A8</color>
+    <color name="secondary_50">#FF563ECC</color>
+    <color name="secondary_60">#FF684DF0</color>
+    <color name="secondary_70">#FF856FF3</color>
+    <color name="secondary_80">#FFA191F6</color>
+    <color name="secondary_90">#FFBEB3F9</color>
+    <color name="secondary_95">#FFDBD4FB</color>
+    <color name="secondary_99">#FFF8F6FE</color>
+    <color name="secondary_100">#FFFFFFFF</color>
+
+    <!--Tertiary-->
+    <color name="tertiary_0">#FF000000</color>
+    <color name="tertiary_10">#FF121531</color>
+    <color name="tertiary_20">#FF212658</color>
+    <color name="tertiary_30">#FF30387D</color>
+    <color name="tertiary_40">#FF414BA2</color>
+    <color name="tertiary_50">#FF535EC6</color>
+    <color name="tertiary_60">#FF6572E9</color>
+    <color name="tertiary_70">#FF828DED</color>
+    <color name="tertiary_80">#FFAOA8F1</color>
+    <color name="tertiary_90">#FFBDC2F6</color>
+    <color name="tertiary_95">#FFDADDFA</color>
+    <color name="tertiary_99">#FFF7F8FE</color>
+    <color name="tertiary_100">#FFFFFFFF</color>
+
+    <!--Error-->
+    <color name="error_0">#FF000000</color>
+    <color name="error_10">#FF410E0B</color>
+    <color name="error_20">#FF601410</color>
+    <color name="error_30">#FF8C1D18</color>
+    <color name="error_40">#FFB3261E</color>
+    <color name="error_50">#FFDC362E</color>
+    <color name="error_60">#FFE46962</color>
+    <color name="error_70">#FFEC928E</color>
+    <color name="error_80">#FFF2B8B5</color>
+    <color name="error_90">#FFF9DEDC</color>
+    <color name="error_95">#FFFCEEEE</color>
+    <color name="error_99">#FFFFFBF9</color>
+    <color name="error_100">#FFFFFFFF</color>
+
+    <!--Neutral-->
+    <color name="neutral_0">#FF000000</color>
+    <color name="neutral_10">#FF1C1B1F</color>
+    <color name="neutral_20">#FF313033</color>
+    <color name="neutral_30">#FF484649</color>
+    <color name="neutral_40">#FF605D62</color>
+    <color name="neutral_50">#FF787579</color>
+    <color name="neutral_60">#FF939094</color>
+    <color name="neutral_70">#FFAEAAAE</color>
+    <color name="neutral_80">#FFC9C5CA</color>
+    <color name="neutral_90">#FFE6E1E5</color>
+    <color name="neutral_95">#FFF4EFF4</color>
+    <color name="neutral_99">#FFFFFBFE</color>
+    <color name="neutral_100">#FFFFFFFF</color>
+
+    <!--Neutral Variant-->
+    <color name="neutral_variant_0">#FF000000</color>
+    <color name="neutral_variant_10">#FF1D1A22</color>
+    <color name="neutral_variant_20">#FF322F37</color>
+    <color name="neutral_variant_30">#FF49454F</color>
+    <color name="neutral_variant_40">#FF605D66</color>
+    <color name="neutral_variant_50">#FF79747E</color>
+    <color name="neutral_variant_60">#FF938F99</color>
+    <color name="neutral_variant_70">#FFAEA9B4</color>
+    <color name="neutral_variant_80">#FFCAC4D0</color>
+    <color name="neutral_variant_90">#FFE7E0EC</color>
+    <color name="neutral_variant_95">#FFF5FEFA</color>
+    <color name="neutral_variant_99">#FFFFFBFE</color>
+    <color name="neutral_variant_100">#FFFFFFFF</color>
+
+    <!--Common-->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="test">#FF3D8AFF</color>
+
+</resources>

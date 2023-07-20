@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 android {
@@ -31,7 +32,29 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'com.xquare.android'
+                artifactId = 'xds-android'
+                version = 'v0.1.0'
+            }
+            debug(MavenPublication) {
+                from components.debug
+
+                groupId = 'com.xquare.android'
+                artifactId = 'xds-android-debug'
+                version = 'v0.1.0'
+            }
+        }
+    }
 }
