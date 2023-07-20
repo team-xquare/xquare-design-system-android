@@ -1,35 +1,5 @@
 <resources>
 
-    <style name="Base.Theme.XQUAREDesignSystemAndroid" parent="Theme.Material3.DayNight.NoActionBar" />
-
-    <color name="primary">@color/primary_40</color>
-    <color name="onPrimary">@color/primary_100</color>
-    <color name="primaryContainer">@color/primary_30</color>
-    <color name="onPrimaryContainer">@color/primary_90</color>
-
-    <color name="secondary">@color/secondary_40</color>
-    <color name="onSecondary">@color/secondary_100</color>
-    <color name="secondaryContainer">@color/secondary_30</color>
-    <color name="onSecondaryContainer">@color/secondary_90</color>
-
-    <color name="tertiary">@color/tertiary_40</color>
-    <color name="onTertiary">@color/tertiary_100</color>
-    <color name="tertiaryContainer">@color/tertiary_30</color>
-    <color name="onTertiaryContainer">@color/tertiary_90</color>
-
-    <color name="error">@color/error_40</color>
-    <color name="onError">@color/error_100</color>
-    <color name="errorContainer">@color/error_30</color>
-    <color name="onErrorContainer">@color/error_90</color>
-
-    <color name="background">@color/neutral_10</color>
-    <color name="onBackground">@color/neutral_90</color>
-    <color name="surface">@color/neutral_10</color>
-    <color name="onSurface">@color/neutral_90</color>
-
-    <color name="surfaceVariant">@color/neutral_variant_30</color>
-    <color name="onSurfaceVariant">@color/neutral_variant_80</color>
-    <color name="outline">@color/neutral_variant_60</color>
-    <color name="outline_variant">@color/neutral_variant_30</color>
+    <style name="Theme.XQUARE.DayNight.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar" />
 
 </resources>
