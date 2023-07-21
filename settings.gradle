@@ -16,5 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "XQUARE Design System-Android"
 include ':app'
-include ':xds-android'
 include ':xquare-design-system-android'
