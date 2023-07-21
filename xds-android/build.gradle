@@ -58,3 +58,5 @@ afterEvaluate {
         }
     }
 }
+
+group='com.github.Tmdhoon2'
