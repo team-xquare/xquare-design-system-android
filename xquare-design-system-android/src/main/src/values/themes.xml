@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.XQUARE.DayNight.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar" />
+
+    <!--primary-->
+    <color name="primary">@color/primary_60</color>
+    <color name="on_primary">@color/primary_100</color>
+    <color name="primary_container">@color/primary_90</color>
+    <color name="on_primary_container">@color/primary_10</color>
+
+    <!--secondary-->
+    <color name="secondary">@color/secondary_60</color>
+    <color name="on_secondary">@color/secondary_100</color>
+    <color name="secondary_container">@color/secondary_90</color>
+    <color name="on_secondary_container">@color/secondary_10</color>
+
+    <!--tertiary-->
+    <color name="tertiary">@color/tertiary_60</color>
+    <color name="on_tertiary">@color/tertiary_100</color>
+    <color name="tertiary_container">@color/tertiary_90</color>
+    <color name="on_tertiary_container">@color/tertiary_10</color>
+
+    <!--error-->
+    <color name="error">@color/error_60</color>
+    <color name="on_error">@color/error_100</color>
+    <color name="error_container">@color/error_90</color>
+    <color name="on_error_container">@color/error_10</color>
+
+    <!--background-->
+    <color name="background">@color/neutral_99</color>
+    <color name="on_background">@color/neutral_10</color>
+    <color name="surface">@color/neutral_99</color>
+    <color name="on_surface">@color/neutral_10</color>
+
+    <!--surface-->
+    <color name="surface_variant">@color/neutral_variant_90</color>
+    <color name="on_surface_variant">@color/neutral_variant_30</color>
+    <color name="outline">@color/neutral_variant_50</color>
+    <color name="outline_variant">@color/neutral_variant_80</color>
+
+</resources>
