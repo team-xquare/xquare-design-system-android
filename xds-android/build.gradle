@@ -36,7 +36,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
 }
-
+/*
 afterEvaluate {
     publishing {
         publications {
@@ -57,6 +57,6 @@ afterEvaluate {
             }
         }
     }
-}
+}*/
 
-group='com.github.Tmdhoon2'
+group='com.github.team-xquare'
