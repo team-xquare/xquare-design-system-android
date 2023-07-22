@@ -9,7 +9,7 @@ import androidx.annotation.StyleRes
 import androidx.appcompat.widget.AppCompatTextView
 import com.xquare.xquare_design_system_android.R
 
-abstract class Typography @JvmOverloads constructor(
+abstract class XdsTextView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     @StyleRes private val style: Int,
@@ -23,10 +23,13 @@ abstract class Typography @JvmOverloads constructor(
 
     init {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        inflater.inflate(R.layout.typography, findViewById(R.id.typography))
+        inflater.inflate(
+            /* resource = */ R.layout.typography,
+            /* root = */ findViewById(R.id.typography),
+        )
         typedArray = context.obtainStyledAttributes(
             /* set = */ attrs,
-            /* attrs = */ R.styleable.Typography,
+            /* attrs = */ R.styleable.XdsTextView,
         )
         setAttrs()
     }
@@ -43,15 +46,15 @@ abstract class Typography @JvmOverloads constructor(
     }
 
     private fun setText() {
-        text = typedArray.getText(R.styleable.Typography_text)
+        text = typedArray.getText(R.styleable.XdsTextView_android_text)
     }
 
     private fun setTextColor() {
         setTextColor(
             typedArray.getColor(
-                /* index = */ R.styleable.Typography_textColor,
+                /* index = */ R.styleable.XdsTextView_android_textColor,
                 /* defValue = */ resources.getColor(color),
-            )
+            ),
         )
     }
 

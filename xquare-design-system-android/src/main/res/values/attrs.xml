@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="Typography">
-        <attr name="text" format="string|integer" />
-        <attr name="textColor" format="reference|color" />
+    <declare-styleable name="XdsTextView">
+        <attr name="android:text" format="string|integer" />
+        <attr name="android:textColor" format="reference|color" />
     </declare-styleable>
 
 </resources>
