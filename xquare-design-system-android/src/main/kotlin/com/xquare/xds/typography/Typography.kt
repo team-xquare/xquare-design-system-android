@@ -29,24 +29,31 @@ abstract class Typography @JvmOverloads constructor(
         setAttrs()
     }
 
-    private fun setAttrs(){
+    private fun setAttrs() {
         setTextStyle()
         setText()
         setTextColor()
+        setIncludeFontPadding()
     }
 
-    private fun setTextStyle(){
+    private fun setTextStyle() {
         setTextAppearance(style)
     }
 
-    private fun setText(){
+    private fun setText() {
         text = typedArray.getText(R.styleable.Typography_text)
     }
 
-    private fun setTextColor(){
-        setTextColor(typedArray.getColor(
-            /* index = */ R.styleable.Typography_textColor,
-            /* defValue = */ resources.getColor(R.color.on_background),
-        ))
+    private fun setTextColor() {
+        setTextColor(
+            typedArray.getColor(
+                /* index = */ R.styleable.Typography_textColor,
+                /* defValue = */ resources.getColor(R.color.on_background),
+            )
+        )
+    }
+
+    private fun setIncludeFontPadding() {
+        includeFontPadding = false
     }
 }
