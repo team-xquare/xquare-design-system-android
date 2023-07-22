@@ -1,15 +1,17 @@
-package com.xquare.xds
+package com.xquare.xds.typography
 
 import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import androidx.annotation.StyleRes
 import androidx.appcompat.widget.AppCompatTextView
 import com.xquare.xquare_design_system_android.R
 
-class HeadlineLarge @JvmOverloads constructor(
+abstract class Typography @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
+    @StyleRes private val style: Int,
 ) : AppCompatTextView(
     /* context = */ context,
     /* attrs = */ attrs,
@@ -22,7 +24,7 @@ class HeadlineLarge @JvmOverloads constructor(
         inflater.inflate(R.layout.typography, findViewById(R.id.typography))
         typedArray = context.obtainStyledAttributes(
             /* set = */ attrs,
-            /* attrs = */ R.styleable.HeadlineLarge,
+            /* attrs = */ R.styleable.Typography,
         )
         setAttrs()
     }
@@ -34,16 +36,16 @@ class HeadlineLarge @JvmOverloads constructor(
     }
 
     private fun setTextStyle(){
-        setTextAppearance(R.style.HeadlineLarge)
+        setTextAppearance(style)
     }
 
     private fun setText(){
-        text = typedArray.getText(R.styleable.HeadlineLarge_text)
+        text = typedArray.getText(R.styleable.Typography_text)
     }
 
     private fun setTextColor(){
         setTextColor(typedArray.getColor(
-            /* index = */ R.styleable.HeadlineLarge_textColor,
+            /* index = */ R.styleable.Typography_textColor,
             /* defValue = */ resources.getColor(R.color.on_background),
         ))
     }
