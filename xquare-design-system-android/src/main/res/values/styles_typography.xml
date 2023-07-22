@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--display-->
     <style name="DisplayLarge">
         <item name="android:fontFamily">@font/notosans_bold</item>
         <item name="android:textColor">@color/on_background</item>
@@ -22,6 +23,7 @@
         <item name="android:lineSpacingExtra">8dp</item>
     </style>
 
+    <!--headline-->
     <style name="HeadlineLarge">
         <item name="android:fontFamily">@font/notosans_bold</item>
         <item name="android:textColor">@color/on_background</item>
@@ -43,6 +45,7 @@
         <item name="android:lineSpacingExtra">8dp</item>
     </style>
 
+    <!--title-->
     <style name="TitleLarge">
         <item name="android:fontFamily">@font/notosans_medium</item>
         <item name="android:textColor">@color/on_background</item>
@@ -64,6 +67,7 @@
         <item name="android:lineSpacingExtra">6dp</item>
     </style>
 
+    <!--label-->
     <style name="LabelLarge">
         <item name="android:fontFamily">@font/notosans_regular</item>
         <item name="android:textColor">@color/on_background</item>
@@ -85,6 +89,7 @@
         <item name="android:lineSpacingExtra">5dp</item>
     </style>
 
+    <!--body-->
     <style name="BodyLarge">
         <item name="android:fontFamily">@font/notosans_regular</item>
         <item name="android:textColor">@color/on_background</item>
