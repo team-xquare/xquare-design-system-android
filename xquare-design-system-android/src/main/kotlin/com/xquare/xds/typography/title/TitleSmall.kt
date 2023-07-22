@@ -12,4 +12,5 @@ class TitleSmall @JvmOverloads constructor(
     context = context,
     attrs = attrs,
     style = R.style.TitleSmall,
+    color = R.color.neutral_10,
 )

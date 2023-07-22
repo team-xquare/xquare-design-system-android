@@ -12,4 +12,5 @@ class LabelMedium @JvmOverloads constructor(
     context = context,
     attrs = attrs,
     style = R.style.LabelMedium,
+    color = R.color.neutral_50,
 )

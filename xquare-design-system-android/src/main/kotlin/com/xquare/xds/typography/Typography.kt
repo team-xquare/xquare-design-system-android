@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import androidx.annotation.ColorRes
 import androidx.annotation.StyleRes
 import androidx.appcompat.widget.AppCompatTextView
 import com.xquare.xquare_design_system_android.R
@@ -12,6 +13,7 @@ abstract class Typography @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     @StyleRes private val style: Int,
+    @ColorRes private val color: Int = R.color.neutral_0,
 ) : AppCompatTextView(
     /* context = */ context,
     /* attrs = */ attrs,
@@ -48,7 +50,7 @@ abstract class Typography @JvmOverloads constructor(
         setTextColor(
             typedArray.getColor(
                 /* index = */ R.styleable.Typography_textColor,
-                /* defValue = */ resources.getColor(R.color.on_background),
+                /* defValue = */ resources.getColor(color),
             )
         )
     }

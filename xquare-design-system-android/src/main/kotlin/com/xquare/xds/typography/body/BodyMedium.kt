@@ -12,4 +12,5 @@ class BodyMedium @JvmOverloads constructor(
     context = context,
     attrs = attrs,
     style = R.style.BodyMedium,
+    color = R.color.neutral_30,
 )

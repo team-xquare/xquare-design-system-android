@@ -12,4 +12,5 @@ class TitleLarge @JvmOverloads constructor(
     context = context,
     attrs = attrs,
     style = R.style.TitleLarge,
+    color = R.color.neutral_10,
 )

@@ -12,4 +12,5 @@ class BodySmall @JvmOverloads constructor(
     context = context,
     attrs = attrs,
     style = R.style.BodySmall,
+    color = R.color.neutral_30,
 )

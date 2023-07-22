@@ -12,4 +12,5 @@ class TitleMedium @JvmOverloads constructor(
     context = context,
     attrs = attrs,
     style = R.style.TitleMedium,
+    color = R.color.neutral_10,
 )

@@ -12,4 +12,5 @@ class LabelLarge @JvmOverloads constructor(
     context = context,
     attrs = attrs,
     style = R.style.LabelLarge,
+    color = R.color.neutral_50,
 )

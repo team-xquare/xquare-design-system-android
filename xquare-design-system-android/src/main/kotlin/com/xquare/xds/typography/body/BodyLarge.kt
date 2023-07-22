@@ -12,4 +12,5 @@ class BodyLarge @JvmOverloads constructor(
     context = context,
     attrs = attrs,
     style = R.style.BodyLarge,
+    color = R.color.neutral_30,
 )

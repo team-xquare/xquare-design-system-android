@@ -12,4 +12,5 @@ class LabelSmall @JvmOverloads constructor(
     context = context,
     attrs = attrs,
     style = R.style.LabelSmall,
+    color = R.color.neutral_50,
 )
