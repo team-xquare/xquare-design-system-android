@@ -36,8 +36,7 @@ android {
 }
 
 dependencies {
-    
-    implementation(project(':xds-android'))
+    implementation(project(':xquare-design-system-android'))
 
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'

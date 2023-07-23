@@ -10,8 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
+
 rootProject.name = "XQUARE Design System-Android"
 include ':app'
-include ':xds-android'
+include ':xquare-design-system-android'
