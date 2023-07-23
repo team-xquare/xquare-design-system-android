@@ -9,7 +9,10 @@ import androidx.annotation.StyleRes
 import androidx.appcompat.widget.AppCompatTextView
 import com.xquare.xquare_design_system_android.R
 
-@Deprecated("Use 'style' attribute in layout")
+@Deprecated(
+    message = "Use 'style' attribute in layout",
+    level = DeprecationLevel.WARNING,
+)
 public abstract class XdsTextView @JvmOverloads public constructor(
     context: Context,
     attrs: AttributeSet? = null,
