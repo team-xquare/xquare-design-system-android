@@ -28,8 +28,8 @@
     <color name="on_error_container">@color/error_10</color>
 
     <!--background-->
-    <color name="background">@color/neutral_100</color>
-    <color name="on_background">@color/neutral_0</color>
+    <color name="background">@color/neutral_99</color>
+    <color name="on_background">@color/neutral_10</color>
     <color name="surface">@color/neutral_99</color>
     <color name="on_surface">@color/neutral_10</color>
 
