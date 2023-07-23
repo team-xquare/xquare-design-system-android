@@ -44,14 +44,14 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.xquare.android'
                 artifactId = 'xds-design-system-android'
-                version = '0.1.0'
+                version = '0.2.0'
             }
             debug(MavenPublication) {
                 from components.debug
 
                 groupId = 'com.xquare.android'
                 artifactId = 'xds-design-system-android'
-                version = '0.1.0'
+                version = '0.2.0'
             }
         }
     }
