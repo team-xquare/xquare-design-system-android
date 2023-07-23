@@ -5,11 +5,11 @@ import android.util.AttributeSet
 import com.xquare.xds.typography.XdsTextView
 import com.xquare.xquare_design_system_android.R
 
-//class DisplayLarge @JvmOverloads constructor(
-//    context: Context,
-//    attrs: AttributeSet? = null,
-//) : XdsTextView(
-//    context = context,
-//    attrs = attrs,
-//    style = R.style.DisplayLarge,
-//)
+public class DisplayLarge @JvmOverloads public constructor(
+    context: Context,
+    attrs: AttributeSet? = null,
+) : XdsTextView(
+    context = context,
+    attrs = attrs,
+    style = R.style.DisplayLarge,
+)

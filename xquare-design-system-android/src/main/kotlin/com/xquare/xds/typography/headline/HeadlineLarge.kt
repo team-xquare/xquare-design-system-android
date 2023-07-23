@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import com.xquare.xds.typography.XdsTextView
 import com.xquare.xquare_design_system_android.R
 
-class HeadlineLarge @JvmOverloads constructor(
+public class HeadlineLarge @JvmOverloads public constructor(
     context: Context,
     attrs: AttributeSet? = null,
 ) : XdsTextView(

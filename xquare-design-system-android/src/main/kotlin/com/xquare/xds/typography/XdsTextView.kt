@@ -9,7 +9,7 @@ import androidx.annotation.StyleRes
 import androidx.appcompat.widget.AppCompatTextView
 import com.xquare.xquare_design_system_android.R
 
-abstract class XdsTextView @JvmOverloads constructor(
+public abstract class XdsTextView @JvmOverloads public constructor(
     context: Context,
     attrs: AttributeSet? = null,
     @StyleRes private val style: Int,

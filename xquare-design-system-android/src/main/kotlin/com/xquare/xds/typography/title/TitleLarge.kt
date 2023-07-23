@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import com.xquare.xds.typography.XdsTextView
 import com.xquare.xquare_design_system_android.R
 
-class TitleLarge @JvmOverloads constructor(
+public class TitleLarge @JvmOverloads public constructor(
     context: Context,
     attrs: AttributeSet? = null,
 ) : XdsTextView(
