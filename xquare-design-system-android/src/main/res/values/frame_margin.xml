@@ -4,6 +4,13 @@
     <dimen name="margin_frame_end">16dp</dimen>
     <dimen name="margin_frame_top">12dp</dimen>
     <dimen name="margin_frame_bottom">12dp</dimen>
-    <dimen name="margin_frame_horizontal">16dp</dimen>
-    <dimen name="margin_frame_vertical">12dp</dimen>
+    <dimen name="margin_frame_horizontal">12dp</dimen>
+    <dimen name="margin_frame_vertical">16dp</dimen>
+
+    <style name="MarginFrameDefault">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
 </resources>
