@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="elevation_low">8dp</dimen>
+    <dimen name="elevation_medium">16dp</dimen>
+    <dimen name="elevation_high">24dp</dimen>
+</resources>
