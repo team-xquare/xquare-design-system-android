@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="row_elevation">8dp</dimen>
-    <dimen name="medium_elevation">16dp</dimen>
-    <dimen name="high_elevation">24dp</dimen>
+    <dimen name="elevation_row">8dp</dimen>
+    <dimen name="elevation_medium">16dp</dimen>
+    <dimen name="elevation_high">24dp</dimen>
 </resources>
