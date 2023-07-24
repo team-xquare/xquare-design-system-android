@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="xSmall">4dp</dimen>
-    <dimen name="small">8dp</dimen>
-    <dimen name="medium">12dp</dimen>
-    <dimen name="large">16dp</dimen>
-    <dimen name="xLarge">20dp</dimen>
+    <dimen name="corner_xsmall">4dp</dimen>
+    <dimen name="corner_small">8dp</dimen>
+    <dimen name="corner_medium">12dp</dimen>
+    <dimen name="corner_large">16dp</dimen>
+    <dimen name="corner_xlarge">20dp</dimen>
 </resources>
