@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/XButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_filled_button">
+
+    <TextView
+        style="@style/BodyLarge"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/on_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
