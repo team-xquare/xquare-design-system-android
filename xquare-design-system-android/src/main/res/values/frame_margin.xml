@@ -13,4 +13,9 @@
         <item name="android:layout_marginTop">12dp</item>
         <item name="android:layout_marginBottom">12dp</item>
     </style>
+
+    <style name="MarginFrameDefaultBackground" parent="@style/MarginFrameDefault">
+        <item name="android:colorBackground">@color/background</item>
+    </style>
+
 </resources>
