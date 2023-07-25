@@ -5,4 +5,12 @@
         <attr name="android:textColor" format="reference|color" />
     </declare-styleable>
 
+    <declare-styleable name="XButton">
+        <attr name="android:text" format="string|integer"/>
+        <attr name="android:background" format="reference|integer"/>
+        <attr name="android:src" format="reference|integer"/>
+        <attr name="android:enabled" format="boolean"/>
+        <attr name="textColor" format="integer"/>
+    </declare-styleable>
+
 </resources>
