@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FilledButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_button_filled</item>
+        <item name="textColor">@color/on_primary</item>
+    </style>
+
+    <style name="OutlinedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_button_outlined</item>
+        <item name="textColor">@color/primary</item>
+    </style>
+
+    <style name="TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_button_text</item>
+        <item name="textColor">@color/on_surface</item>
+    </style>
+</resources>
