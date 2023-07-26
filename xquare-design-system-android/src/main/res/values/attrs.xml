@@ -13,4 +13,9 @@
         <attr name="textColor" format="integer"/>
     </declare-styleable>
 
+    <declare-styleable name="XFloatingActionButton">
+        <attr name="android:src" format="reference|integer"/>
+        <attr name="android:enabled" format="boolean"/>
+    </declare-styleable>
+
 </resources>

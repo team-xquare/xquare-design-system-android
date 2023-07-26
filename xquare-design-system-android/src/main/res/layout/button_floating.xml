@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_xbutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/bg_button_floating"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_xbutton_floating"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="Floating Button Icon" />
+
+    </LinearLayout>
+
+</LinearLayout>
