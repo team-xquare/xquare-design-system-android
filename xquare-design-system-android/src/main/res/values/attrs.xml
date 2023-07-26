@@ -42,7 +42,6 @@
         <attr name="android:background" format="reference|integer" />
         <attr name="android:src" format="reference|integer" />
         <attr name="android:enabled" format="boolean" />
-        <attr name="android:spinnersShown" format="boolean" />
     </declare-styleable>
 
 </resources>
