@@ -6,11 +6,13 @@
     android:background="@drawable/bg_filled_chip_button">
 
     <ImageView
+        android:id="@+id/iv_xds_chip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="4dp" />
 
     <TextView
+        android:id="@+id/tv_xds_chip"
         style="@style/BodyMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
