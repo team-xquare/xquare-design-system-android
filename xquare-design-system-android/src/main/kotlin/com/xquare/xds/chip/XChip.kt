@@ -44,17 +44,24 @@ public class XChip @JvmOverloads public constructor(
         context: Context? = null,
         attrs: AttributeSet? = null,
     ) {
-        val inflater =
-            context?.applicationContext?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        inflater.inflate(R.layout.chip, this)
-        typedArray = context.obtainStyledAttributes(attrs, R.styleable.XChip)
+        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        inflater.inflate(
+            /* resource = */ R.layout.chip,
+            /* root = */ this,
+        )
+        typedArray = context.obtainStyledAttributes(
+            /* set = */ attrs,
+            /* attrs = */ R.styleable.XdsChip,
+        )
     }
 
     private fun setAttrs() {
         setText()
+        setTexColor()
         setTextStyle()
-        setTextColor()
-        setIconImage()
+        setImage()
+        setBackground()
+        setEnabled()
         setDropDownImage()
         setEnabled()
     }
@@ -75,14 +82,17 @@ public class XChip @JvmOverloads public constructor(
     private fun setTextColor() {
         textView.setTextColor(
             typedArray.getColor(
-                R.styleable.XChip_android_textColor,
-                context.resources.getColor(R.color.on_primary),
+                R.styleable.XdsChip_android_textColor, resources.getColor(R.color.white)
             )
         )
     }
 
-    private fun setIconImage() {
-        val iconDrawable = typedArray.getDrawable(R.styleable.XChip_leadingIcon)
+    private fun setTextStyle() {
+        textView.setTextAppearance(R.style.BodyMedium)
+    }
+
+    private fun setImage() {
+        val iconDrawable = typedArray.getDrawable(R.styleable.XdsChip_iconImage)
         if (iconDrawable == null) {
             iconImageView.visibility = View.GONE
         } else {
@@ -90,15 +100,27 @@ public class XChip @JvmOverloads public constructor(
         }
     }
 
+    private fun setBackground() {
+        background = typedArray.getDrawable(R.styleable.XdsChip_android_background)
+    }
+
     private fun setEnabled() {
-        if (!typedArray.getBoolean(R.styleable.XChip_android_enabled, true)) {
+        if (!typedArray.getBoolean(
+                /* index = */ R.styleable.XdsChip_android_enabled,
+                /* defValue = */ true,
+            )
+        ) {
             alpha = 0.4f
         }
     }
 
     private fun setDropDownImage() {
-        val dropDownIcon = typedArray.getDrawable(R.styleable.XChip_trailingIcon)
-        if (dropDownIcon == null) {
+        val isDropDown = typedArray.getBoolean(
+            /* index = */ R.styleable.XdsChip_isDropDown,
+            /* defValue */ false,
+        )
+        val dropDownIcon = typedArray.getDrawable(R.styleable.XdsChip_dropDownIcon)
+        if (!isDropDown) {
             dropDownImageView.visibility = View.GONE
         } else {
             dropDownImageView.setImageDrawable(dropDownIcon)

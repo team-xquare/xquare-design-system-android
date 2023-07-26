@@ -36,12 +36,11 @@
         <attr name="android:enabled" format="boolean" />
     </declare-styleable>
 
-    <declare-styleable name="XdsChip">
+    <declare-styleable name="XChip">
         <attr name="android:text" format="string|integer" />
         <attr name="android:textColor" format="integer" />
         <attr name="android:background" format="reference|integer" />
         <attr name="iconImage" format="reference|integer" />
-        <attr name="isDropDown" format="boolean" />
         <attr name="dropDownIcon" format="reference|integer" />
         <attr name="android:enabled" format="boolean" />
     </declare-styleable>
