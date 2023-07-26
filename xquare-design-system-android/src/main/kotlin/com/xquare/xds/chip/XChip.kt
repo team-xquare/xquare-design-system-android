@@ -12,7 +12,7 @@ import androidx.annotation.ColorRes
 import androidx.annotation.StyleRes
 import com.xquare.xquare_design_system_android.R
 
-public class XdsChip @JvmOverloads public constructor(
+public class XChip @JvmOverloads public constructor(
     context: Context,
     attr: AttributeSet? = null,
     @StyleRes private val style: Int,
