@@ -14,105 +14,128 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <LinearLayout
+            <com.xquare.xds.typography.body.BodyLarge
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
+                android:layout_gravity="start"
+                android:layout_marginVertical="32dp"
+                android:text="Filled Button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
                 android:orientation="horizontal">
 
                 <com.xquare.xds.button.XButton
                     style="@style/FilledButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
                     android:text="Enabled" />
 
                 <com.xquare.xds.button.XButton
                     style="@style/FilledButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
                     android:src="@mipmap/ic_launcher" />
 
                 <com.xquare.xds.button.XButton
                     style="@style/FilledButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
                     android:enabled="false"
                     android:src="@mipmap/ic_launcher"
                     android:text="Disabled" />
 
             </LinearLayout>
 
+            <com.xquare.xds.typography.body.BodyLarge
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginVertical="32dp"
+                android:text="Outlined Button" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:orientation="horizontal">
 
                 <com.xquare.xds.button.XButton
                     style="@style/OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
                     android:text="Enabled" />
 
                 <com.xquare.xds.button.XButton
                     style="@style/OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
                     android:src="@mipmap/ic_launcher" />
 
                 <com.xquare.xds.button.XButton
                     style="@style/OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
                     android:enabled="false"
                     android:src="@mipmap/ic_launcher"
                     android:text="Disabled" />
 
             </LinearLayout>
 
+            <com.xquare.xds.typography.body.BodyLarge
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginVertical="32dp"
+                android:text="Text Button" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:orientation="horizontal">
 
                 <com.xquare.xds.button.XButton
                     style="@style/TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
                     android:text="Enabled" />
 
                 <com.xquare.xds.button.XButton
                     style="@style/TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
                     android:src="@mipmap/ic_launcher" />
 
                 <com.xquare.xds.button.XButton
                     style="@style/TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
                     android:enabled="false"
                     android:src="@mipmap/ic_launcher"
                     android:text="Disabled" />
 
             </LinearLayout>
 
-            <LinearLayout
+            <com.xquare.xds.typography.body.BodyLarge
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
+                android:layout_gravity="start"
+                android:layout_marginVertical="32dp"
+                android:text="Floating Action Button" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <com.xquare.xds.button.XFloatingActionButton
                     style="@style/FloatingActionButton"
