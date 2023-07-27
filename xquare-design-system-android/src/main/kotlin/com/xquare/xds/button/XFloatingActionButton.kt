@@ -49,7 +49,6 @@ public class XFloatingActionButton @JvmOverloads public constructor(
     private fun setAttrs() {
         setImage()
         setEnabled()
-        setElevation()
     }
 
     private fun setImage() {
@@ -68,9 +67,5 @@ public class XFloatingActionButton @JvmOverloads public constructor(
         ) {
             alpha = 0.4f
         }
-    }
-
-    private fun setElevation(){
-        //elevation = typedArray.getFloat(R.styleable.XFloatingActionButton_android_elevation, 0f)
     }
 }
