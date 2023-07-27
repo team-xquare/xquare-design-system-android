@@ -9,8 +9,8 @@
         android:id="@+id/img_xchip_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
         android:layout_gravity="center_vertical"
+        android:layout_margin="4dp"
         android:contentDescription="XChip Icon" />
 
     <TextView
@@ -18,8 +18,8 @@
         style="@style/BodyMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
         android:layout_gravity="center_vertical"
+        android:layout_margin="4dp"
         android:contentDescription="XChip Text"
         android:textColor="@color/on_primary" />
 
@@ -27,8 +27,8 @@
         android:id="@+id/img_xchip_drop_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
         android:layout_gravity="center_vertical"
+        android:layout_margin="4dp"
         android:contentDescription="XChip DropDown Icon" />
 
 </LinearLayout>

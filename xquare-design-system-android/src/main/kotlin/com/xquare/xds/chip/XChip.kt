@@ -11,6 +11,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.annotation.ColorRes
 import androidx.annotation.StyleRes
+import androidx.appcompat.app.AppCompatActivity
 import com.xquare.xquare_design_system_android.R
 
 public class XChip @JvmOverloads public constructor(
@@ -43,10 +44,10 @@ public class XChip @JvmOverloads public constructor(
     }
 
     private fun initView(
-        context: Context,
+        context: Context? = null,
         attrs: AttributeSet? = null,
     ) {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val inflater = context?.applicationContext?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         inflater.inflate(
             /* resource = */ R.layout.chip,
             /* root = */ this,
@@ -82,23 +83,23 @@ public class XChip @JvmOverloads public constructor(
     private fun setTextColor() {
         textView.setTextColor(
             typedArray.getColor(
-                R.styleable.XChip_android_textColor, context.resources.getColor(R.color.on_primary)
+                R.styleable.XChip_android_textColor,
+                context.resources.getColor(R.color.on_primary),
             )
         )
     }
 
     private fun setIconImage() {
         val iconDrawable = typedArray.getDrawable(R.styleable.XChip_leadingIcon)
-        if (iconDrawable == null) iconImageView.visibility = View.GONE
-        else iconImageView.setImageDrawable(iconDrawable)
+        if (iconDrawable == null) {
+            iconImageView.visibility = View.GONE
+        } else {
+            iconImageView.setImageDrawable(iconDrawable)
+        }
     }
 
     private fun setEnabled() {
-        if (!typedArray.getBoolean(
-                /* index = */ R.styleable.XChip_android_enabled,
-                /* defValue = */ true,
-            )
-        ) {
+        if (!typedArray.getBoolean(R.styleable.XChip_android_enabled, true)) {
             alpha = 0.4f
         }
     }

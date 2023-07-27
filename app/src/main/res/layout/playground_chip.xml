@@ -41,6 +41,7 @@
 
                 <com.xquare.xds.chip.XChip
                     style="@style/FilledChip"
+                    android:layout_marginStart="8dp"
                     android:text="Enabled"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +51,7 @@
                 <com.xquare.xds.chip.XChip
                     android:id="@+id/XChip"
                     style="@style/FilledChip"
+                    android:layout_marginStart="8dp"
                     android:text="Enabled"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +90,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/OutlinedChip"
+                        android:layout_marginStart="8dp"
                         android:text="Enabled"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -96,6 +99,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/OutlinedChip"
+                        android:layout_marginStart="8dp"
                         android:text="Enabled"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -135,6 +139,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/TextChip"
+                        android:layout_marginStart="8dp"
                         android:text="Enabled"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -143,6 +148,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/TextChip"
+                        android:layout_marginStart="8dp"
                         android:text="Enabled"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -183,6 +189,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/OutlinedChip"
+                        android:layout_marginStart="8dp"
                         android:enabled="false"
                         android:text="Enabled"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -192,6 +199,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/TextChip"
+                        android:layout_marginStart="8dp"
                         android:enabled="false"
                         android:text="Enabled"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -232,6 +240,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/OutlinedChip"
+                        android:layout_marginStart="8dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -239,6 +248,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/TextChip"
+                        android:layout_marginStart="8dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -246,6 +256,7 @@
 
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -268,6 +279,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/FilledChip"
+                        android:layout_marginStart="8dp"
                         android:enabled="false"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -276,6 +288,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/OutlinedChip"
+                        android:layout_marginStart="8dp"
                         android:enabled="false"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -284,6 +297,7 @@
 
                     <com.xquare.xds.chip.XChip
                         style="@style/TextChip"
+                        android:layout_marginStart="8dp"
                         android:enabled="false"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
