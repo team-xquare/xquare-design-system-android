@@ -44,7 +44,7 @@ public class XChip @JvmOverloads public constructor(
         context: Context? = null,
         attrs: AttributeSet? = null,
     ) {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val inflater = context?.applicationContext?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         inflater.inflate(
             /* resource = */ R.layout.chip,
             /* root = */ this,
