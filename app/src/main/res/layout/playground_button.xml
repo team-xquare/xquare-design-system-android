@@ -20,7 +20,7 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <com.xquare.xds.typography.body.BodyLarge
+            <com.xquare.xdsandroid.typography.body.BodyLarge
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -33,20 +33,20 @@
                 android:gravity="end"
                 android:orientation="horizontal">
 
-                <com.xquare.xds.button.XButton
+                <com.xquare.xdsandroid.button.XButton
                     style="@style/FilledButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enabled" />
 
-                <com.xquare.xds.button.XButton
+                <com.xquare.xdsandroid.button.XButton
                     style="@style/FilledButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
                     android:src="@mipmap/ic_launcher" />
 
-                <com.xquare.xds.button.XButton
+                <com.xquare.xdsandroid.button.XButton
                     style="@style/FilledButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
 
             </LinearLayout>
 
-            <com.xquare.xds.typography.body.BodyLarge
+            <com.xquare.xdsandroid.typography.body.BodyLarge
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -68,20 +68,20 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <com.xquare.xds.button.XButton
+                <com.xquare.xdsandroid.button.XButton
                     style="@style/OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enabled" />
 
-                <com.xquare.xds.button.XButton
+                <com.xquare.xdsandroid.button.XButton
                     style="@style/OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
                     android:src="@mipmap/ic_launcher" />
 
-                <com.xquare.xds.button.XButton
+                <com.xquare.xdsandroid.button.XButton
                     style="@style/OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
 
             </LinearLayout>
 
-            <com.xquare.xds.typography.body.BodyLarge
+            <com.xquare.xdsandroid.typography.body.BodyLarge
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -103,20 +103,20 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <com.xquare.xds.button.XButton
+                <com.xquare.xdsandroid.button.XButton
                     style="@style/TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enabled" />
 
-                <com.xquare.xds.button.XButton
+                <com.xquare.xdsandroid.button.XButton
                     style="@style/TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
                     android:src="@mipmap/ic_launcher" />
 
-                <com.xquare.xds.button.XButton
+                <com.xquare.xdsandroid.button.XButton
                     style="@style/TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
 
             </LinearLayout>
 
-            <com.xquare.xds.typography.body.BodyLarge
+            <com.xquare.xdsandroid.typography.body.BodyLarge
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -137,14 +137,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <com.xquare.xds.button.XFloatingActionButton
+                <com.xquare.xdsandroid.button.XFloatingActionButton
                     style="@style/FloatingActionButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:src="@mipmap/ic_launcher" />
 
-                <com.xquare.xds.button.XFloatingActionButton
+                <com.xquare.xdsandroid.button.XFloatingActionButton
                     style="@style/FloatingActionButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

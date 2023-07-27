@@ -1,4 +1,4 @@
-package com.xquare.xds.button
+package com.xquare.xdsandroid.button
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -7,14 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
-import com.xquare.xquare_design_system_android.R
+import com.xquare.xdsandroid.R
 
 public class XFloatingActionButton @JvmOverloads public constructor(
     context: Context,
     attrs: AttributeSet? = null,
 ) : LinearLayout(
-    /* context = */ context,
-    /* attrs = */ attrs,
+    context,
+    attrs,
 ) {
 
     private lateinit var typedArray: TypedArray
@@ -37,12 +37,12 @@ public class XFloatingActionButton @JvmOverloads public constructor(
     ) {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         inflater.inflate(
-            /* resource = */ R.layout.button_floating,
-            /* root = */ this,
+            R.layout.button_floating,
+            this,
         )
         typedArray = context.obtainStyledAttributes(
-            /* set = */ attrs,
-            /* attrs = */ R.styleable.XFloatingActionButton,
+            attrs,
+            R.styleable.XFloatingActionButton,
         )
     }
 
@@ -55,14 +55,15 @@ public class XFloatingActionButton @JvmOverloads public constructor(
         val drawable = typedArray.getDrawable(R.styleable.XFloatingActionButton_android_src)
         if (drawable == null) {
             imageView.visibility = View.GONE
-        } else imageView.setImageDrawable(drawable)
-
+        } else {
+            imageView.setImageDrawable(drawable)
+        }
     }
 
     private fun setEnabled() {
         if (!typedArray.getBoolean(
-                /* index = */ R.styleable.XButton_android_enabled,
-                /* defValue = */ true,
+                R.styleable.XButton_android_enabled,
+                true,
             )
         ) {
             alpha = 0.4f

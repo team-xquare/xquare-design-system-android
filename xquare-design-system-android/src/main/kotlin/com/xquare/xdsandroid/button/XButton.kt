@@ -1,4 +1,4 @@
-package com.xquare.xds.button
+package com.xquare.xdsandroid.button
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -8,14 +8,14 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.xquare.xquare_design_system_android.R
+import com.xquare.xdsandroid.R
 
 public class XButton @JvmOverloads public constructor(
     context: Context,
     attrs: AttributeSet? = null,
 ) : LinearLayout(
-    /* context = */ context,
-    /* attrs = */ attrs,
+    context,
+    attrs,
 ) {
 
     private lateinit var typedArray: TypedArray
@@ -42,12 +42,12 @@ public class XButton @JvmOverloads public constructor(
     ) {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         inflater.inflate(
-            /* resource = */ R.layout.button,
-            /* root = */ this,
+            R.layout.button,
+            this,
         )
         typedArray = context.obtainStyledAttributes(
-            /* set = */ attrs,
-            /* attrs = */ R.styleable.XButton,
+            attrs,
+            R.styleable.XButton,
         )
     }
 
@@ -62,8 +62,11 @@ public class XButton @JvmOverloads public constructor(
 
     private fun setText() {
         val text = typedArray.getText(R.styleable.XButton_android_text)
-        if (text == null) textView.visibility = View.GONE
-        else textView.text = text
+        if (text == null) {
+            textView.visibility = View.GONE
+        } else {
+            textView.text = text
+        }
     }
 
     private fun setTextStyle() {
@@ -74,15 +77,18 @@ public class XButton @JvmOverloads public constructor(
         textView.setTextColor(
             typedArray.getColor(
                 R.styleable.XButton_textColor,
-                resources.getColor(R.color.black)
-            )
+                resources.getColor(R.color.black),
+            ),
         )
     }
 
     private fun setImage() {
         val drawable = typedArray.getDrawable(R.styleable.XButton_android_src)
-        if (drawable == null) imageView.visibility = View.GONE
-        else imageView.setImageDrawable(drawable)
+        if (drawable == null) {
+            imageView.visibility = View.GONE
+        } else {
+            imageView.setImageDrawable(drawable)
+        }
     }
 
     private fun setBackground() {
@@ -91,8 +97,8 @@ public class XButton @JvmOverloads public constructor(
 
     private fun setEnabled() {
         if (!typedArray.getBoolean(
-                /* index = */ R.styleable.XButton_android_enabled,
-                /* defValue = */ true,
+                R.styleable.XButton_android_enabled,
+                true,
             )
         ) {
             alpha = 0.4f

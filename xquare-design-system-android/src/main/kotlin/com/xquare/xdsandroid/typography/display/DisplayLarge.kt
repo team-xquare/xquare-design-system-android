@@ -1,20 +1,19 @@
-package com.xquare.xds.typography.label
+package com.xquare.xdsandroid.typography.display
 
 import android.content.Context
 import android.util.AttributeSet
-import com.xquare.xds.typography.XdsTextView
-import com.xquare.xquare_design_system_android.R
+import com.xquare.xdsandroid.R
+import com.xquare.xdsandroid.typography.XdsTextView
 
 @Deprecated(
     message = "Use 'style' attribute in layout",
     level = DeprecationLevel.HIDDEN,
 )
-public class LabelLarge @JvmOverloads public constructor(
+public class DisplayLarge @JvmOverloads public constructor(
     context: Context,
     attrs: AttributeSet? = null,
 ) : XdsTextView(
     context = context,
     attrs = attrs,
-    style = R.style.LabelLarge,
-    color = R.color.neutral_50,
+    style = R.style.DisplayLarge,
 )

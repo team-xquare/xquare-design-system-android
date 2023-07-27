@@ -1,4 +1,4 @@
-package com.xquare.xquare_design_system_android
+package com.xquare.xdsplayground
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
