@@ -4,6 +4,7 @@
     <style name="FilledChip">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout">@layout/chip_filled</item>
         <item name="android:background">@drawable/selector_chip_bg_filled</item>
         <item name="android:textColor">@color/on_primary</item>
     </style>
@@ -11,6 +12,7 @@
     <style name="OutlinedChip">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout">@layout/chip_outlined</item>
         <item name="android:background">@drawable/selector_chip_outlined</item>
         <item name="android:textColor">@color/secondary</item>
     </style>
@@ -18,6 +20,7 @@
     <style name="TextChip">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout">@layout/chip_text</item>
         <item name="android:background">@drawable/selector_chip_text</item>
         <item name="android:textColor">@color/secondary</item>
     </style>

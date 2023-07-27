@@ -5,32 +5,30 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/img_xchip_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginVertical="12dp"
-        android:orientation="horizontal">
+        android:layout_margin="4dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="XChip Icon" />
 
-        <ImageView
-            android:id="@+id/img_xchip_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="XChip Icon" />
+    <TextView
+        android:id="@+id/tv_xchip"
+        style="@style/BodyMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="XChip Text"
+        android:textColor="@color/on_primary" />
 
-        <TextView
-            android:id="@+id/tv_xchip"
-            style="@style/BodyMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="XChip Text" />
-
-        <ImageView
-            android:id="@+id/img_xchip_drop_down"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="XChip DropDown Icon" />
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_xchip_drop_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="XChip DropDown Icon" />
 
 </LinearLayout>
