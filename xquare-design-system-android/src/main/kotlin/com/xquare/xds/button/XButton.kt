@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.Space
 import android.widget.TextView
 import com.xquare.xquare_design_system_android.R
 
@@ -27,10 +26,6 @@ public class XButton @JvmOverloads public constructor(
 
     private val imageView: ImageView by lazy {
         this.findViewById(R.id.iv_xbutton)
-    }
-
-    private val space: Space by lazy {
-        this.findViewById(R.id.space_xbutton)
     }
 
     init {
@@ -67,10 +62,8 @@ public class XButton @JvmOverloads public constructor(
 
     private fun setText() {
         val text = typedArray.getText(R.styleable.XButton_android_text)
-        if (text == null) {
-            textView.visibility = View.GONE
-            setSpaceDisabled()
-        } else textView.text = text
+        if (text == null) textView.visibility = View.GONE
+        else textView.text = text
     }
 
     private fun setTextStyle() {
@@ -88,11 +81,8 @@ public class XButton @JvmOverloads public constructor(
 
     private fun setImage() {
         val drawable = typedArray.getDrawable(R.styleable.XButton_android_src)
-        if (drawable == null) {
-            imageView.visibility = View.GONE
-            setSpaceDisabled()
-        } else imageView.setImageDrawable(drawable)
-
+        if (drawable == null) imageView.visibility = View.GONE
+        else imageView.setImageDrawable(drawable)
     }
 
     private fun setBackground() {
@@ -107,9 +97,5 @@ public class XButton @JvmOverloads public constructor(
         ) {
             alpha = 0.4f
         }
-    }
-
-    private fun setSpaceDisabled() {
-        space.visibility = View.GONE
     }
 }
