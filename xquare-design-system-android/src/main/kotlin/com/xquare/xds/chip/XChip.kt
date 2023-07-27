@@ -17,10 +17,7 @@ import com.xquare.xquare_design_system_android.R
 public class XChip @JvmOverloads public constructor(
     context: Context,
     attr: AttributeSet? = null,
-) : LinearLayout(
-    /* context = */ context,
-    /* attrs = */ attr,
-) {
+) : LinearLayout(context, attr) {
     private lateinit var typedArray: TypedArray
 
     private val textView: TextView by lazy {
@@ -47,15 +44,10 @@ public class XChip @JvmOverloads public constructor(
         context: Context? = null,
         attrs: AttributeSet? = null,
     ) {
-        val inflater = context?.applicationContext?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        inflater.inflate(
-            /* resource = */ R.layout.chip,
-            /* root = */ this,
-        )
-        typedArray = context.obtainStyledAttributes(
-            /* set = */ attrs,
-            /* attrs = */ R.styleable.XChip,
-        )
+        val inflater =
+            context?.applicationContext?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        inflater.inflate(R.layout.chip, this)
+        typedArray = context.obtainStyledAttributes(attrs, R.styleable.XChip)
     }
 
     private fun setAttrs() {
