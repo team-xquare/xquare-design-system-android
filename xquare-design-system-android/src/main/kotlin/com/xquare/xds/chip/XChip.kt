@@ -2,6 +2,7 @@ package com.xquare.xds.chip
 
 import android.content.Context
 import android.content.res.TypedArray
+import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
@@ -58,10 +59,11 @@ public class XChip @JvmOverloads public constructor(
 
     private fun setAttrs() {
         setText()
+        setTextStyle()
+        setTextColor()
         setIconImage()
-        setBackground()
-        setEnabled()
         setDropDownImage()
+        setEnabled()
     }
 
     private fun setText() {
@@ -80,23 +82,15 @@ public class XChip @JvmOverloads public constructor(
     private fun setTextColor() {
         textView.setTextColor(
             typedArray.getColor(
-                R.styleable.XChip_android_textColor,
-                resources.getColor(R.color.black)
+                R.styleable.XChip_android_textColor, context.resources.getColor(R.color.on_primary)
             )
         )
     }
 
     private fun setIconImage() {
-        val iconDrawable = typedArray.getDrawable(R.styleable.XChip_iconImage)
-        if (iconDrawable == null) {
-            iconImageView.visibility = View.GONE
-        } else {
-            iconImageView.setImageDrawable(iconDrawable)
-        }
-    }
-
-    private fun setBackground() {
-        background = typedArray.getDrawable(R.styleable.XChip_android_background)
+        val iconDrawable = typedArray.getDrawable(R.styleable.XChip_leadingIcon)
+        if (iconDrawable == null) iconImageView.visibility = View.GONE
+        else iconImageView.setImageDrawable(iconDrawable)
     }
 
     private fun setEnabled() {
@@ -110,7 +104,7 @@ public class XChip @JvmOverloads public constructor(
     }
 
     private fun setDropDownImage() {
-        val dropDownIcon = typedArray.getDrawable(R.styleable.XChip_dropDownIcon)
+        val dropDownIcon = typedArray.getDrawable(R.styleable.XChip_trailingIcon)
         if (dropDownIcon == null) {
             dropDownImageView.visibility = View.GONE
         } else {
