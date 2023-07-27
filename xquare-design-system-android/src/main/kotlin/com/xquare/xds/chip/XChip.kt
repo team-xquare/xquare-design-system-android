@@ -57,11 +57,9 @@ public class XChip @JvmOverloads public constructor(
 
     private fun setAttrs() {
         setText()
-        setTexColor()
         setTextStyle()
-        setImage()
-        setBackground()
-        setEnabled()
+        setTextColor()
+        setIconImage()
         setDropDownImage()
         setEnabled()
     }
@@ -82,17 +80,14 @@ public class XChip @JvmOverloads public constructor(
     private fun setTextColor() {
         textView.setTextColor(
             typedArray.getColor(
-                R.styleable.XdsChip_android_textColor, resources.getColor(R.color.white)
+                R.styleable.XChip_android_textColor,
+                resources.getColor(R.color.black)
             )
         )
     }
 
-    private fun setTextStyle() {
-        textView.setTextAppearance(R.style.BodyMedium)
-    }
-
-    private fun setImage() {
-        val iconDrawable = typedArray.getDrawable(R.styleable.XdsChip_iconImage)
+    private fun setIconImage() {
+        val iconDrawable = typedArray.getDrawable(R.styleable.XChip_iconImage)
         if (iconDrawable == null) {
             iconImageView.visibility = View.GONE
         } else {
@@ -101,7 +96,7 @@ public class XChip @JvmOverloads public constructor(
     }
 
     private fun setBackground() {
-        background = typedArray.getDrawable(R.styleable.XdsChip_android_background)
+        background = typedArray.getDrawable(R.styleable.XChip_android_background)
     }
 
     private fun setEnabled() {
@@ -115,12 +110,8 @@ public class XChip @JvmOverloads public constructor(
     }
 
     private fun setDropDownImage() {
-        val isDropDown = typedArray.getBoolean(
-            /* index = */ R.styleable.XdsChip_isDropDown,
-            /* defValue */ false,
-        )
-        val dropDownIcon = typedArray.getDrawable(R.styleable.XdsChip_dropDownIcon)
-        if (!isDropDown) {
+        val dropDownIcon = typedArray.getDrawable(R.styleable.XChip_dropDownIcon)
+        if (dropDownIcon == null) {
             dropDownImageView.visibility = View.GONE
         } else {
             dropDownImageView.setImageDrawable(dropDownIcon)
