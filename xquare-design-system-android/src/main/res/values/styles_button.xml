@@ -4,27 +4,30 @@
     <style name="FilledButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/bg_button_filled</item>
-        <item name="textColor">@color/on_primary</item>
+        <item name="android:background">@drawable/selector_button_filled</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="OutlinedButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/selector_button_outlined</item>
-        <item name="textColor">@color/primary</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="TextButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/selector_button_text</item>
-        <item name="textColor">@color/on_surface</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="FloatingActionButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/bg_button_floating</item>
+        <item name="android:background">@drawable/selector_button_floating_action</item>
     </style>
 </resources>

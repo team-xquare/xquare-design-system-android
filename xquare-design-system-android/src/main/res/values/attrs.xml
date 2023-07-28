@@ -2,20 +2,20 @@
 <resources>
     <declare-styleable name="XdsTextView">
         <attr name="android:text" format="string|integer" />
-        <attr name="android:textColor" format="reference|color" />
+        <attr name="android:textColor" format="reference|integer" />
     </declare-styleable>
 
     <declare-styleable name="XButton">
-        <attr name="android:text" format="string|integer"/>
-        <attr name="android:background" format="reference|integer"/>
-        <attr name="android:src" format="reference|integer"/>
-        <attr name="android:enabled" format="boolean"/>
-        <attr name="textColor" format="integer"/>
+        <attr name="android:text" format="string|integer" />
+        <attr name="android:background" format="reference|integer" />
+        <attr name="android:drawable" format="reference|integer" />
+        <attr name="android:enabled" format="boolean" />
+        <attr name="android:textColor" format="reference|integer" />
     </declare-styleable>
 
     <declare-styleable name="XFloatingActionButton">
-        <attr name="android:src" format="reference|integer"/>
-        <attr name="android:enabled" format="boolean"/>
+        <attr name="android:drawable" format="reference|integer" />
+        <attr name="android:enabled" format="boolean" />
     </declare-styleable>
 
 </resources>

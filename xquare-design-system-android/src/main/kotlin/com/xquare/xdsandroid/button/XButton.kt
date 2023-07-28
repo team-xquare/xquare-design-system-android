@@ -6,26 +6,26 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.widget.AppCompatButton
 import com.xquare.xdsandroid.R
 
 public class XButton @JvmOverloads public constructor(
     context: Context,
     attrs: AttributeSet? = null,
-) : LinearLayout(
+) : AppCompatButton(
     context,
     attrs,
 ) {
 
     private lateinit var typedArray: TypedArray
 
-    private val textView: TextView by lazy {
-        this.findViewById(R.id.tv_xbutton)
+    private val tvButton: TextView by lazy {
+        this.findViewById(R.id.tv_button)
     }
 
-    private val imageView: ImageView by lazy {
-        this.findViewById(R.id.iv_xbutton)
+    private val imageButton: ImageView by lazy {
+        this.findViewById(R.id.image_button)
     }
 
     init {
@@ -43,7 +43,7 @@ public class XButton @JvmOverloads public constructor(
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         inflater.inflate(
             R.layout.button,
-            this,
+            findViewById(R.id.cl_button),
         )
         typedArray = context.obtainStyledAttributes(
             attrs,
@@ -63,31 +63,31 @@ public class XButton @JvmOverloads public constructor(
     private fun setText() {
         val text = typedArray.getText(R.styleable.XButton_android_text)
         if (text == null) {
-            textView.visibility = View.GONE
+            tvButton.visibility = View.GONE
         } else {
-            textView.text = text
+            tvButton.text = text
         }
     }
 
     private fun setTextStyle() {
-        textView.setTextAppearance(R.style.BodyLarge)
+        tvButton.setTextAppearance(R.style.BodyLarge)
     }
 
     private fun setTextColor() {
-        textView.setTextColor(
+        tvButton.setTextColor(
             typedArray.getColor(
-                R.styleable.XButton_textColor,
+                R.styleable.XButton_android_textColor,
                 resources.getColor(R.color.black),
             ),
         )
     }
 
     private fun setImage() {
-        val drawable = typedArray.getDrawable(R.styleable.XButton_android_src)
+        val drawable = typedArray.getDrawable(R.styleable.XButton_android_drawable)
         if (drawable == null) {
-            imageView.visibility = View.GONE
+            imageButton.visibility = View.GONE
         } else {
-            imageView.setImageDrawable(drawable)
+            imageButton.setImageDrawable(drawable)
         }
     }
 
