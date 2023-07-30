@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name="com.xquare.xds.application.XdsApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -24,5 +25,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
