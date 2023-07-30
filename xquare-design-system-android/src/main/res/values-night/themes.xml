@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--color 참조 시 @color 가 아닌 ?attr/ 로 참조하여 사용-->
 <resources>
 
     <style name="Theme.XQUARE.DayNight.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar" />
@@ -38,5 +39,41 @@
     <color name="on_surface_variant">@color/neutral_variant_80</color>
     <color name="outline">@color/neutral_variant_60</color>
     <color name="outline_variant">@color/neutral_variant_30</color>
+
+    <!--primary-->
+    <color name="colorPrimary">@color/primary_40</color>
+    <color name="colorOnPrimary">@color/primary_100</color>
+    <color name="colorPrimaryContainer">@color/primary_30</color>
+    <color name="colorOnPrimaryContainer">@color/primary_90</color>
+
+    <!--secondary-->
+    <color name="colorSecondary">@color/secondary_40</color>
+    <color name="colorOnSecondary">@color/secondary_100</color>
+    <color name="colorSecondaryContainer">@color/secondary_30</color>
+    <color name="colorOnSecondaryContainer">@color/secondary_90</color>
+
+    <!--tertiary-->
+    <color name="colorTertiary">@color/tertiary_40</color>
+    <color name="colorOnTertiary">@color/tertiary_100</color>
+    <color name="colorTertiaryContainer">@color/tertiary_30</color>
+    <color name="colorOnTertiaryContainer">@color/tertiary_90</color>
+
+    <!--error-->
+    <color name="colorError">@color/error_40</color>
+    <color name="colorOnError">@color/error_100</color>
+    <color name="colorErrorContainer">@color/error_30</color>
+    <color name="colorOnErrorContainer">@color/error_90</color>
+
+    <!--background-->
+    <color name="colorBackground">@color/neutral_10</color>
+    <color name="colorOnBackground">@color/neutral_90</color>
+    <color name="colorSurface">@color/neutral_10</color>
+    <color name="colorOnSurface">@color/neutral_90</color>
+
+    <!--surface-->
+    <color name="colorSurfaceVariant">@color/neutral_variant_30</color>
+    <color name="colorOnSurfaceVariant">@color/neutral_variant_80</color>
+    <color name="colorOutline">@color/neutral_variant_60</color>
+    <color name="colorOutlineVariant">@color/neutral_variant_30</color>
 
 </resources>
