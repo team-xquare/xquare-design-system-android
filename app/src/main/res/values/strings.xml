@@ -2,12 +2,9 @@
     <string name="app_name">XQUARE Design System-Android</string>
     <string name="action_settings">Settings</string>
 
-    <!--Button-->
-    <string name="button_image_description">Button Icon</string>
-
-    <!--Floating Action Button-->
-
-    <string name="button_floating_action_image_description">Floating Action Button Icon</string>
-
+    <!--Playground-->
+    <string name="playground_enabled">Enabled</string>
+    <string name="playground_disabled">Disabled</string>
+    <string name="playground_icon_button_content_description">XIconButton</string>
 
 </resources>
