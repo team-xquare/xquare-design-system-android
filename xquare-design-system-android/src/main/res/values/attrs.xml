@@ -6,16 +6,16 @@
     </declare-styleable>
 
     <declare-styleable name="XButton">
-        <attr name="android:text" format="string|integer" />
-        <attr name="android:background" format="reference|integer" />
-        <attr name="android:drawable" format="reference|integer" />
+        <attr name="android:text" format="reference|string|integer" />
         <attr name="android:enabled" format="boolean" />
-        <attr name="android:textColor" format="reference|integer" />
+        <attr name="leadingSrc" format="reference|integer" />
+        <attr name="trailingSrc" format="reference|integer" />
+        <attr name="android:src" format="reference|integer" />
     </declare-styleable>
 
-    <declare-styleable name="XFloatingActionButton">
-        <attr name="android:drawable" format="reference|integer" />
+    <declare-styleable name="XIconButton">
         <attr name="android:enabled" format="boolean" />
+        <attr name="android:src" format="reference|integer" />
     </declare-styleable>
 
 </resources>
