@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:divider="@drawable/divider_vertical"
+    android:divider="@drawable/divider_vertical_16dp"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="12dp"
@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal"
+        android:divider="@drawable/divider_horizontal_8dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:showDividers="middle">
@@ -44,7 +44,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal"
+        android:divider="@drawable/divider_horizontal_8dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:showDividers="middle">
@@ -78,7 +78,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal"
+        android:divider="@drawable/divider_horizontal_8dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:showDividers="middle">
@@ -112,7 +112,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal"
+        android:divider="@drawable/divider_horizontal_8dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:showDividers="middle">
@@ -144,7 +144,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal"
+        android:divider="@drawable/divider_horizontal_8dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:showDividers="middle">
