@@ -28,8 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/playground_enabled"
-            app:leadingSrc="@drawable/ic_test"
-            app:trailingSrc="@drawable/ic_test" />
+            app:leadingSrc="@drawable/ic_test_24dp"
+            app:trailingSrc="@drawable/ic_test_24dp" />
 
         <com.xquare.xdsandroid.button.XButton
             style="@style/FilledButton"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:enabled="false"
             android:text="@string/playground_disabled"
-            app:leadingSrc="@drawable/ic_test" />
+            app:leadingSrc="@drawable/ic_test_24dp" />
 
     </LinearLayout>
 
@@ -61,8 +61,8 @@
             android:layout_height="wrap_content"
             android:drawableTint="@color/primary"
             android:text="@string/playground_enabled"
-            app:leadingSrc="@drawable/ic_test"
-            app:trailingSrc="@drawable/ic_test" />
+            app:leadingSrc="@drawable/ic_test_24dp"
+            app:trailingSrc="@drawable/ic_test_24dp" />
 
         <com.xquare.xdsandroid.button.XButton
             style="@style/OutlinedButton"
@@ -71,7 +71,7 @@
             android:drawableTint="@color/primary"
             android:enabled="false"
             android:text="@string/playground_disabled"
-            app:leadingSrc="@drawable/ic_test" />
+            app:leadingSrc="@drawable/ic_test_24dp" />
 
     </LinearLayout>
 
@@ -95,8 +95,8 @@
             android:layout_height="wrap_content"
             android:drawableTint="@color/primary"
             android:text="@string/playground_enabled"
-            app:leadingSrc="@drawable/ic_test"
-            app:trailingSrc="@drawable/ic_test" />
+            app:leadingSrc="@drawable/ic_test_24dp"
+            app:trailingSrc="@drawable/ic_test_24dp" />
 
         <com.xquare.xdsandroid.button.XButton
             style="@style/TextButton"
@@ -105,7 +105,7 @@
             android:drawableTint="@color/primary"
             android:enabled="false"
             android:text="@string/playground_disabled"
-            app:leadingSrc="@drawable/ic_test" />
+            app:leadingSrc="@drawable/ic_test_24dp" />
 
     </LinearLayout>
 
@@ -128,8 +128,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/playground_enabled"
-            app:leadingSrc="@drawable/ic_test"
-            app:trailingSrc="@drawable/ic_test" />
+            app:leadingSrc="@drawable/ic_test_24dp"
+            app:trailingSrc="@drawable/ic_test_24dp" />
 
         <com.xquare.xdsandroid.button.XButton
             style="@style/FloatingActionButton"
@@ -137,7 +137,7 @@
             android:layout_height="wrap_content"
             android:enabled="false"
             android:text="@string/playground_disabled"
-            app:leadingSrc="@drawable/ic_test" />
+            app:leadingSrc="@drawable/ic_test_24dp" />
 
     </LinearLayout>
 
@@ -154,14 +154,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/playground_icon_button_content_description"
-            android:src="@drawable/ic_test" />
+            android:src="@drawable/ic_test_24dp" />
 
         <com.xquare.xdsandroid.button.XIconButton
             style="@style/OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/playground_icon_button_content_description"
-            android:src="@drawable/ic_test"
+            android:src="@drawable/ic_test_24dp"
             android:tint="@color/primary" />
 
         <com.xquare.xdsandroid.button.XIconButton
@@ -170,7 +170,7 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/playground_icon_button_content_description"
             android:enabled="false"
-            android:src="@drawable/ic_test"
+            android:src="@drawable/ic_test_24dp"
             android:tint="@color/primary" />
 
         <com.xquare.xdsandroid.button.XIconButton
@@ -178,7 +178,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/playground_icon_button_content_description"
-            android:src="@drawable/ic_test" />
+            android:src="@drawable/ic_test_24dp" />
 
     </LinearLayout>
 
