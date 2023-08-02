@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="button_medium">12dp</dimen>
-    <dimen name="button_large">16dp</dimen>
+    <dimen name="button_padding_small">8dp</dimen>
+    <dimen name="button_padding_medium">12dp</dimen>
+    <dimen name="button_padding_large">16dp</dimen>
 </resources>

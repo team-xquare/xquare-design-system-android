@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageButton
-import com.xquare.xdsandroid.Constant
+import com.xquare.xdsandroid.ButtonConstants
 import com.xquare.xdsandroid.R
 
 public class XIconButton : AppCompatImageButton {
@@ -45,12 +45,6 @@ public class XIconButton : AppCompatImageButton {
     private fun setAttrs() {
         setSrc()
         setEnabled()
-        setPadding(
-            paddingLeft,
-            resources.getDimension(R.dimen.button_vertical).toInt(),
-            paddingRight,
-            resources.getDimension(R.dimen.button_vertical).toInt(),
-        )
     }
 
     private fun setSrc() {
@@ -64,7 +58,7 @@ public class XIconButton : AppCompatImageButton {
                 true,
             )
         ) {
-            alpha = Constant.Disabled
+            alpha = ButtonConstants.ButtonDisabled
         }
     }
 }
