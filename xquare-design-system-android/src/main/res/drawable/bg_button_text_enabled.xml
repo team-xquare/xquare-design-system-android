@@ -3,11 +3,7 @@
     android:color="@color/primary_container">
     <item>
         <shape>
-            <solid android:color="@color/on_primary" />
             <corners android:radius="@dimen/corner_medium" />
-            <stroke
-                android:width="@dimen/button_stroke_width_xsmall"
-                android:color="@color/primary" />
         </shape>
     </item>
 

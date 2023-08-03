@@ -3,7 +3,7 @@
 
     <style name="FilledButton">
         <item name="android:minHeight">0dp</item>
-        <item name="android:background">@drawable/selector_button_filled_background</item>
+        <item name="android:background">@drawable/bg_button_filled_enabled</item>
         <item name="android:textColor">@color/on_primary</item>
         <item name="android:paddingStart">@dimen/button_padding_large</item>
         <item name="android:paddingEnd">@dimen/button_padding_large</item>
@@ -13,7 +13,7 @@
 
     <style name="OutlinedButton">
         <item name="android:minHeight">0dp</item>
-        <item name="android:background">@drawable/selector_button_outlined_background</item>
+        <item name="android:background">@drawable/bg_button_outlined_enabled</item>
         <item name="android:textColor">@color/primary</item>
         <item name="android:paddingStart">@dimen/button_padding_large</item>
         <item name="android:paddingEnd">@dimen/button_padding_large</item>
@@ -23,7 +23,7 @@
 
     <style name="TextButton">
         <item name="android:minHeight">0dp</item>
-        <item name="android:background">@drawable/selector_button_text_background</item>
+        <item name="android:background">@drawable/bg_button_text_enabled</item>
         <item name="android:textColor">@color/on_surface</item>
         <item name="android:paddingStart">@dimen/button_padding_large</item>
         <item name="android:paddingEnd">@dimen/button_padding_large</item>
