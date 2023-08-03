@@ -44,7 +44,7 @@ public class XIconButton : AppCompatImageButton {
 
     private fun setAttrs() {
         setSrc()
-        setEnabled()
+        setButtonEnabled()
     }
 
     private fun setSrc() {
@@ -52,13 +52,14 @@ public class XIconButton : AppCompatImageButton {
         setImageDrawable(src)
     }
 
-    private fun setEnabled() {
-        if (!attributes.getBoolean(
-                R.styleable.XButton_android_enabled,
-                true,
-            )
-        ) {
+    private fun setButtonEnabled() {
+
+        val buttonEnabled = attributes.getBoolean(R.styleable.XIconButton_android_enabled, true)
+
+        if (!buttonEnabled) {
             alpha = ButtonConstants.ButtonDisabled
         }
+
+        isEnabled = buttonEnabled
     }
 }

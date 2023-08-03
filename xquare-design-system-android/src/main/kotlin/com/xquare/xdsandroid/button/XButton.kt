@@ -84,13 +84,13 @@ public class XButton : AppCompatButton {
     }
 
     private fun setButtonEnabled() {
-        if (
-            !attributes.getBoolean(
-                R.styleable.XButton_android_enabled,
-                true,
-            )
-        ) {
+
+        val buttonEnabled = attributes.getBoolean(R.styleable.XButton_android_enabled, true)
+
+        if(!buttonEnabled){
             alpha = ButtonConstants.ButtonDisabled
         }
+
+        isEnabled = buttonEnabled
     }
 }
