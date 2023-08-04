@@ -3,183 +3,223 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:divider="@drawable/divider_vertical_16dp"
+    android:divider="@drawable/divider_vertical_playground_button_16"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="12dp"
     android:showDividers="middle">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal_8dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:showDividers="middle">
+        android:layout_height="match_parent">
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/FilledButton"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/playground_enabled" />
+            android:divider="@drawable/divider_vertical_playground_button_16"
+            android:orientation="vertical"
+            android:showDividers="middle">
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/FilledButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/playground_enabled"
-            app:leadingSrc="@drawable/ic_test_24dp"
-            app:trailingSrc="@drawable/ic_test_24dp" />
+            <com.xquare.xdsandroid.typography.body.BodyLarge
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playground_button_filled" />
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/FilledButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:text="@string/playground_disabled"
-            app:leadingSrc="@drawable/ic_test_24dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:showDividers="middle">
 
-    </LinearLayout>
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/FilledButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playground_enabled" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal_8dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:showDividers="middle">
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/FilledButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playground_enabled"
+                    app:leadingSrc="@drawable/ic_test_24"
+                    app:trailingSrc="@drawable/ic_test_24" />
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/playground_enabled" />
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/FilledButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="@string/playground_disabled"
+                    app:leadingSrc="@drawable/ic_test_24" />
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTint="@color/primary"
-            android:text="@string/playground_enabled"
-            app:leadingSrc="@drawable/ic_test_24dp"
-            app:trailingSrc="@drawable/ic_test_24dp" />
+            </LinearLayout>
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTint="@color/primary"
-            android:enabled="false"
-            android:text="@string/playground_disabled"
-            app:leadingSrc="@drawable/ic_test_24dp" />
+            <com.xquare.xdsandroid.typography.body.BodyLarge
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playground_button_outlined" />
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:showDividers="middle">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal_8dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:showDividers="middle">
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playground_enabled" />
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/TextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/playground_enabled" />
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/primary"
+                    android:text="@string/playground_enabled"
+                    app:leadingSrc="@drawable/ic_test_24"
+                    app:trailingSrc="@drawable/ic_test_24" />
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/TextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTint="@color/primary"
-            android:text="@string/playground_enabled"
-            app:leadingSrc="@drawable/ic_test_24dp"
-            app:trailingSrc="@drawable/ic_test_24dp" />
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/primary"
+                    android:enabled="false"
+                    android:text="@string/playground_disabled"
+                    app:leadingSrc="@drawable/ic_test_24" />
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/TextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTint="@color/primary"
-            android:enabled="false"
-            android:text="@string/playground_disabled"
-            app:leadingSrc="@drawable/ic_test_24dp" />
+            </LinearLayout>
 
-    </LinearLayout>
+            <com.xquare.xdsandroid.typography.body.BodyLarge
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playground_button_text" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal_8dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:showDividers="middle">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:showDividers="middle">
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/FloatingActionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/playground_enabled" />
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playground_enabled" />
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/FloatingActionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/playground_enabled"
-            app:leadingSrc="@drawable/ic_test_24dp"
-            app:trailingSrc="@drawable/ic_test_24dp" />
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/primary"
+                    android:text="@string/playground_enabled"
+                    app:leadingSrc="@drawable/ic_test_24"
+                    app:trailingSrc="@drawable/ic_test_24" />
 
-        <com.xquare.xdsandroid.button.XButton
-            style="@style/FloatingActionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:text="@string/playground_disabled"
-            app:leadingSrc="@drawable/ic_test_24dp" />
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/primary"
+                    android:enabled="false"
+                    android:text="@string/playground_disabled"
+                    app:leadingSrc="@drawable/ic_test_24" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal_8dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:showDividers="middle">
+            <com.xquare.xdsandroid.typography.body.BodyLarge
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playground_button_floating_action" />
 
-        <com.xquare.xdsandroid.button.XIconButton
-            style="@style/FilledButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/playground_icon_button_content_description"
-            android:src="@drawable/ic_test_24dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:showDividers="middle">
 
-        <com.xquare.xdsandroid.button.XIconButton
-            style="@style/OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/playground_icon_button_content_description"
-            android:src="@drawable/ic_test_24dp"
-            android:tint="@color/primary" />
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/FloatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playground_enabled" />
 
-        <com.xquare.xdsandroid.button.XIconButton
-            style="@style/TextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/playground_icon_button_content_description"
-            android:enabled="false"
-            android:src="@drawable/ic_test_24dp"
-            android:tint="@color/primary" />
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/FloatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playground_enabled"
+                    app:leadingSrc="@drawable/ic_test_24"
+                    app:trailingSrc="@drawable/ic_test_24" />
 
-        <com.xquare.xdsandroid.button.XIconButton
-            style="@style/FloatingActionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/playground_icon_button_content_description"
-            android:src="@drawable/ic_test_24dp" />
+                <com.xquare.xdsandroid.button.XButton
+                    style="@style/FloatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="@string/playground_disabled"
+                    app:leadingSrc="@drawable/ic_test_24" />
 
-    </LinearLayout>
+            </LinearLayout>
+
+            <com.xquare.xdsandroid.typography.body.BodyLarge
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playground_button_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <com.xquare.xdsandroid.button.XIconButton
+                    style="@style/FilledButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/playground_icon_button_content_description"
+                    android:src="@drawable/ic_test_24" />
+
+                <com.xquare.xdsandroid.button.XIconButton
+                    style="@style/OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/playground_icon_button_content_description"
+                    android:src="@drawable/ic_test_24"
+                    android:tint="@color/primary" />
+
+                <com.xquare.xdsandroid.button.XIconButton
+                    style="@style/TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/playground_icon_button_content_description"
+                    android:enabled="false"
+                    android:src="@drawable/ic_test_24"
+                    android:tint="@color/primary" />
+
+                <com.xquare.xdsandroid.button.XIconButton
+                    style="@style/FloatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/playground_icon_button_content_description"
+                    android:src="@drawable/ic_test_24" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
