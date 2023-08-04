@@ -7,11 +7,8 @@
         <item name="android:textColor">@color/on_secondary</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/selector_chip_bg_filled</item>
-        <item name="android:paddingStart">@dimen/padding_chip_small</item>
-        <item name="android:paddingEnd">@dimen/padding_chip_small</item>
-        <item name="android:paddingTop">@dimen/padding_chip_small</item>
-        <item name="android:paddingBottom">@dimen/padding_chip_small</item>
+        <item name="android:background">@drawable/bg_chip_filled_enabled</item>
+        <item name="android:padding">@dimen/padding_chip_small</item>
     </style>
 
     <style name="OutlinedChip">
@@ -19,11 +16,8 @@
         <item name="minWidth">0dp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/selector_chip_outlined</item>
-        <item name="android:paddingStart">@dimen/padding_chip_small</item>
-        <item name="android:paddingEnd">@dimen/padding_chip_small</item>
-        <item name="android:paddingTop">@dimen/padding_chip_small</item>
-        <item name="android:paddingBottom">@dimen/padding_chip_small</item>
+        <item name="android:background">@drawable/bg_chip_outlined_enabled</item>
+        <item name="android:padding">@dimen/padding_chip_small</item>
     </style>
 
     <style name="TextChip">
@@ -31,12 +25,9 @@
         <item name="minWidth">0dp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/selector_chip_text</item>
+        <item name="android:background">@drawable/bg_chip_text_enabled</item>
         <item name="android:outlineProvider">none</item>
-        <item name="android:paddingStart">@dimen/padding_chip_small</item>
-        <item name="android:paddingEnd">@dimen/padding_chip_small</item>
-        <item name="android:paddingTop">@dimen/padding_chip_small</item>
-        <item name="android:paddingBottom">@dimen/padding_chip_small</item>
+        <item name="android:padding">@dimen/padding_chip_small</item>
     </style>
 
 </resources>
