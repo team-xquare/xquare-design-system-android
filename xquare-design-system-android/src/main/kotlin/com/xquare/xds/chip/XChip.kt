@@ -1,48 +1,38 @@
 package com.xquare.xds.chip
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.TypedArray
-import android.graphics.drawable.Drawable
 import android.util.AttributeSet
-import android.view.LayoutInflater
-import android.view.View
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
-import androidx.annotation.ColorRes
-import androidx.annotation.StyleRes
-import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
+import com.xquare.xds.constant.ChipConstants
 import com.xquare.xquare_design_system_android.R
 
-public class XChip @JvmOverloads public constructor(
-    context: Context,
-    attr: AttributeSet? = null,
-) : LinearLayout(context, attr) {
-    private lateinit var typedArray: TypedArray
-
-    private val textView: TextView by lazy {
-        this.findViewById(R.id.tv_xchip)
+public class XChip : AppCompatButton {
+    public constructor(context: Context) : super(context) {
+        initView(
+            context = context, attrs = null
+        )
     }
 
-    private val iconImageView: ImageView by lazy {
-        this.findViewById(R.id.img_xchip_icon)
-    }
-
-    private val dropDownImageView: ImageView by lazy {
-        this.findViewById(R.id.img_xchip_drop_down)
-    }
-
-    init {
+    public constructor(
+        context: Context,
+        attrs: AttributeSet? = null,
+    ) : super(
+        context,
+        attrs,
+    ) {
         initView(
             context = context,
-            attrs = attr,
+            attrs = attrs,
         )
-        setAttrs()
     }
 
+    private lateinit var attributes: TypedArray
+
     private fun initView(
-        context: Context? = null,
-        attrs: AttributeSet? = null,
+        context: Context,
+        attrs: AttributeSet?,
     ) {
         val inflater = context?.applicationContext?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         inflater.inflate(
@@ -55,27 +45,22 @@ public class XChip @JvmOverloads public constructor(
         )
     }
 
+
+    @SuppressLint("ResourceAsColor")
     private fun setAttrs() {
-        setText()
-        setTextStyle()
-        setTextColor()
-        setIconImage()
-        setDropDownImage()
-        setEnabled()
+        text = attributes.getText(R.styleable.XChip_android_text)
+        setTextAppearance(R.style.BodyMedium)
+        isAllCaps = false
+        includeFontPadding = false
+        compoundDrawablePadding = resources.getDimension(R.dimen.padding_chip_small).toInt()
+        setChipEnabled()
+        setSrc()
+
     }
 
-    private fun setText() {
-        val text = typedArray.getText(R.styleable.XChip_android_text)
-        if (text == null) {
-            textView.visibility = View.GONE
-        } else {
-            textView.text = text
-        }
-    }
-
-    private fun setTextStyle() {
-        textView.setTextAppearance(R.style.BodyMedium)
-    }
+    private fun setSrc() {
+        val leadingSrc = attributes.getDrawable(R.styleable.XChip_leadingSrc)
+        val trailingSrc = attributes.getDrawable(R.styleable.XChip_trailingSrc)
 
     private fun setTextColor() {
         textView.setTextColor(
@@ -93,7 +78,6 @@ public class XChip @JvmOverloads public constructor(
         } else {
             iconImageView.setImageDrawable(iconDrawable)
         }
-    }
 
     private fun setBackground() {
         background = typedArray.getDrawable(R.styleable.XChip_android_background)
@@ -107,6 +91,8 @@ public class XChip @JvmOverloads public constructor(
         ) {
             alpha = 0.4f
         }
+
+        setCompoundDrawables(leadingSrc, null, trailingSrc, null)
     }
 
     private fun setDropDownImage() {
@@ -116,5 +102,7 @@ public class XChip @JvmOverloads public constructor(
         } else {
             dropDownImageView.setImageDrawable(dropDownIcon)
         }
+
+        isEnabled = chipEnabled
     }
 }

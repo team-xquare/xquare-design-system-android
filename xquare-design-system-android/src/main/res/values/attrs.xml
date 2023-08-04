@@ -38,11 +38,14 @@
 
     <declare-styleable name="XChip">
         <attr name="android:text" format="string|integer" />
-        <attr name="android:textColor" format="reference|integer" />
-        <attr name="android:background" format="reference|integer" />
-        <attr name="leadingIcon" format="reference|integer" />
-        <attr name="trailingIcon" format="integer" />
+        <attr name="leadingSrc" format="reference|integer" />
+        <attr name="trailingSrc" format="integer" />
         <attr name="android:enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="XIconChip">
+        <attr name="android:enabled" format="boolean" />
+        <attr name="android:src" format="reference|integer" />
     </declare-styleable>
 
 </resources>
