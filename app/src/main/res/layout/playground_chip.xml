@@ -46,7 +46,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:leadingIcon="@drawable/baseline_arrow_drop_down_24" />
+                    app:leadingSrc="@drawable/baseline_arrow_drop_down_24" />
 
                 <com.xquare.xds.chip.XChip
                     android:id="@+id/XChip"
@@ -56,8 +56,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:leadingIcon="@drawable/baseline_arrow_drop_down_24"
-                    app:trailingIcon="@drawable/baseline_arrow_drop_down_24" />
+                    app:leadingSrc="@drawable/baseline_arrow_drop_down_24"
+                    app:trailingSrc="@drawable/baseline_arrow_drop_down_24" />
 
             </LinearLayout>
 
@@ -95,7 +95,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_access_time_24" />
+                        app:leadingSrc="@drawable/baseline_access_time_24" />
 
                     <com.xquare.xds.chip.XChip
                         style="@style/OutlinedChip"
@@ -104,8 +104,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_access_time_24"
-                        app:trailingIcon="@drawable/baseline_access_time_24" />
+                        app:leadingSrc="@drawable/baseline_access_time_24"
+                        app:trailingSrc="@drawable/baseline_access_time_24" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -144,7 +144,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_access_time_24" />
+                        app:leadingSrc="@drawable/baseline_access_time_24" />
 
                     <com.xquare.xds.chip.XChip
                         style="@style/TextChip"
@@ -153,8 +153,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_access_time_24"
-                        app:trailingIcon="@drawable/baseline_access_time_24" />
+                        app:leadingSrc="@drawable/baseline_access_time_24"
+                        app:trailingSrc="@drawable/baseline_access_time_24" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -195,7 +195,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_access_time_24" />
+                        app:leadingSrc="@drawable/baseline_access_time_24" />
 
                     <com.xquare.xds.chip.XChip
                         style="@style/TextChip"
@@ -205,8 +205,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_access_time_24"
-                        app:trailingIcon="@drawable/baseline_access_time_24" />
+                        app:leadingSrc="@drawable/baseline_access_time_24"
+                        app:trailingSrc="@drawable/baseline_access_time_24" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -231,28 +231,28 @@
                     android:gravity="end"
                     android:orientation="horizontal">
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xds.chip.XIconChip
                         style="@style/FilledChip"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_arrow_drop_down_24" />
+                        android:src="@drawable/baseline_arrow_drop_down_24" />
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xds.chip.XIconChip
                         style="@style/OutlinedChip"
                         android:layout_marginStart="8dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_access_time_24" />
+                        android:src="@drawable/baseline_access_time_24" />
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xds.chip.XIconChip
                         style="@style/TextChip"
                         android:layout_marginStart="8dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_access_time_24" />
+                        android:src="@drawable/baseline_access_time_24" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -277,32 +277,32 @@
                     android:gravity="end"
                     android:orientation="horizontal">
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xds.chip.XIconChip
                         style="@style/FilledChip"
                         android:layout_marginStart="8dp"
                         android:enabled="false"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_arrow_drop_down_24" />
+                        android:src="@drawable/baseline_arrow_drop_down_24" />
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xds.chip.XIconChip
                         style="@style/OutlinedChip"
                         android:layout_marginStart="8dp"
                         android:enabled="false"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_access_time_24" />
+                        android:src="@drawable/baseline_access_time_24" />
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xds.chip.XIconChip
                         style="@style/TextChip"
                         android:layout_marginStart="8dp"
                         android:enabled="false"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:leadingIcon="@drawable/baseline_access_time_24" />
+                        android:src="@drawable/baseline_access_time_24" />
 
                 </LinearLayout>
             </LinearLayout>
