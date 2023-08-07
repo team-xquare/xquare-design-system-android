@@ -9,6 +9,8 @@
         <item name="android:paddingEnd">@dimen/padding_button_large</item>
         <item name="android:paddingTop">@dimen/padding_button_medium</item>
         <item name="android:paddingBottom">@dimen/padding_button_medium</item>
+        <item name="leadingTint">?attr/colorOnPrimary</item>
+        <item name="trailingTint">?attr/colorOnPrimary</item>
     </style>
 
     <style name="OutlinedButton">
@@ -19,6 +21,8 @@
         <item name="android:paddingEnd">@dimen/padding_button_large</item>
         <item name="android:paddingTop">@dimen/padding_button_medium</item>
         <item name="android:paddingBottom">@dimen/padding_button_medium</item>
+        <item name="leadingTint">?attr/colorPrimary</item>
+        <item name="trailingTint">?attr/colorPrimary</item>
     </style>
 
     <style name="TextButton">
@@ -29,6 +33,8 @@
         <item name="android:paddingEnd">@dimen/padding_button_large</item>
         <item name="android:paddingTop">@dimen/padding_button_medium</item>
         <item name="android:paddingBottom">@dimen/padding_button_medium</item>
+        <item name="leadingTint">?attr/colorPrimary</item>
+        <item name="trailingTint">?attr/colorPrimary</item>
     </style>
 
     <style name="FloatingActionButton">
@@ -38,5 +44,7 @@
         <item name="android:textAppearance">@style/BodyMedium</item>
         <item name="android:elevation">@dimen/elevation_low</item>
         <item name="android:padding">@dimen/padding_button_large</item>
+        <item name="leadingTint">?attr/colorOnPrimary</item>
+        <item name="trailingTint">?attr/colorOnPrimary</item>
     </style>
 </resources>

@@ -5,6 +5,7 @@ import android.content.res.TypedArray
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
+import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.ButtonConstants
 import com.xquare.xdsandroid.R
 
@@ -64,12 +65,22 @@ public class XButton : AppCompatButton {
     private fun setLeadingSrc() {
         leadingSrc = attributes.getDrawable(R.styleable.XButton_leadingSrc)?.apply {
             setBounds(0, 0, intrinsicWidth, intrinsicHeight)
+
+            val leadingTint =
+                attributes.getColor(R.styleable.XButton_leadingTint, R.attr.leadingTint)
+
+            DrawableCompat.wrap(this).setTint(leadingTint)
         }
     }
 
     private fun setTrailingSrc() {
         trailingSrc = attributes.getDrawable(R.styleable.XButton_trailingSrc)?.apply {
             setBounds(0, 0, intrinsicWidth, intrinsicHeight)
+
+            val trailingHint =
+                attributes.getColor(R.styleable.XButton_trailingTint, R.attr.trailingTint)
+
+            DrawableCompat.wrap(this).setTint(trailingHint)
         }
     }
 

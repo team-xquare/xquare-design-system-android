@@ -10,6 +10,8 @@
         <attr name="android:enabled" format="boolean" />
         <attr name="leadingSrc" format="reference|integer" />
         <attr name="trailingSrc" format="reference|integer" />
+        <attr name="leadingTint" format="color"/>
+        <attr name="trailingTint" format="color"/>
     </declare-styleable>
 
     <declare-styleable name="XIconButton">
