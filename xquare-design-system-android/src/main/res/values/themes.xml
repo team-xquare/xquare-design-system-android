@@ -1,8 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--color 참조 시 @color 가 아닌 ?attr/ 로 참조하여 사용-->
+<?xml version="1.0" encoding="utf-8"?><!--color 참조 시 @color 가 아닌 ?attr/ 로 참조하여 사용-->
 <resources>
 
-    <style name="Theme.XQUARE.DayNight.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Theme.XQUARE.DayNight.NoActionBar" parent="Theme.Material3.DynamicColors.Light">
+
+        <!--primary-->
+        <item name="colorPrimary">@color/primary_60</item>
+        <item name="colorOnPrimary">@color/primary_100</item>
+        <item name="colorPrimaryContainer">@color/primary_90</item>
+        <item name="colorOnPrimaryContainer">@color/primary_10</item>
+
+        <!--secondary-->
+        <item name="colorSecondary">@color/secondary_60</item>
+        <item name="colorOnSecondary">@color/secondary_100</item>
+        <item name="colorSecondaryContainer">@color/secondary_90</item>
+        <item name="colorOnSecondaryContainer">@color/secondary_10</item>
+
+        <!--tertiary-->
+        <item name="colorTertiary">@color/tertiary_60</item>
+        <item name="colorOnTertiary">@color/tertiary_100</item>
+        <item name="colorTertiaryContainer">@color/tertiary_90</item>
+        <item name="colorOnTertiaryContainer">@color/tertiary_10</item>
+
+        <!--error-->
+        <item name="colorError">@color/error_60</item>
+        <item name="colorOnError">@color/error_100</item>
+        <item name="colorErrorContainer">@color/error_90</item>
+        <item name="colorOnErrorContainer">@color/error_10</item>
+
+        <!--background-->
+        <item name="colorOnBackground">@color/neutral_10</item>
+        <item name="colorSurface">@color/neutral_100</item>
+        <item name="colorOnSurface">@color/neutral_0</item>
+
+        <!--surface-->
+        <item name="colorSurfaceVariant">@color/neutral_variant_90</item>
+        <item name="colorOnSurfaceVariant">@color/neutral_variant_30</item>
+        <item name="colorOutline">@color/neutral_variant_50</item>
+        <item name="colorOutlineVariant">@color/neutral_variant_80</item>
+    </style>
 
     <!--primary-->
     <color name="primary">@color/primary_60</color>
@@ -39,41 +74,5 @@
     <color name="on_surface_variant">@color/neutral_variant_30</color>
     <color name="outline">@color/neutral_variant_50</color>
     <color name="outline_variant">@color/neutral_variant_80</color>
-
-    <!--primary-->
-    <color name="colorPrimary">@color/primary_60</color>
-    <color name="colorOnPrimary">@color/primary_100</color>
-    <color name="colorPrimaryContainer">@color/primary_90</color>
-    <color name="colorOnPrimaryContainer">@color/primary_10</color>
-
-    <!--secondary-->
-    <color name="colorSecondary">@color/secondary_60</color>
-    <color name="colorOnSecondary">@color/secondary_100</color>
-    <color name="colorSecondaryContainer">@color/secondary_90</color>
-    <color name="colorOnSecondaryContainer">@color/secondary_10</color>
-
-    <!--tertiary-->
-    <color name="colorTertiary">@color/tertiary_60</color>
-    <color name="colorOnTertiary">@color/tertiary_100</color>
-    <color name="colorTertiaryContainer">@color/tertiary_90</color>
-    <color name="colorOnTertiaryContainer">@color/tertiary_10</color>
-
-    <!--error-->
-    <color name="colorError">@color/error_60</color>
-    <color name="colorOnError">@color/error_100</color>
-    <color name="colorErrorContainer">@color/error_90</color>
-    <color name="colorOnErrorContainer">@color/error_10</color>
-
-    <!--background-->
-    <color name="colorBackground">@color/neutral_99</color>
-    <color name="colorOnBackground">@color/neutral_10</color>
-    <color name="colorSurface">@color/neutral_99</color>
-    <color name="colorOnSurface">@color/neutral_10</color>
-
-    <!--surface-->
-    <color name="colorSurfaceVariant">@color/neutral_variant_90</color>
-    <color name="colorOnSurfaceVariant">@color/neutral_variant_30</color>
-    <color name="colorOutline">@color/neutral_variant_50</color>
-    <color name="colorOutlineVariant">@color/neutral_variant_80</color>
 
 </resources>
