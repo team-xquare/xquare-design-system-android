@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/primary_container">
+    android:color="?attr/colorPrimaryContainer">
     <item>
         <shape>
-            <solid android:color="@color/on_primary" />
+            <solid android:color="?attr/colorOnPrimary" />
             <corners android:radius="@dimen/corner_medium" />
             <stroke
                 android:width="@dimen/stroke_button_width_xsmall"
-                android:color="@color/primary" />
+                android:color="?attr/colorPrimary" />
         </shape>
     </item>
 
     <item android:id="@android:id/mask">
         <inset android:inset="@dimen/stroke_button_width_xsmall">
             <shape>
-                <solid android:color="@color/on_primary" />
+                <solid android:color="?attr/colorOnPrimary" />
                 <corners android:radius="@dimen/corner_medium" />
             </shape>
         </inset>
