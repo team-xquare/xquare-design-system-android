@@ -80,7 +80,7 @@
                     style="@style/OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableTint="@color/primary"
+                    android:drawableTint="?attr/colorPrimary"
                     android:text="@string/playground_enabled"
                     app:leadingSrc="@drawable/ic_test_24"
                     app:trailingSrc="@drawable/ic_test_24" />
@@ -89,7 +89,7 @@
                     style="@style/OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableTint="@color/primary"
+                    android:drawableTint="?attr/colorPrimary"
                     android:enabled="false"
                     android:text="@string/playground_disabled"
                     app:leadingSrc="@drawable/ic_test_24" />
@@ -119,7 +119,7 @@
                     style="@style/TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableTint="@color/primary"
+                    android:drawableTint="?attr/colorPrimary"
                     android:text="@string/playground_enabled"
                     app:leadingSrc="@drawable/ic_test_24"
                     app:trailingSrc="@drawable/ic_test_24" />
@@ -128,7 +128,7 @@
                     style="@style/TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableTint="@color/primary"
+                    android:drawableTint="?attr/colorPrimary"
                     android:enabled="false"
                     android:text="@string/playground_disabled"
                     app:leadingSrc="@drawable/ic_test_24" />
@@ -198,7 +198,7 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/playground_icon_button_content_description"
                     android:src="@drawable/ic_test_24"
-                    android:tint="@color/primary" />
+                    android:tint="?attr/colorPrimary" />
 
                 <com.xquare.xdsandroid.button.XIconButton
                     style="@style/TextButton"
@@ -207,7 +207,7 @@
                     android:contentDescription="@string/playground_icon_button_content_description"
                     android:enabled="false"
                     android:src="@drawable/ic_test_24"
-                    android:tint="@color/primary" />
+                    android:tint="?attr/colorPrimary" />
 
                 <com.xquare.xdsandroid.button.XIconButton
                     style="@style/FloatingActionButton"

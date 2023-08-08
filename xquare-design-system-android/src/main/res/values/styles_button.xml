@@ -4,7 +4,7 @@
     <style name="FilledButton">
         <item name="android:minHeight">0dp</item>
         <item name="android:background">@drawable/bg_button_filled_enabled</item>
-        <item name="android:textColor">@color/on_primary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="android:paddingStart">@dimen/padding_button_large</item>
         <item name="android:paddingEnd">@dimen/padding_button_large</item>
         <item name="android:paddingTop">@dimen/padding_button_medium</item>
@@ -16,7 +16,7 @@
     <style name="OutlinedButton">
         <item name="android:minHeight">0dp</item>
         <item name="android:background">@drawable/bg_button_outlined_enabled</item>
-        <item name="android:textColor">@color/primary</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
         <item name="android:paddingStart">@dimen/padding_button_large</item>
         <item name="android:paddingEnd">@dimen/padding_button_large</item>
         <item name="android:paddingTop">@dimen/padding_button_medium</item>
@@ -40,7 +40,7 @@
     <style name="FloatingActionButton">
         <item name="android:minHeight">0dp</item>
         <item name="android:background">@drawable/bg_button_floating_action_enabled</item>
-        <item name="android:textColor">@color/on_primary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="android:textAppearance">@style/BodyMedium</item>
         <item name="android:elevation">@dimen/elevation_low</item>
         <item name="android:padding">@dimen/padding_button_large</item>
