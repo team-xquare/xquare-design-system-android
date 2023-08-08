@@ -4,7 +4,6 @@
     <!--display-->
     <style name="DisplayLarge">
         <item name="android:fontFamily">@font/notosans_bold</item>
-        <item name="android:textColor">@color/on_background</item>
         <item name="android:textSize">57sp</item>
         <item name="android:lineSpacingExtra">7dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -12,7 +11,6 @@
 
     <style name="DisplayMedium">
         <item name="android:fontFamily">@font/notosans_bold</item>
-        <item name="android:textColor">@color/on_background</item>
         <item name="android:textSize">45sp</item>
         <item name="android:lineSpacingExtra">7dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -20,7 +18,6 @@
 
     <style name="DisplaySmall">
         <item name="android:fontFamily">@font/notosans_bold</item>
-        <item name="android:textColor">@color/on_background</item>
         <item name="android:textSize">36sp</item>
         <item name="android:lineSpacingExtra">8dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -29,7 +26,6 @@
     <!--headline-->
     <style name="HeadlineLarge">
         <item name="android:fontFamily">@font/notosans_bold</item>
-        <item name="android:textColor">@color/on_background</item>
         <item name="android:textSize">32sp</item>
         <item name="android:lineSpacingExtra">8dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -37,7 +33,6 @@
 
     <style name="HeadLineMedium">
         <item name="android:fontFamily">@font/notosans_bold</item>
-        <item name="android:textColor">@color/on_background</item>
         <item name="android:textSize">28sp</item>
         <item name="android:lineSpacingExtra">8dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -45,7 +40,6 @@
 
     <style name="HeadLineSmall">
         <item name="android:fontFamily">@font/notosans_bold</item>
-        <item name="android:textColor">@color/on_background</item>
         <item name="android:textSize">24sp</item>
         <item name="android:lineSpacingExtra">8dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -54,7 +48,6 @@
     <!--title-->
     <style name="TitleLarge">
         <item name="android:fontFamily">@font/notosans_medium</item>
-        <item name="android:textColor">@color/on_surface</item>
         <item name="android:textSize">22sp</item>
         <item name="android:lineSpacingExtra">6dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -62,7 +55,6 @@
 
     <style name="TitleMedium">
         <item name="android:fontFamily">@font/notosans_medium</item>
-        <item name="android:textColor">@color/on_surface</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineSpacingExtra">8dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -70,7 +62,6 @@
 
     <style name="TitleSmall">
         <item name="android:fontFamily">@font/notosans_medium</item>
-        <item name="android:textColor">@color/on_surface</item>
         <item name="android:textSize">14sp</item>
         <item name="android:lineSpacingExtra">6dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -79,7 +70,6 @@
     <!--label-->
     <style name="LabelLarge">
         <item name="android:fontFamily">@font/notosans_regular</item>
-        <item name="android:textColor">@color/neutral_50</item>
         <item name="android:textSize">14sp</item>
         <item name="android:lineSpacingExtra">6dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -87,7 +77,6 @@
 
     <style name="LabelMedium">
         <item name="android:fontFamily">@font/notosans_regular</item>
-        <item name="android:textColor">@color/neutral_50</item>
         <item name="android:textSize">12sp</item>
         <item name="android:lineSpacingExtra">4dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -95,7 +84,6 @@
 
     <style name="LabelSmall">
         <item name="android:fontFamily">@font/notosans_regular</item>
-        <item name="android:textColor">@color/neutral_50</item>
         <item name="android:textSize">11sp</item>
         <item name="android:lineSpacingExtra">5dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -104,7 +92,6 @@
     <!--body-->
     <style name="BodyLarge">
         <item name="android:fontFamily">@font/notosans_regular</item>
-        <item name="android:textColor">@color/neutral_30</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineSpacingExtra">8dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -112,7 +99,6 @@
 
     <style name="BodyMedium">
         <item name="android:fontFamily">@font/notosans_regular</item>
-        <item name="android:textColor">@color/neutral_30</item>
         <item name="android:textSize">14sp</item>
         <item name="android:lineSpacingExtra">6dp</item>
         <item name="android:includeFontPadding">false</item>
@@ -120,7 +106,6 @@
 
     <style name="BodySmall">
         <item name="android:fontFamily">@font/notosans_regular</item>
-        <item name="android:textColor">@color/neutral_30</item>
         <item name="android:textSize">12sp</item>
         <item name="android:lineSpacingExtra">4dp</item>
         <item name="android:includeFontPadding">false</item>
