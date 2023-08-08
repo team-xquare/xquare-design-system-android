@@ -1,79 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--color 참조 시 @color 가 아닌 ?attr/ 로 참조하여 사용-->
+<?xml version="1.0" encoding="utf-8"?><!--color 참조 시 @color 가 아닌 ?attr/ 로 참조하여 사용-->
 <resources>
 
-    <style name="Theme.XQUARE.DayNight.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Theme.XQUARE.DayNight.NoActionBar" parent="Theme.Material3.DynamicColors.DayNight">
+        <!--primary-->
+        <item name="colorPrimary">@color/primary_40</item>
+        <item name="colorOnPrimary">@color/primary_100</item>
+        <item name="colorPrimaryContainer">@color/primary_30</item>
+        <item name="colorOnPrimaryContainer">@color/primary_90</item>
 
-    <!--primary-->
-    <color name="primary">@color/primary_40</color>
-    <color name="on_primary">@color/primary_100</color>
-    <color name="primary_container">@color/primary_30</color>
-    <color name="on_primary_container">@color/primary_90</color>
+        <!--secondary-->
+        <item name="colorSecondary">@color/secondary_40</item>
+        <item name="colorOnSecondary">@color/secondary_100</item>
+        <item name="colorSecondaryContainer">@color/secondary_30</item>
+        <item name="colorOnSecondaryContainer">@color/secondary_90</item>
 
-    <!--secondary-->
-    <color name="secondary">@color/secondary_40</color>
-    <color name="on_secondary">@color/secondary_100</color>
-    <color name="secondary_container">@color/secondary_30</color>
-    <color name="on_secondary_container">@color/secondary_90</color>
+        <!--tertiary-->
+        <item name="colorTertiary">@color/tertiary_40</item>
+        <item name="colorOnTertiary">@color/tertiary_100</item>
+        <item name="colorTertiaryContainer">@color/tertiary_30</item>
+        <item name="colorOnTertiaryContainer">@color/tertiary_90</item>
 
-    <!--tertiary-->
-    <color name="tertiary">@color/tertiary_40</color>
-    <color name="on_tertiary">@color/tertiary_100</color>
-    <color name="tertiary_container">@color/tertiary_30</color>
-    <color name="on_tertiary_container">@color/tertiary_90</color>
+        <!--error-->
+        <item name="colorError">@color/error_40</item>
+        <item name="colorOnError">@color/error_100</item>
+        <item name="colorErrorContainer">@color/error_30</item>
+        <item name="colorOnErrorContainer">@color/error_90</item>
 
-    <!--error-->
-    <color name="error">@color/error_40</color>
-    <color name="on_error">@color/error_100</color>
-    <color name="error_container">@color/error_30</color>
-    <color name="on_error_container">@color/error_90</color>
+        <!--background-->
+        <item name="colorOnBackground">@color/neutral_90</item>
 
-    <!--background-->
-    <color name="background">@color/neutral_10</color>
-    <color name="on_background">@color/neutral_90</color>
-    <color name="surface">@color/neutral_10</color>
-    <color name="on_surface">@color/neutral_90</color>
+        <!--surface-->
+        <item name="colorSurface">@color/neutral_0</item>
+        <item name="colorOnSurface">@color/neutral_100</item>
+        <item name="colorSurfaceVariant">@color/neutral_variant_30</item>
+        <item name="colorOnSurfaceVariant">@color/neutral_variant_80</item>
 
-    <!--surface-->
-    <color name="surface_variant">@color/neutral_variant_30</color>
-    <color name="on_surface_variant">@color/neutral_variant_80</color>
-    <color name="outline">@color/neutral_variant_60</color>
-    <color name="outline_variant">@color/neutral_variant_30</color>
-
-    <!--primary-->
-    <color name="colorPrimary">@color/primary_40</color>
-    <color name="colorOnPrimary">@color/primary_100</color>
-    <color name="colorPrimaryContainer">@color/primary_30</color>
-    <color name="colorOnPrimaryContainer">@color/primary_90</color>
-
-    <!--secondary-->
-    <color name="colorSecondary">@color/secondary_40</color>
-    <color name="colorOnSecondary">@color/secondary_100</color>
-    <color name="colorSecondaryContainer">@color/secondary_30</color>
-    <color name="colorOnSecondaryContainer">@color/secondary_90</color>
-
-    <!--tertiary-->
-    <color name="colorTertiary">@color/tertiary_40</color>
-    <color name="colorOnTertiary">@color/tertiary_100</color>
-    <color name="colorTertiaryContainer">@color/tertiary_30</color>
-    <color name="colorOnTertiaryContainer">@color/tertiary_90</color>
-
-    <!--error-->
-    <color name="colorError">@color/error_40</color>
-    <color name="colorOnError">@color/error_100</color>
-    <color name="colorErrorContainer">@color/error_30</color>
-    <color name="colorOnErrorContainer">@color/error_90</color>
-
-    <!--background-->
-    <color name="colorBackground">@color/neutral_10</color>
-    <color name="colorOnBackground">@color/neutral_90</color>
-    <color name="colorSurface">@color/neutral_10</color>
-    <color name="colorOnSurface">@color/neutral_90</color>
-
-    <!--surface-->
-    <color name="colorSurfaceVariant">@color/neutral_variant_30</color>
-    <color name="colorOnSurfaceVariant">@color/neutral_variant_80</color>
-    <color name="colorOutline">@color/neutral_variant_60</color>
-    <color name="colorOutlineVariant">@color/neutral_variant_30</color>
-
+        <!--outline-->
+        <item name="colorOutline">@color/neutral_variant_60</item>
+        <item name="colorOutlineVariant">@color/neutral_variant_30</item>
+    </style>
 </resources>
