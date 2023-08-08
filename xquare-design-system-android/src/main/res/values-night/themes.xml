@@ -28,12 +28,14 @@
 
         <!--background-->
         <item name="colorOnBackground">@color/neutral_90</item>
-        <item name="colorSurface">@color/neutral_0</item>
-        <item name="colorOnSurface">@color/neutral_100</item>
 
         <!--surface-->
+        <item name="colorSurface">@color/neutral_0</item>
+        <item name="colorOnSurface">@color/neutral_100</item>
         <item name="colorSurfaceVariant">@color/neutral_variant_30</item>
         <item name="colorOnSurfaceVariant">@color/neutral_variant_80</item>
+
+        <!--Outline-->
         <item name="colorOutline">@color/neutral_variant_60</item>
         <item name="colorOutlineVariant">@color/neutral_variant_30</item>
     </style>
