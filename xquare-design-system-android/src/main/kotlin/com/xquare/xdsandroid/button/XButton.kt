@@ -40,7 +40,7 @@ public class XButton : AppCompatButton {
         setTextAttrs()
         setDrawableAttrs()
         stateListAnimator = null
-        setButtonEnabled()
+        setIsEnabled()
     }
 
     private fun setTextAttrs() {
@@ -62,7 +62,7 @@ public class XButton : AppCompatButton {
             setBounds(0, 0, intrinsicWidth, intrinsicHeight)
 
             val leadingTint =
-                attributes.getColor(R.styleable.XButton_leadingTint, R.attr.leadingTint)
+                attributes.getColor(R.styleable.XButton_leadingTint, R.attr.leadingSrcTint)
 
             DrawableCompat.wrap(this).setTint(leadingTint)
         }
@@ -73,13 +73,13 @@ public class XButton : AppCompatButton {
             setBounds(0, 0, intrinsicWidth, intrinsicHeight)
 
             val trailingTint =
-                attributes.getColor(R.styleable.XButton_trailingTint, R.attr.trailingTint)
+                attributes.getColor(R.styleable.XButton_trailingTint, R.attr.trailingSrcTint)
 
             DrawableCompat.wrap(this).setTint(trailingTint)
         }
     }
 
-    private fun setButtonEnabled() {
+    private fun setIsEnabled() {
         val buttonEnabled = attributes.getBoolean(R.styleable.XButton_android_enabled, true)
 
         if (!buttonEnabled) {

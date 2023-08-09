@@ -35,7 +35,7 @@ public class XIconButton : AppCompatImageButton {
 
     private fun setAttrs() {
         setDrawableAttrs()
-        setButtonEnabled()
+        setIsEnabled()
     }
 
     private fun setDrawableAttrs() {
@@ -43,7 +43,7 @@ public class XIconButton : AppCompatImageButton {
         setImageDrawable(src)
     }
 
-    private fun setButtonEnabled() {
+    private fun setIsEnabled() {
         val buttonEnabled = attributes.getBoolean(R.styleable.XIconButton_android_enabled, true)
 
         if (!buttonEnabled) {
