@@ -8,10 +8,10 @@ import androidx.appcompat.widget.AppCompatImageButton
 import com.xquare.xdsandroid.ButtonConstants
 import com.xquare.xdsandroid.R
 
-public class XIconButton : AppCompatImageButton {
+public class XIconButton : AppCompatImageButton, ButtonSrc, ButtonBase {
 
     public constructor(context: Context) : this(context, null)
-    
+
     public constructor(
         context: Context,
         attrs: AttributeSet?,
@@ -23,9 +23,10 @@ public class XIconButton : AppCompatImageButton {
     }
 
     private lateinit var attributes: TypedArray
+
     private var src: Drawable? = null
 
-    private fun initView(
+    override fun initView(
         context: Context,
         attrs: AttributeSet?,
     ) {
@@ -33,17 +34,17 @@ public class XIconButton : AppCompatImageButton {
         setAttrs()
     }
 
-    private fun setAttrs() {
+    override fun setAttrs() {
         setDrawableAttrs()
         setIsEnabled()
     }
 
-    private fun setDrawableAttrs() {
+    override fun setDrawableAttrs() {
         src = attributes.getDrawable(R.styleable.XIconButton_android_src)
         setImageDrawable(src)
     }
 
-    private fun setIsEnabled() {
+    override fun setIsEnabled() {
         val buttonEnabled = attributes.getBoolean(R.styleable.XIconButton_android_enabled, true)
 
         if (!buttonEnabled) {

@@ -9,7 +9,7 @@ import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.ButtonConstants
 import com.xquare.xdsandroid.R
 
-public class XButton : AppCompatButton {
+public class XButton : AppCompatButton, ButtonSrc, ButtonBase {
 
     public constructor(context: Context) : this(context, null)
 
@@ -28,7 +28,7 @@ public class XButton : AppCompatButton {
     private var leadingSrc: Drawable? = null
     private var trailingSrc: Drawable? = null
 
-    private fun initView(
+    override fun initView(
         context: Context,
         attrs: AttributeSet?,
     ) {
@@ -36,7 +36,7 @@ public class XButton : AppCompatButton {
         setAttrs()
     }
 
-    private fun setAttrs() {
+    override fun setAttrs() {
         setTextAttrs()
         setDrawableAttrs()
         stateListAnimator = null
@@ -50,7 +50,7 @@ public class XButton : AppCompatButton {
         setTextAppearance(R.style.BodyLarge)
     }
 
-    private fun setDrawableAttrs() {
+    override fun setDrawableAttrs() {
         setLeadingSrc()
         setTrailingSrc()
         setCompoundDrawables(leadingSrc, null, trailingSrc, null)
@@ -79,7 +79,7 @@ public class XButton : AppCompatButton {
         }
     }
 
-    private fun setIsEnabled() {
+    override fun setIsEnabled() {
         val buttonEnabled = attributes.getBoolean(R.styleable.XButton_android_enabled, true)
 
         if (!buttonEnabled) {
