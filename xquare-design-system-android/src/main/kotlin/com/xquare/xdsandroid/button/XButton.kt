@@ -62,7 +62,7 @@ public class XButton : AppCompatButton {
             setBounds(0, 0, intrinsicWidth, intrinsicHeight)
 
             val leadingTint =
-                attributes.getColor(R.styleable.XButton_leadingTint, R.attr.leadingSrcTint)
+                attributes.getColor(R.styleable.XButton_leadingSrcTint, R.attr.leadingSrcTint)
 
             DrawableCompat.wrap(this).setTint(leadingTint)
         }
@@ -73,7 +73,7 @@ public class XButton : AppCompatButton {
             setBounds(0, 0, intrinsicWidth, intrinsicHeight)
 
             val trailingTint =
-                attributes.getColor(R.styleable.XButton_trailingTint, R.attr.trailingSrcTint)
+                attributes.getColor(R.styleable.XButton_trailingSrcTint, R.attr.trailingSrcTint)
 
             DrawableCompat.wrap(this).setTint(trailingTint)
         }

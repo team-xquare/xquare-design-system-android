@@ -1,50 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="FilledButton">
+    <style name="XButton" parent="Widget.AppCompat.Button">
         <item name="android:minHeight">0dp</item>
+        <item name="android:paddingStart">@dimen/padding_button_large</item>
+        <item name="android:paddingEnd">@dimen/padding_button_large</item>
+        <item name="android:paddingTop">@dimen/padding_button_medium</item>
+        <item name="android:paddingBottom">@dimen/padding_button_medium</item>
+    </style>
+
+    <style name="FilledButton" parent="XButton">
         <item name="android:background">@drawable/bg_button_filled_enabled</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
-        <item name="android:paddingStart">@dimen/padding_button_large</item>
-        <item name="android:paddingEnd">@dimen/padding_button_large</item>
-        <item name="android:paddingTop">@dimen/padding_button_medium</item>
-        <item name="android:paddingBottom">@dimen/padding_button_medium</item>
-        <item name="leadingTint">?attr/colorOnPrimary</item>
-        <item name="trailingTint">?attr/colorOnPrimary</item>
+        <item name="leadingSrcTint">?attr/colorOnPrimary</item>
+        <item name="trailingSrcTint">?attr/colorOnPrimary</item>
     </style>
 
-    <style name="OutlinedButton">
-        <item name="android:minHeight">0dp</item>
+    <style name="OutlinedButton" parent="XButton">
         <item name="android:background">@drawable/bg_button_outlined_enabled</item>
         <item name="android:textColor">?attr/colorPrimary</item>
-        <item name="android:paddingStart">@dimen/padding_button_large</item>
-        <item name="android:paddingEnd">@dimen/padding_button_large</item>
-        <item name="android:paddingTop">@dimen/padding_button_medium</item>
-        <item name="android:paddingBottom">@dimen/padding_button_medium</item>
-        <item name="leadingTint">?attr/colorPrimary</item>
-        <item name="trailingTint">?attr/colorPrimary</item>
+        <item name="leadingSrcTint">?attr/colorPrimary</item>
+        <item name="trailingSrcTint">?attr/colorPrimary</item>
     </style>
 
-    <style name="TextButton">
-        <item name="android:minHeight">0dp</item>
+    <style name="TextButton" parent="XButton">
         <item name="android:background">@drawable/bg_button_text_enabled</item>
         <item name="android:textColor">@color/on_surface</item>
-        <item name="android:paddingStart">@dimen/padding_button_large</item>
-        <item name="android:paddingEnd">@dimen/padding_button_large</item>
-        <item name="android:paddingTop">@dimen/padding_button_medium</item>
-        <item name="android:paddingBottom">@dimen/padding_button_medium</item>
-        <item name="leadingTint">?attr/colorPrimary</item>
-        <item name="trailingTint">?attr/colorPrimary</item>
+        <item name="leadingSrcTint">?attr/colorPrimary</item>
+        <item name="trailingSrcTint">?attr/colorPrimary</item>
     </style>
 
-    <style name="FloatingActionButton">
-        <item name="android:minHeight">0dp</item>
+    <style name="FloatingActionButton" parent="XButton">
         <item name="android:background">@drawable/bg_button_floating_action_enabled</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="android:textAppearance">@style/BodyMedium</item>
         <item name="android:elevation">@dimen/elevation_low</item>
         <item name="android:padding">@dimen/padding_button_large</item>
-        <item name="leadingTint">?attr/colorOnPrimary</item>
-        <item name="trailingTint">?attr/colorOnPrimary</item>
+        <item name="leadingSrcTint">?attr/colorOnPrimary</item>
+        <item name="trailingSrcTint">?attr/colorOnPrimary</item>
     </style>
 </resources>
