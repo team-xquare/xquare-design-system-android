@@ -10,13 +10,8 @@ import com.xquare.xdsandroid.R
 
 public class XIconButton : AppCompatImageButton {
 
-    public constructor(context: Context) : this(context, null) {
-        initView(
-            context = context,
-            attrs = null,
-        )
-    }
-
+    public constructor(context: Context) : this(context, null)
+    
     public constructor(
         context: Context,
         attrs: AttributeSet?,
