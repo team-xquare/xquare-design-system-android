@@ -32,6 +32,7 @@ public class XIconButton : AppCompatImageButton, ButtonSrc, ButtonBase {
     ) {
         attributes = context.obtainStyledAttributes(attrs, R.styleable.XIconButton)
         setAttrs()
+        attributes.recycle()
     }
 
     override fun setAttrs() {

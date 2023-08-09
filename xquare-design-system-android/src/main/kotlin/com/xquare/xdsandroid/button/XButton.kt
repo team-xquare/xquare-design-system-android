@@ -34,6 +34,7 @@ public class XButton : AppCompatButton, ButtonSrc, ButtonBase {
     ) {
         attributes = context.obtainStyledAttributes(attrs, R.styleable.XButton)
         setAttrs()
+        attributes.recycle()
     }
 
     override fun setAttrs() {
