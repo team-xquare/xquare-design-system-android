@@ -2,6 +2,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <stroke
         android:width="@dimen/stroke_textfield_width_xsmall"
-        android:color="@color/black" />
+        android:color="?attr/colorOnBackground" />
     <corners android:radius="@dimen/corner_medium"/>
 </shape>
