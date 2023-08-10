@@ -4,13 +4,18 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
+import androidx.annotation.ColorInt
+import androidx.annotation.StyleableRes
 import androidx.appcompat.widget.AppCompatImageButton
 import com.xquare.xdsandroid.ButtonConstants
 import com.xquare.xdsandroid.R
 
-public class XIconButton : AppCompatImageButton, ButtonSrc, ButtonBase {
+public class XIconButton : AppCompatImageButton, CustomViewBase, CustomViewImage {
 
-    public constructor(context: Context) : this(context, null)
+    public constructor(context: Context) : this(
+        context = context,
+        attrs = null,
+    )
 
     public constructor(
         context: Context,
@@ -45,6 +50,13 @@ public class XIconButton : AppCompatImageButton, ButtonSrc, ButtonBase {
         setImageDrawable(src)
     }
 
+    override fun getTint(
+        @StyleableRes styleable: Int,
+        @ColorInt color: Int,
+    ): Int {
+        return attributes.getColor(styleable, color)
+    }
+
     override fun setIsEnabled() {
         val buttonEnabled = attributes.getBoolean(R.styleable.XIconButton_android_enabled, true)
 
@@ -54,4 +66,7 @@ public class XIconButton : AppCompatImageButton, ButtonSrc, ButtonBase {
 
         isEnabled = buttonEnabled
     }
+
+    override fun setLeadingSrc() {}
+    override fun setTrailingSrc() {}
 }
