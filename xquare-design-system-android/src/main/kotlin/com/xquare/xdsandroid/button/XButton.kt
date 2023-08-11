@@ -9,6 +9,7 @@ import androidx.annotation.StyleableRes
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.ButtonConstants
+import com.xquare.xdsandroid.CustomViewProperties
 import com.xquare.xdsandroid.R
 
 public class XButton : AppCompatButton, CustomViewBase, CustomViewText, CustomViewImage {
@@ -63,8 +64,8 @@ public class XButton : AppCompatButton, CustomViewBase, CustomViewText, CustomVi
                 androidx.appcompat.R.attr.colorPrimary,
             ),
         )
-        isAllCaps = false
-        includeFontPadding = false
+        isAllCaps = CustomViewProperties.IS_ALL_CAPS
+        includeFontPadding = CustomViewProperties.INCLUDE_FONT_PADDING
     }
 
     override fun setDrawableAttrs() {
@@ -76,7 +77,12 @@ public class XButton : AppCompatButton, CustomViewBase, CustomViewText, CustomVi
 
     override fun setLeadingSrc() {
         leadingSrc = attributes.getDrawable(R.styleable.XButton_leadingSrc)?.apply {
-            setBounds(0, 0, intrinsicWidth, intrinsicHeight)
+            setBounds(
+                CustomViewProperties.IMAGE_BOUND_DEFAULT,
+                CustomViewProperties.IMAGE_BOUND_DEFAULT,
+                intrinsicWidth,
+                intrinsicHeight,
+            )
 
             val leadingTint = getTint(R.styleable.XButton_leadingSrcTint, R.attr.leadingSrcTint)
 
@@ -86,7 +92,12 @@ public class XButton : AppCompatButton, CustomViewBase, CustomViewText, CustomVi
 
     override fun setTrailingSrc() {
         trailingSrc = attributes.getDrawable(R.styleable.XButton_trailingSrc)?.apply {
-            setBounds(0, 0, intrinsicWidth, intrinsicHeight)
+            setBounds(
+                CustomViewProperties.IMAGE_BOUND_DEFAULT,
+                CustomViewProperties.IMAGE_BOUND_DEFAULT,
+                intrinsicWidth,
+                intrinsicHeight,
+            )
 
             val trailingTint = getTint(R.styleable.XButton_trailingSrcTint, R.attr.trailingSrcTint)
 
@@ -102,7 +113,10 @@ public class XButton : AppCompatButton, CustomViewBase, CustomViewText, CustomVi
     }
 
     override fun setIsEnabled() {
-        val buttonEnabled = attributes.getBoolean(R.styleable.XButton_android_enabled, true)
+        val buttonEnabled = attributes.getBoolean(
+            R.styleable.XButton_android_enabled,
+            CustomViewProperties.ENABLED_DEFAULT,
+        )
 
         if (!buttonEnabled) {
             alpha = ButtonConstants.BUTTON_DISABLED

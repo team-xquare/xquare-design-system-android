@@ -8,6 +8,7 @@ import androidx.annotation.ColorInt
 import androidx.annotation.StyleableRes
 import androidx.appcompat.widget.AppCompatImageButton
 import com.xquare.xdsandroid.ButtonConstants
+import com.xquare.xdsandroid.CustomViewProperties
 import com.xquare.xdsandroid.R
 
 public class XIconButton : AppCompatImageButton, CustomViewBase, CustomViewImage {
@@ -58,7 +59,10 @@ public class XIconButton : AppCompatImageButton, CustomViewBase, CustomViewImage
     }
 
     override fun setIsEnabled() {
-        val buttonEnabled = attributes.getBoolean(R.styleable.XIconButton_android_enabled, true)
+        val buttonEnabled = attributes.getBoolean(
+            R.styleable.XIconButton_android_enabled,
+            CustomViewProperties.ENABLED_DEFAULT,
+        )
 
         if (!buttonEnabled) {
             alpha = ButtonConstants.BUTTON_DISABLED
