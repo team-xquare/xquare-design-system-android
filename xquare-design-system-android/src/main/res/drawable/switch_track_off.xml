@@ -10,5 +10,5 @@
         android:height="32dp" />
 
     <solid
-        android:color="@color/neutral_variant_50" />
+        android:color="?attr/colorOutline" />
 </shape>

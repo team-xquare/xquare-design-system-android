@@ -10,5 +10,5 @@
         android:height="32dp" />
 
     <solid
-        android:color="@color/secondary_60" />
+        android:color="?attr/colorSecondary" />
 </shape>
