@@ -8,10 +8,10 @@
         android:height="28dp" />
 
     <solid
-        android:color="@color/secondary_100" />
+        android:color="?attr/colorOnSecondary" />
 
     <stroke
         android:width="2dp"
-        android:color="@color/neutral_variant_50"/>
+        android:color="?attr/colorOutline"/>
 
 </shape>
