@@ -38,10 +38,22 @@ public class XIconButton : AppCompatImageButton, InitializableView {
 
     override fun setAttrs() {
         setDrawableAttrs()
+        setIsEnabled(
+            attributes.getBoolean(
+                R.styleable.XIconButton_android_enabled,
+                true,
+            ),
+        )
     }
 
     override fun setDrawableAttrs() {
         attributes.getDrawable(R.styleable.XIconButton_android_src)?.apply {
+            setBounds(
+                0,
+                0,
+                attributes.getInt(R.styleable.XIconButton_srcSize, this.intrinsicWidth),
+                attributes.getInt(R.styleable.XIconButton_srcSize, this.intrinsicHeight),
+            )
             DrawableCompat.wrap(this).setTint(
                 attributes.getColor(
                     R.styleable.XIconButton_android_tint,
@@ -52,14 +64,7 @@ public class XIconButton : AppCompatImageButton, InitializableView {
         }
     }
 
-    override fun setEnabled(enabled: Boolean) {
-        super.setEnabled(
-            attributes.getBoolean(
-                R.styleable.XButton_android_enabled,
-                true,
-            ),
-        )
-
+    override fun setIsEnabled(enabled: Boolean) {
         if (!enabled) {
             alpha = ViewDefaults.VIEW_DISABLED
         }

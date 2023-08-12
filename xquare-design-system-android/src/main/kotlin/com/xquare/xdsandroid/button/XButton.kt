@@ -84,16 +84,23 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
 
     override fun getLeadingSrc(): Drawable? {
         return attributes.getDrawable(R.styleable.XButton_leadingSrc)?.apply {
-            setBounds(0, 0, this.intrinsicWidth, this.intrinsicHeight)
-            DrawableCompat.wrap(this).setTint(
-                attributes.getColor(R.styleable.XButton_leadingSrcTint, R.attr.leadingSrcTint),
+            setBounds(
+                0,
+                0,
+                attributes.getInt(R.styleable.XButton_srcSize, this.intrinsicWidth),
+                attributes.getInt(R.styleable.XButton_srcSize, this.intrinsicHeight),
             )
         }
     }
 
     override fun getTrailingSrc(): Drawable? {
         return attributes.getDrawable(R.styleable.XButton_trailingSrc)?.apply {
-            setBounds(0, 0, this.intrinsicWidth, this.intrinsicHeight)
+            setBounds(
+                0,
+                0,
+                attributes.getInt(R.styleable.XButton_srcSize, this.intrinsicWidth),
+                attributes.getInt(R.styleable.XButton_srcSize, this.intrinsicHeight),
+            )
             DrawableCompat.wrap(this).setTint(
                 attributes.getColor(R.styleable.XButton_trailingSrcTint, R.attr.trailingSrcTint),
             )
