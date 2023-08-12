@@ -6,13 +6,13 @@
             <solid android:color="?attr/colorOnPrimary" />
             <corners android:radius="@dimen/corner_medium" />
             <stroke
-                android:width="@dimen/stroke_button_width_xsmall"
+                android:width="@dimen/stroke_width_1"
                 android:color="?attr/colorPrimary" />
         </shape>
     </item>
 
     <item android:id="@android:id/mask">
-        <inset android:inset="@dimen/stroke_button_width_xsmall">
+        <inset android:inset="@dimen/stroke_width_1">
             <shape>
                 <solid android:color="?attr/colorOnPrimary" />
                 <corners android:radius="@dimen/corner_medium" />

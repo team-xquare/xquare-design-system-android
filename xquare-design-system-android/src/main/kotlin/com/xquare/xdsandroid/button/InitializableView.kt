@@ -10,4 +10,5 @@ interface InitializableView {
     )
     fun setAttrs()
     fun setDrawableAttrs()
+    fun setIsEnabled(enabled: Boolean)
 }

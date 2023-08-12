@@ -53,7 +53,7 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
             attributes.getResourceId(
                 R.styleable.XButton_android_fontFamily,
                 R.font.notosans_regular,
-            )
+            ),
         )
     }
 
@@ -87,8 +87,8 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
             setBounds(
                 0,
                 0,
-                attributes.getInt(R.styleable.XButton_srcSize, this.intrinsicWidth),
-                attributes.getInt(R.styleable.XButton_srcSize, this.intrinsicHeight),
+                attributes.getInt(R.styleable.XButton_leadingSrcSize, this.intrinsicWidth),
+                attributes.getInt(R.styleable.XButton_leadingSrcSize, this.intrinsicHeight),
             )
         }
     }
@@ -98,8 +98,8 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
             setBounds(
                 0,
                 0,
-                attributes.getInt(R.styleable.XButton_srcSize, this.intrinsicWidth),
-                attributes.getInt(R.styleable.XButton_srcSize, this.intrinsicHeight),
+                attributes.getInt(R.styleable.XButton_trailingSrcSize, this.intrinsicWidth),
+                attributes.getInt(R.styleable.XButton_trailingSrcSize, this.intrinsicHeight),
             )
             DrawableCompat.wrap(this).setTint(
                 attributes.getColor(R.styleable.XButton_trailingSrcTint, R.attr.trailingSrcTint),
