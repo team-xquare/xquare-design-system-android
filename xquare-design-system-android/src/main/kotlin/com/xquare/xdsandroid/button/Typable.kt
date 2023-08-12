@@ -1,5 +1,5 @@
 package com.xquare.xdsandroid.button
 
-interface CustomViewText {
+interface Typable {
     fun setTextAttrs()
 }

@@ -2,16 +2,13 @@ package com.xquare.xdsandroid.button
 
 import android.content.Context
 import android.content.res.TypedArray
-import android.graphics.drawable.Drawable
 import android.util.AttributeSet
-import androidx.annotation.ColorInt
-import androidx.annotation.StyleableRes
 import androidx.appcompat.widget.AppCompatImageButton
-import com.xquare.xdsandroid.ButtonConstants
-import com.xquare.xdsandroid.CustomViewProperties
+import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
+import com.xquare.xdsandroid.ViewDefaults
 
-public class XIconButton : AppCompatImageButton, CustomViewBase, CustomViewImage {
+public class XIconButton : AppCompatImageButton, InitializableView {
 
     public constructor(context: Context) : this(
         context = context,
@@ -30,8 +27,6 @@ public class XIconButton : AppCompatImageButton, CustomViewBase, CustomViewImage
 
     private lateinit var attributes: TypedArray
 
-    private var src: Drawable? = null
-
     override fun initView(
         context: Context,
         attrs: AttributeSet?,
@@ -43,34 +38,31 @@ public class XIconButton : AppCompatImageButton, CustomViewBase, CustomViewImage
 
     override fun setAttrs() {
         setDrawableAttrs()
-        setIsEnabled()
     }
 
     override fun setDrawableAttrs() {
-        src = attributes.getDrawable(R.styleable.XIconButton_android_src)
-        setImageDrawable(src)
+        attributes.getDrawable(R.styleable.XIconButton_android_src)?.apply {
+            DrawableCompat.wrap(this).setTint(
+                attributes.getColor(
+                    R.styleable.XIconButton_android_tint,
+                    R.styleable.XIconButton_android_tint,
+                ),
+            )
+            setImageDrawable(this)
+        }
     }
 
-    override fun getTint(
-        @StyleableRes styleable: Int,
-        @ColorInt color: Int,
-    ): Int {
-        return attributes.getColor(styleable, color)
-    }
-
-    override fun setIsEnabled() {
-        val buttonEnabled = attributes.getBoolean(
-            R.styleable.XIconButton_android_enabled,
-            CustomViewProperties.ENABLED_DEFAULT,
+    override fun setEnabled(enabled: Boolean) {
+        super.setEnabled(
+            attributes.getBoolean(
+                R.styleable.XButton_android_enabled,
+                true,
+            ),
         )
 
-        if (!buttonEnabled) {
-            alpha = ButtonConstants.BUTTON_DISABLED
+        if (!enabled) {
+            alpha = ViewDefaults.VIEW_DISABLED
         }
-
-        isEnabled = buttonEnabled
+        isEnabled = enabled
     }
-
-    override fun setLeadingSrc() {}
-    override fun setTrailingSrc() {}
 }
