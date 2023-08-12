@@ -5,6 +5,7 @@ import android.content.res.TypedArray
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
+import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.ViewDefaults
@@ -41,13 +42,26 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
         setTextAttrs()
         setDrawableAttrs()
         stateListAnimator = null
+        setIsEnabled(
+            attributes.getBoolean(
+                R.styleable.XButton_android_enabled,
+                true,
+            ),
+        )
+        typeface = ResourcesCompat.getFont(
+            context,
+            attributes.getResourceId(
+                R.styleable.XButton_android_fontFamily,
+                R.font.notosans_regular,
+            )
+        )
     }
 
     override fun setTextAttrs() {
         text = attributes.getText(R.styleable.XButton_android_text)
         setTextAppearance(
             attributes.getResourceId(
-                R.styleable.XButton_android_textAppearance,
+                R.styleable.XButton_textStyle,
                 R.style.BodyLarge,
             ),
         )
@@ -65,7 +79,7 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
         val leadingSrc = getLeadingSrc()
         val trailingSrc = getTrailingSrc()
         setCompoundDrawables(leadingSrc, null, trailingSrc, null)
-        compoundDrawablePadding = resources.getDimension(R.dimen.padding_button_small).toInt()
+        compoundDrawablePadding = resources.getDimension(R.dimen.padding_8).toInt()
     }
 
     override fun getLeadingSrc(): Drawable? {
@@ -86,14 +100,7 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
         }
     }
 
-    override fun setEnabled(enabled: Boolean) {
-        super.setEnabled(
-            attributes.getBoolean(
-                R.styleable.XButton_android_enabled,
-                true,
-            ),
-        )
-
+    override fun setIsEnabled(enabled: Boolean) {
         if (!enabled) {
             alpha = ViewDefaults.VIEW_DISABLED
         }
