@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="Orientation">
+
+    <com.xquare.xds.typography.body.BodyLarge
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp">
+
+        <com.xquare.xds.xswitch.XSwitch
+            style="@style/Switch"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.xquare.xds.xswitch.XSwitch
+            style="@style/Switch"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"/>
+
+        <com.xquare.xds.xswitch.XSwitch
+            style="@style/Switch"
+            android:checked="false"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp">
+
+        <com.xquare.xds.xswitch.XSwitch
+            style="@style/Switch"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.xquare.xds.xswitch.XSwitch
+            style="@style/Switch"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"/>
+
+        <com.xquare.xds.xswitch.XSwitch
+            style="@style/Switch"
+            android:checked="true"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
