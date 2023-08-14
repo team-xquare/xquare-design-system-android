@@ -1,5 +1,9 @@
 package com.xquare.xdsandroid.button
 
-interface Typable {
-    fun setTextAttrs()
+internal interface Typable {
+    fun setTextAttrs(
+        text: CharSequence,
+        isAllCaps: Boolean,
+        includeFontPadding: Boolean,
+    )
 }
