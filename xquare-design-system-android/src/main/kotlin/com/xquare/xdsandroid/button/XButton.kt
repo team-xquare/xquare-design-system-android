@@ -10,44 +10,29 @@ import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.ViewDefaults
 
-public class XButton : AppCompatButton, InitializableView, Typable, InitializableDrawable {
+public class XButton(
+    context: Context,
+    attrs: AttributeSet?,
+) : AppCompatButton(context, attrs),
+    InitializableView,
+    Typable,
+    LeadingDrawable,
+    TrailingDrawable {
 
-    public constructor(context: Context) : this(
-        context = context,
-        attrs = null,
-    )
+    override lateinit var attributes: TypedArray
 
-    public constructor(
-        context: Context,
-        attrs: AttributeSet?,
-    ) : super(context, attrs) {
-        initView(
-            context = context,
-            attrs = attrs,
-        )
-    }
-
-    private lateinit var attributes: TypedArray
-
-    override fun initView(
-        context: Context,
-        attrs: AttributeSet?,
-    ) {
-        attributes = context.obtainStyledAttributes(attrs, R.styleable.XButton)
-        setAttrs()
-        attributes.recycle()
+    init {
+        initView(context, attrs, R.styleable.XButton)
     }
 
     override fun setAttrs() {
-        setTextAttrs()
+        setTextAttrs(
+            text = attributes.getText(R.styleable.XButton_android_text),
+            isAllCaps = false,
+            includeFontPadding = false,
+        )
         setDrawableAttrs()
         stateListAnimator = null
-        setIsEnabled(
-            attributes.getBoolean(
-                R.styleable.XButton_android_enabled,
-                true,
-            ),
-        )
         typeface = ResourcesCompat.getFont(
             context,
             attributes.getResourceId(
@@ -55,10 +40,17 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
                 R.font.notosans_regular,
             ),
         )
+
+        val isEnabled = attributes.getBoolean(R.styleable.XButton_android_enabled, true)
+        setIsEnabled(isEnabled)
     }
 
-    override fun setTextAttrs() {
-        text = attributes.getText(R.styleable.XButton_android_text)
+    override fun setTextAttrs(
+        text: CharSequence,
+        isAllCaps: Boolean,
+        includeFontPadding: Boolean,
+    ) {
+        this.text = text
         setTextAppearance(
             attributes.getResourceId(
                 R.styleable.XButton_textStyle,
@@ -71,8 +63,8 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
                 androidx.appcompat.R.attr.colorPrimary,
             ),
         )
-        isAllCaps = false
-        includeFontPadding = false
+        this.isAllCaps = isAllCaps
+        this.includeFontPadding = includeFontPadding
     }
 
     override fun setDrawableAttrs() {
@@ -87,8 +79,17 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
             setBounds(
                 0,
                 0,
-                attributes.getInt(R.styleable.XButton_leadingSrcSize, this.intrinsicWidth),
-                attributes.getInt(R.styleable.XButton_leadingSrcSize, this.intrinsicHeight),
+                attributes.getDimension(
+                    R.styleable.XButton_leadingSrcSize,
+                    this.intrinsicWidth.toFloat(),
+                ).toInt(),
+                attributes.getDimension(
+                    R.styleable.XButton_leadingSrcSize,
+                    this.intrinsicHeight.toFloat(),
+                ).toInt(),
+            )
+            DrawableCompat.wrap(this).setTint(
+                attributes.getColor(R.styleable.XButton_leadingSrcTint, R.attr.leadingSrcTint),
             )
         }
     }
@@ -98,8 +99,14 @@ public class XButton : AppCompatButton, InitializableView, Typable, Initializabl
             setBounds(
                 0,
                 0,
-                attributes.getInt(R.styleable.XButton_trailingSrcSize, this.intrinsicWidth),
-                attributes.getInt(R.styleable.XButton_trailingSrcSize, this.intrinsicHeight),
+                attributes.getDimension(
+                    R.styleable.XButton_trailingSrcSize,
+                    this.intrinsicWidth.toFloat(),
+                ).toInt(),
+                attributes.getDimension(
+                    R.styleable.XButton_trailingSrcSize,
+                    this.intrinsicHeight.toFloat(),
+                ).toInt(),
             )
             DrawableCompat.wrap(this).setTint(
                 attributes.getColor(R.styleable.XButton_trailingSrcTint, R.attr.trailingSrcTint),

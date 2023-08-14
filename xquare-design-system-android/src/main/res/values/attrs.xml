@@ -15,15 +15,15 @@
         <attr name="textStyle" format="reference" />
         <attr name="android:textColor" format="reference|integer" />
         <attr name="android:fontFamily" format="reference" />
-        <attr name="leadingSrcSize" format="integer" />
-        <attr name="trailingSrcSize" format="integer"/>
+        <attr name="leadingSrcSize" format="dimension" />
+        <attr name="trailingSrcSize" format="dimension"/>
     </declare-styleable>
 
     <declare-styleable name="XIconButton">
         <attr name="android:enabled" format="boolean" />
         <attr name="android:src" format="reference|integer" />
         <attr name="android:tint" format="color" />
-        <attr name="srcSize" format="integer"/>
+        <attr name="srcSize" format="dimension"/>
     </declare-styleable>
 
 </resources>

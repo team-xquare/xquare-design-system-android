@@ -8,32 +8,15 @@ import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.ViewDefaults
 
-public class XIconButton : AppCompatImageButton, InitializableView {
+public class XIconButton(
+    context: Context,
+    attrs: AttributeSet?,
+) : AppCompatImageButton(context, attrs), InitializableView {
 
-    public constructor(context: Context) : this(
-        context = context,
-        attrs = null,
-    )
+    override lateinit var attributes: TypedArray
 
-    public constructor(
-        context: Context,
-        attrs: AttributeSet?,
-    ) : super(context, attrs) {
-        initView(
-            context = context,
-            attrs = attrs,
-        )
-    }
-
-    private lateinit var attributes: TypedArray
-
-    override fun initView(
-        context: Context,
-        attrs: AttributeSet?,
-    ) {
-        attributes = context.obtainStyledAttributes(attrs, R.styleable.XIconButton)
-        setAttrs()
-        attributes.recycle()
+    init {
+        initView(context, attrs, R.styleable.XIconButton)
     }
 
     override fun setAttrs() {
@@ -51,8 +34,8 @@ public class XIconButton : AppCompatImageButton, InitializableView {
             setBounds(
                 0,
                 0,
-                attributes.getInt(R.styleable.XIconButton_srcSize, this.intrinsicWidth),
-                attributes.getInt(R.styleable.XIconButton_srcSize, this.intrinsicHeight),
+                attributes.getDimension(R.styleable.XIconButton_srcSize, this.intrinsicWidth.toFloat()).toInt(),
+                attributes.getDimension(R.styleable.XIconButton_srcSize, this.intrinsicHeight.toFloat()).toInt(),
             )
             DrawableCompat.wrap(this).setTint(
                 attributes.getColor(
