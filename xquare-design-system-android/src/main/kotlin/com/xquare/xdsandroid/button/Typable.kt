@@ -3,7 +3,7 @@ package com.xquare.xdsandroid.button
 internal interface Typable {
     fun setTextAttrs(
         text: CharSequence,
-        isAllCaps: Boolean,
-        includeFontPadding: Boolean,
+        isAllCaps: Boolean = false,
+        includeFontPadding: Boolean = false,
     )
 }

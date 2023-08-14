@@ -10,33 +10,35 @@
         <item name="textStyle">@style/BodyLarge</item>
     </style>
 
-    <style name="XFilledButton" parent="BaseXButton">
+    <style name="FilledXButton" parent="BaseXButton">
         <item name="android:background">@drawable/bg_button_filled_enabled</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="leadingSrcTint">?attr/colorOnPrimary</item>
         <item name="trailingSrcTint">?attr/colorOnPrimary</item>
+        <item name="android:tint">?attr/colorOnPrimary</item>
     </style>
 
-    <style name="XOutlinedButton" parent="BaseXButton">
+    <style name="OutlinedXButton" parent="BaseXButton">
         <item name="android:background">@drawable/bg_button_outlined_enabled</item>
         <item name="android:textColor">?attr/colorPrimary</item>
         <item name="leadingSrcTint">?attr/colorPrimary</item>
         <item name="trailingSrcTint">?attr/colorPrimary</item>
     </style>
 
-    <style name="XTextButton" parent="BaseXButton">
+    <style name="TextXButton" parent="BaseXButton">
         <item name="android:background">@drawable/bg_button_text_enabled</item>
         <item name="android:textColor">?attr/colorOnSurface</item>
         <item name="leadingSrcTint">?attr/colorPrimary</item>
         <item name="trailingSrcTint">?attr/colorPrimary</item>
     </style>
 
-    <style name="XFloatingActionButton" parent="BaseXButton">
+    <style name="FloatingActionXButton" parent="BaseXButton">
         <item name="android:background">@drawable/bg_button_floating_action_enabled</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="android:elevation">@dimen/elevation_low</item>
         <item name="android:padding">@dimen/padding_16</item>
         <item name="leadingSrcTint">?attr/colorOnPrimary</item>
         <item name="trailingSrcTint">?attr/colorOnPrimary</item>
+        <item name="android:tint">?attr/colorOnPrimary</item>
     </style>
 </resources>

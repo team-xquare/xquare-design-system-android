@@ -26,11 +26,7 @@ public class XButton(
     }
 
     override fun setAttrs() {
-        setTextAttrs(
-            text = attributes.getText(R.styleable.XButton_android_text),
-            isAllCaps = false,
-            includeFontPadding = false,
-        )
+        setTextAttrs(attributes.getText(R.styleable.XButton_android_text))
         setDrawableAttrs()
         stateListAnimator = null
         typeface = ResourcesCompat.getFont(
@@ -51,18 +47,20 @@ public class XButton(
         includeFontPadding: Boolean,
     ) {
         this.text = text
-        setTextAppearance(
-            attributes.getResourceId(
-                R.styleable.XButton_textStyle,
-                R.style.BodyLarge,
-            ),
+
+        val textStyle = attributes.getResourceId(
+            R.styleable.XButton_textStyle,
+            R.style.BodyLarge,
         )
-        setTextColor(
-            attributes.getColor(
-                R.styleable.XButton_android_textColor,
-                androidx.appcompat.R.attr.colorPrimary,
-            ),
+
+        val textColor = attributes.getColor(
+            R.styleable.XButton_android_textColor,
+            androidx.appcompat.R.attr.colorPrimary,
         )
+
+        setTextAppearance(textStyle)
+        setTextColor(textColor)
+
         this.isAllCaps = isAllCaps
         this.includeFontPadding = includeFontPadding
     }
@@ -76,41 +74,47 @@ public class XButton(
 
     override fun getLeadingSrc(): Drawable? {
         return attributes.getDrawable(R.styleable.XButton_leadingSrc)?.apply {
-            setBounds(
-                0,
-                0,
-                attributes.getDimension(
-                    R.styleable.XButton_leadingSrcSize,
-                    this.intrinsicWidth.toFloat(),
-                ).toInt(),
-                attributes.getDimension(
-                    R.styleable.XButton_leadingSrcSize,
-                    this.intrinsicHeight.toFloat(),
-                ).toInt(),
+            val leadingSrcWidth = attributes.getDimension(
+                R.styleable.XButton_leadingSrcSize,
+                this.intrinsicWidth.toFloat(),
+            ).toInt()
+
+            val leadingSrcHeight = attributes.getDimension(
+                R.styleable.XButton_leadingSrcSize,
+                this.intrinsicHeight.toFloat(),
+            ).toInt()
+
+            val leadingSrcTint = attributes.getColor(
+                R.styleable.XButton_leadingSrcTint,
+                R.attr.leadingSrcTint,
             )
-            DrawableCompat.wrap(this).setTint(
-                attributes.getColor(R.styleable.XButton_leadingSrcTint, R.attr.leadingSrcTint),
-            )
+
+            setBounds(0, 0, leadingSrcWidth, leadingSrcHeight)
+
+            DrawableCompat.wrap(this).setTint(leadingSrcTint)
         }
     }
 
     override fun getTrailingSrc(): Drawable? {
         return attributes.getDrawable(R.styleable.XButton_trailingSrc)?.apply {
-            setBounds(
-                0,
-                0,
-                attributes.getDimension(
-                    R.styleable.XButton_trailingSrcSize,
-                    this.intrinsicWidth.toFloat(),
-                ).toInt(),
-                attributes.getDimension(
-                    R.styleable.XButton_trailingSrcSize,
-                    this.intrinsicHeight.toFloat(),
-                ).toInt(),
+            val trailingSrcWidth = attributes.getDimension(
+                R.styleable.XButton_trailingSrcSize,
+                this.intrinsicWidth.toFloat(),
+            ).toInt()
+
+            val trailingSrcHeight = attributes.getDimension(
+                R.styleable.XButton_trailingSrcSize,
+                this.intrinsicHeight.toFloat(),
+            ).toInt()
+
+            val trailingSrcTint = attributes.getColor(
+                R.styleable.XButton_trailingSrcTint,
+                R.attr.trailingSrcTint,
             )
-            DrawableCompat.wrap(this).setTint(
-                attributes.getColor(R.styleable.XButton_trailingSrcTint, R.attr.trailingSrcTint),
-            )
+
+            setBounds(0, 0, trailingSrcWidth, trailingSrcHeight)
+
+            DrawableCompat.wrap(this).setTint(trailingSrcTint)
         }
     }
 

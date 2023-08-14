@@ -31,18 +31,24 @@ public class XIconButton(
 
     override fun setDrawableAttrs() {
         attributes.getDrawable(R.styleable.XIconButton_android_src)?.apply {
-            setBounds(
-                0,
-                0,
-                attributes.getDimension(R.styleable.XIconButton_srcSize, this.intrinsicWidth.toFloat()).toInt(),
-                attributes.getDimension(R.styleable.XIconButton_srcSize, this.intrinsicHeight.toFloat()).toInt(),
+            val srcWidth = attributes.getDimension(
+                R.styleable.XIconButton_srcSize,
+                this.intrinsicWidth.toFloat(),
+            ).toInt()
+
+            val srcHeight = attributes.getDimension(
+                R.styleable.XIconButton_srcSize,
+                this.intrinsicHeight.toFloat(),
+            ).toInt()
+
+            val srcTint = attributes.getColor(
+                R.styleable.XIconButton_android_tint,
+                androidx.appcompat.R.attr.tint,
             )
-            DrawableCompat.wrap(this).setTint(
-                attributes.getColor(
-                    R.styleable.XIconButton_android_tint,
-                    R.styleable.XIconButton_android_tint,
-                ),
-            )
+
+            setBounds(0, 0, srcWidth, srcHeight)
+
+            DrawableCompat.wrap(this).setTint(srcTint)
             setImageDrawable(this)
         }
     }
