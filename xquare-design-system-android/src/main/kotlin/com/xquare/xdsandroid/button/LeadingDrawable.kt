@@ -2,6 +2,6 @@ package com.xquare.xdsandroid.button
 
 import android.graphics.drawable.Drawable
 
-interface LeadingDrawable {
+internal interface LeadingDrawable {
     fun getLeadingSrc(): Drawable?
 }

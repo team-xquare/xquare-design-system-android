@@ -2,6 +2,6 @@ package com.xquare.xdsandroid.button
 
 import android.graphics.drawable.Drawable
 
-interface TrailingDrawable {
+internal interface TrailingDrawable {
     fun getTrailingSrc(): Drawable?
 }
