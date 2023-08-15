@@ -9,6 +9,7 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
+import com.xquare.xdsandroid.ViewDefaults
 
 public class XButton(
     context: Context,
@@ -47,9 +48,17 @@ public class XButton(
     ) {
         this.text = text
 
-        val textStyle = attributes.getResourceId(
-            R.styleable.XButton_textStyle,
+        val textAppearance = attributes.getResourceId(
+            R.styleable.XButton_android_textAppearance,
             R.style.BodyLarge,
+        )
+
+        val textStyle = ResourcesCompat.getFont(
+            context,
+            attributes.getResourceId(
+                R.styleable.XButton_android_textStyle,
+                R.font.notosans_medium,
+            ),
         )
 
         val textColor = attributes.getColor(
@@ -57,7 +66,8 @@ public class XButton(
             androidx.appcompat.R.attr.colorPrimary,
         )
 
-        setTextAppearance(textStyle)
+        typeface = textStyle
+        setTextAppearance(textAppearance)
         setTextColor(textColor)
 
         this.isAllCaps = isAllCaps

@@ -7,7 +7,7 @@
         <item name="android:paddingEnd">@dimen/padding_16</item>
         <item name="android:paddingTop">@dimen/padding_12</item>
         <item name="android:paddingBottom">@dimen/padding_12</item>
-        <item name="textStyle">@style/BodyLarge</item>
+        <item name="android:textAppearance">@style/BodyLarge</item>
     </style>
 
     <style name="FilledXButton" parent="BaseXButton">
