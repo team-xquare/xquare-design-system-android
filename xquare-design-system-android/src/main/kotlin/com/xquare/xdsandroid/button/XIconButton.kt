@@ -3,15 +3,17 @@ package com.xquare.xdsandroid.button
 import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
+import android.view.View
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
-import com.xquare.xdsandroid.ViewDefaults
 
 public class XIconButton(
     context: Context,
     attrs: AttributeSet?,
-) : AppCompatImageButton(context, attrs), InitializableView {
+) : AppCompatImageButton(context, attrs),
+    InitializableView,
+    InitializableDrawable {
 
     override lateinit var attributes: TypedArray
 
@@ -20,13 +22,7 @@ public class XIconButton(
     }
 
     override fun setAttrs() {
-        setDrawableAttrs()
-        setIsEnabled(
-            attributes.getBoolean(
-                R.styleable.XIconButton_android_enabled,
-                true,
-            ),
-        )
+        setIsEnabled()
     }
 
     override fun setDrawableAttrs() {
@@ -53,10 +49,9 @@ public class XIconButton(
         }
     }
 
-    override fun setIsEnabled(enabled: Boolean) {
-        if (!enabled) {
-            alpha = ViewDefaults.VIEW_DISABLED
+    override fun View.setIsEnabled(alpha: Float) {
+        if (!isEnabled) {
+            this.alpha = alpha
         }
-        isEnabled = enabled
     }
 }

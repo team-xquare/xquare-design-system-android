@@ -4,11 +4,11 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
+import android.view.View
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
-import com.xquare.xdsandroid.ViewDefaults
 
 public class XButton(
     context: Context,
@@ -17,7 +17,8 @@ public class XButton(
     InitializableView,
     Typable,
     LeadingDrawable,
-    TrailingDrawable {
+    TrailingDrawable,
+    InitializableDrawable {
 
     override lateinit var attributes: TypedArray
 
@@ -36,9 +37,7 @@ public class XButton(
                 R.font.notosans_regular,
             ),
         )
-
-        val isEnabled = attributes.getBoolean(R.styleable.XButton_android_enabled, true)
-        setIsEnabled(isEnabled)
+        setIsEnabled()
     }
 
     override fun setTextAttrs(
@@ -74,54 +73,53 @@ public class XButton(
 
     override fun getLeadingSrc(): Drawable? {
         return attributes.getDrawable(R.styleable.XButton_leadingSrc)?.apply {
-            val leadingSrcWidth = attributes.getDimension(
+            val width = attributes.getDimension(
                 R.styleable.XButton_leadingSrcSize,
                 this.intrinsicWidth.toFloat(),
             ).toInt()
 
-            val leadingSrcHeight = attributes.getDimension(
+            val height = attributes.getDimension(
                 R.styleable.XButton_leadingSrcSize,
                 this.intrinsicHeight.toFloat(),
             ).toInt()
 
-            val leadingSrcTint = attributes.getColor(
+            val tint = attributes.getColor(
                 R.styleable.XButton_leadingSrcTint,
                 R.attr.leadingSrcTint,
             )
 
-            setBounds(0, 0, leadingSrcWidth, leadingSrcHeight)
+            this.setBounds(0, 0, width, height)
 
-            DrawableCompat.wrap(this).setTint(leadingSrcTint)
+            DrawableCompat.wrap(this).setTint(tint)
         }
     }
 
     override fun getTrailingSrc(): Drawable? {
         return attributes.getDrawable(R.styleable.XButton_trailingSrc)?.apply {
-            val trailingSrcWidth = attributes.getDimension(
+            val width = attributes.getDimension(
                 R.styleable.XButton_trailingSrcSize,
                 this.intrinsicWidth.toFloat(),
             ).toInt()
 
-            val trailingSrcHeight = attributes.getDimension(
+            val height = attributes.getDimension(
                 R.styleable.XButton_trailingSrcSize,
                 this.intrinsicHeight.toFloat(),
             ).toInt()
 
-            val trailingSrcTint = attributes.getColor(
+            val tint = attributes.getColor(
                 R.styleable.XButton_trailingSrcTint,
                 R.attr.trailingSrcTint,
             )
 
-            setBounds(0, 0, trailingSrcWidth, trailingSrcHeight)
+            this.setBounds(0, 0, width, height)
 
-            DrawableCompat.wrap(this).setTint(trailingSrcTint)
+            DrawableCompat.wrap(this).setTint(tint)
         }
     }
 
-    override fun setIsEnabled(enabled: Boolean) {
-        if (!enabled) {
-            alpha = ViewDefaults.VIEW_DISABLED
+    override fun View.setIsEnabled(alpha: Float) {
+        if (!isEnabled) {
+            this.alpha = alpha
         }
-        isEnabled = enabled
     }
 }
