@@ -12,7 +12,8 @@
         <attr name="trailingSrc" format="reference|integer" />
         <attr name="leadingSrcTint" format="color" />
         <attr name="trailingSrcTint" format="color" />
-        <attr name="textStyle" format="reference" />
+        <attr name="android:textStyle" format="reference" />
+        <attr name="android:textAppearance" format="reference"/>
         <attr name="android:textColor" format="reference|integer" />
         <attr name="android:fontFamily" format="reference" />
         <attr name="leadingSrcSize" format="dimension" />

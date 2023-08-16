@@ -35,10 +35,8 @@
 
                 <com.xquare.xdsandroid.button.XButton
                     style="@style/FilledXButton"
-                    android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="@style/TitleLarge"
                     android:text="@string/playground_enabled" />
 
                 <com.xquare.xdsandroid.button.XButton
