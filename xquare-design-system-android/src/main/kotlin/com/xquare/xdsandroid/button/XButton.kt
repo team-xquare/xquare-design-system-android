@@ -31,13 +31,6 @@ public class XButton(
         setTextAttrs(attributes.getText(R.styleable.XButton_android_text))
         setDrawableAttrs()
         stateListAnimator = null
-        typeface = ResourcesCompat.getFont(
-            context,
-            attributes.getResourceId(
-                R.styleable.XButton_android_fontFamily,
-                R.font.notosans_regular,
-            ),
-        )
         setIsEnabled()
     }
 
@@ -100,7 +93,7 @@ public class XButton(
 
             this.setBounds(0, 0, width, height)
 
-            DrawableCompat.wrap(this).setTint(tint)
+            DrawableCompat.wrap(this@apply).setTint(tint)
         }
     }
 
@@ -123,11 +116,15 @@ public class XButton(
 
             this.setBounds(0, 0, width, height)
 
-            DrawableCompat.wrap(this).setTint(tint)
+            DrawableCompat.wrap(this@apply).setTint(tint)
         }
     }
 
-    override fun View.setIsEnabled(alpha: Float) {
+    override fun setIsEnabled() {
+        setIsEnabled(ViewDefaults.ALPHA_DISABLED)
+    }
+
+    private fun View.setIsEnabled(alpha: Float) {
         if (!isEnabled) {
             this.alpha = alpha
         }

@@ -3,9 +3,7 @@ package com.xquare.xdsandroid.button
 import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
-import android.view.View
 import androidx.annotation.StyleableRes
-import com.xquare.xdsandroid.ViewDefaults
 
 internal interface InitializableView {
 
@@ -18,9 +16,10 @@ internal interface InitializableView {
     ) {
         attributes = context.obtainStyledAttributes(attrs, styleableRes)
         setAttrs()
+        setIsEnabled()
         attributes.recycle()
     }
 
     fun setAttrs()
-    fun View.setIsEnabled(alpha: Float = ViewDefaults.ALPHA_DISABLED)
+    fun setIsEnabled()
 }

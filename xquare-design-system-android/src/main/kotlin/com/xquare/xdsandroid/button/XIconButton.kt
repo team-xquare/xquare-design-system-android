@@ -7,6 +7,7 @@ import android.view.View
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
+import com.xquare.xdsandroid.ViewDefaults
 
 public class XIconButton(
     context: Context,
@@ -44,12 +45,16 @@ public class XIconButton(
 
             setBounds(0, 0, srcWidth, srcHeight)
 
-            DrawableCompat.wrap(this).setTint(srcTint)
-            setImageDrawable(this)
+            DrawableCompat.wrap(this@apply).setTint(srcTint)
+            setImageDrawable(this@apply)
         }
     }
 
-    override fun View.setIsEnabled(alpha: Float) {
+    override fun setIsEnabled() {
+        setIsEnabled(ViewDefaults.ALPHA_DISABLED)
+    }
+
+    private fun View.setIsEnabled(alpha: Float) {
         if (!isEnabled) {
             this.alpha = alpha
         }
