@@ -1,5 +1,5 @@
 package com.xquare.xdsandroid.button
 
-interface InitializableDrawable {
+internal interface InitializableDrawable {
     fun setDrawableAttrs()
 }
