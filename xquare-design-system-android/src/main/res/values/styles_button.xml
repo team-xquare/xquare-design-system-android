@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseXButton" parent="Widget.AppCompat.Button">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingStart">@dimen/padding_16</item>
+        <item name="android:paddingEnd">@dimen/padding_16</item>
+        <item name="android:paddingTop">@dimen/padding_12</item>
+        <item name="android:paddingBottom">@dimen/padding_12</item>
+        <item name="android:textAppearance">@style/BodyLarge</item>
+    </style>
+
+    <style name="FilledXButton" parent="BaseXButton">
+        <item name="android:background">@drawable/bg_button_filled_enabled</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="leadingSrcTint">?attr/colorOnPrimary</item>
+        <item name="trailingSrcTint">?attr/colorOnPrimary</item>
+        <item name="android:tint">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="OutlinedXButton" parent="BaseXButton">
+        <item name="android:background">@drawable/bg_button_outlined_enabled</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="leadingSrcTint">?attr/colorPrimary</item>
+        <item name="trailingSrcTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TextXButton" parent="BaseXButton">
+        <item name="android:background">@drawable/bg_button_text_enabled</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="leadingSrcTint">?attr/colorPrimary</item>
+        <item name="trailingSrcTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="FloatingActionXButton" parent="BaseXButton">
+        <item name="android:background">@drawable/bg_button_floating_action_enabled</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:elevation">@dimen/elevation_low</item>
+        <item name="android:padding">@dimen/padding_16</item>
+        <item name="leadingSrcTint">?attr/colorOnPrimary</item>
+        <item name="trailingSrcTint">?attr/colorOnPrimary</item>
+        <item name="android:tint">?attr/colorOnPrimary</item>
+    </style>
+</resources>

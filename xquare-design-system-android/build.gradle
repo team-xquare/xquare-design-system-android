@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.xquare.xquare_design_system_android'
+    namespace 'com.xquare.xdsandroid'
     compileSdk 33
 
     defaultConfig {

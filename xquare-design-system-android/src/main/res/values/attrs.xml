@@ -2,7 +2,29 @@
 <resources>
     <declare-styleable name="XdsTextView">
         <attr name="android:text" format="string|integer" />
-        <attr name="android:textColor" format="reference|color" />
+        <attr name="android:textColor" format="reference|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="XButton">
+        <attr name="android:text" format="reference|string|integer" />
+        <attr name="android:enabled" format="boolean" />
+        <attr name="leadingSrc" format="reference|integer" />
+        <attr name="trailingSrc" format="reference|integer" />
+        <attr name="leadingSrcTint" format="color" />
+        <attr name="trailingSrcTint" format="color" />
+        <attr name="android:textStyle" format="reference" />
+        <attr name="android:textAppearance" format="reference"/>
+        <attr name="android:textColor" format="reference|integer" />
+        <attr name="android:fontFamily" format="reference" />
+        <attr name="leadingSrcSize" format="dimension" />
+        <attr name="trailingSrcSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="XIconButton">
+        <attr name="android:enabled" format="boolean" />
+        <attr name="android:src" format="reference|integer" />
+        <attr name="android:tint" format="color" />
+        <attr name="srcSize" format="dimension"/>
     </declare-styleable>
 
 </resources>
