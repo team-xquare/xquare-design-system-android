@@ -16,10 +16,8 @@ internal interface InitializableView {
     ) {
         attributes = context.obtainStyledAttributes(attrs, styleableRes)
         setAttrs()
-        setIsEnabled()
         attributes.recycle()
     }
 
     fun setAttrs()
-    fun setIsEnabled()
 }

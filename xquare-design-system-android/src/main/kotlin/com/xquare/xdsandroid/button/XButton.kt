@@ -4,12 +4,11 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
-import android.view.View
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
-import com.xquare.xdsandroid.ViewDefaults
+import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
 
 public class XButton(
     context: Context,
@@ -31,7 +30,7 @@ public class XButton(
         setTextAttrs(attributes.getText(R.styleable.XButton_android_text))
         setDrawableAttrs()
         stateListAnimator = null
-        setIsEnabled()
+        setAlphaEnabled()
     }
 
     override fun setTextAttrs(
@@ -117,16 +116,6 @@ public class XButton(
             this.setBounds(0, 0, width, height)
 
             DrawableCompat.wrap(this@apply).setTint(tint)
-        }
-    }
-
-    override fun setIsEnabled() {
-        setIsEnabled(ViewDefaults.ALPHA_DISABLED)
-    }
-
-    private fun View.setIsEnabled(alpha: Float) {
-        if (!isEnabled) {
-            this.alpha = alpha
         }
     }
 }

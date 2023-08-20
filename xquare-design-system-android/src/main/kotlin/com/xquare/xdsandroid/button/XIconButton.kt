@@ -3,11 +3,10 @@ package com.xquare.xdsandroid.button
 import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
-import android.view.View
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
-import com.xquare.xdsandroid.ViewDefaults
+import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
 
 public class XIconButton(
     context: Context,
@@ -23,7 +22,7 @@ public class XIconButton(
     }
 
     override fun setAttrs() {
-        setIsEnabled()
+        setAlphaEnabled()
     }
 
     override fun setDrawableAttrs() {
@@ -47,16 +46,6 @@ public class XIconButton(
 
             DrawableCompat.wrap(this@apply).setTint(srcTint)
             setImageDrawable(this@apply)
-        }
-    }
-
-    override fun setIsEnabled() {
-        setIsEnabled(ViewDefaults.ALPHA_DISABLED)
-    }
-
-    private fun View.setIsEnabled(alpha: Float) {
-        if (!isEnabled) {
-            this.alpha = alpha
         }
     }
 }
