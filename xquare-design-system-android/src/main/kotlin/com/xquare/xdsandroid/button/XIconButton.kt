@@ -2,6 +2,7 @@ package com.xquare.xdsandroid.button
 
 import android.content.Context
 import android.content.res.TypedArray
+import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.graphics.drawable.DrawableCompat
@@ -23,29 +24,30 @@ public class XIconButton(
 
     override fun setAttrs() {
         setAlphaEnabled()
+        setDrawable()
     }
 
-    override fun setDrawableAttrs() {
-        attributes.getDrawable(R.styleable.XIconButton_android_src)?.apply {
-            val srcWidth = attributes.getDimension(
-                R.styleable.XIconButton_srcSize,
-                this.intrinsicWidth.toFloat(),
-            ).toInt()
+    override fun setDrawable() {
+        val drawable: Drawable? =
+            attributes.getDrawable(R.styleable.XIconButton_android_src)?.apply {
+                val srcWidth = attributes.getDimension(
+                    R.styleable.XIconButton_srcSize,
+                    this.intrinsicWidth.toFloat(),
+                ).toInt()
 
-            val srcHeight = attributes.getDimension(
-                R.styleable.XIconButton_srcSize,
-                this.intrinsicHeight.toFloat(),
-            ).toInt()
+                val srcHeight = attributes.getDimension(
+                    R.styleable.XIconButton_srcSize,
+                    this.intrinsicHeight.toFloat(),
+                ).toInt()
 
-            val srcTint = attributes.getColor(
-                R.styleable.XIconButton_android_tint,
-                androidx.appcompat.R.attr.tint,
-            )
+                val srcTint = attributes.getColor(
+                    R.styleable.XIconButton_android_tint,
+                    androidx.appcompat.R.attr.tint,
+                )
 
-            setBounds(0, 0, srcWidth, srcHeight)
-
-            DrawableCompat.wrap(this@apply).setTint(srcTint)
-            setImageDrawable(this@apply)
-        }
+                setBounds(0, 0, srcWidth, srcHeight)
+                DrawableCompat.wrap(drawable).setTint(srcTint)
+            }
+        setImageDrawable(drawable)
     }
 }

@@ -16,8 +16,6 @@ public class XButton(
 ) : AppCompatButton(context, attrs),
     InitializableView,
     Typable,
-    LeadingDrawable,
-    TrailingDrawable,
     InitializableDrawable {
 
     override lateinit var attributes: TypedArray
@@ -28,9 +26,10 @@ public class XButton(
 
     override fun setAttrs() {
         setTextAttrs(attributes.getText(R.styleable.XButton_android_text))
-        setDrawableAttrs()
+        setDrawable()
         stateListAnimator = null
         setAlphaEnabled()
+        compoundDrawablePadding = resources.getDimension(R.dimen.padding_8).toInt()
     }
 
     override fun setTextAttrs(
@@ -66,14 +65,13 @@ public class XButton(
         this.includeFontPadding = includeFontPadding
     }
 
-    override fun setDrawableAttrs() {
-        val leadingSrc = getLeadingSrc()
-        val trailingSrc = getTrailingSrc()
+    override fun setDrawable() {
+        val leadingSrc: Drawable? = getLeadingSrc()
+        val trailingSrc: Drawable? = getTrailingSrc()
         setCompoundDrawables(leadingSrc, null, trailingSrc, null)
-        compoundDrawablePadding = resources.getDimension(R.dimen.padding_8).toInt()
     }
 
-    override fun getLeadingSrc(): Drawable? {
+    private fun getLeadingSrc(): Drawable? {
         return attributes.getDrawable(R.styleable.XButton_leadingSrc)?.apply {
             val width = attributes.getDimension(
                 R.styleable.XButton_leadingSrcSize,
@@ -96,7 +94,7 @@ public class XButton(
         }
     }
 
-    override fun getTrailingSrc(): Drawable? {
+    private fun getTrailingSrc(): Drawable? {
         return attributes.getDrawable(R.styleable.XButton_trailingSrc)?.apply {
             val width = attributes.getDimension(
                 R.styleable.XButton_trailingSrcSize,

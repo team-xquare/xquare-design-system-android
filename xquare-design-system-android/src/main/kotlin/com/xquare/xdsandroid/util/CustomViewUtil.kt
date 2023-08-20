@@ -5,7 +5,7 @@ import com.xquare.xdsandroid.ViewDefaults
 
 object CustomViewUtil {
     fun View.setAlphaEnabled() {
-        if (isEnabled) {
+        if (!isEnabled) {
             this.alpha = ViewDefaults.ALPHA_DISABLED
         }
     }
