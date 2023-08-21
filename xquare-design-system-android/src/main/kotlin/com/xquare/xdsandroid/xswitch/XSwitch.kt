@@ -29,6 +29,7 @@ public class XSwitch(
         setAlphaEnabled()
         setDrawable()
     }
+
     override fun setDrawable() {
         trackDrawable = attributes.getDrawable(R.styleable.XSwitch_android_track)
         thumbDrawable = attributes.getDrawable(R.styleable.XSwitch_android_thumb)
