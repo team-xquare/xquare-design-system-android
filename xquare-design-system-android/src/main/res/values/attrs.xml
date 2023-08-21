@@ -4,5 +4,14 @@
         <attr name="android:text" format="string|integer" />
         <attr name="android:textColor" format="reference|color" />
     </declare-styleable>
+    
+    <declare-styleable name="XTextField">
+        <attr name="android:hint" format="reference|string"/>
+        <attr name="android:enabled" format="boolean"/>
+        <attr name="leadingSrc" format="reference|integer" />
+        <attr name="trailingSrc" format="reference|integer" />
+        <attr name="leadingSrcTint" format="color"/>
+        <attr name="trailingSrcTint" format="color"/>
+    </declare-styleable>
 
 </resources>
