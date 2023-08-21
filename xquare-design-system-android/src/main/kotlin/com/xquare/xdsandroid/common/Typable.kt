@@ -1,4 +1,4 @@
-package com.xquare.xdsandroid.button
+package com.xquare.xdsandroid.common
 
 internal interface Typable {
     fun setTextAttrs(

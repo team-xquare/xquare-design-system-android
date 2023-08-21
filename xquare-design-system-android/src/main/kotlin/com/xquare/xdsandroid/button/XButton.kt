@@ -8,6 +8,9 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
+import com.xquare.xdsandroid.common.InitializableDrawable
+import com.xquare.xdsandroid.common.InitializableView
+import com.xquare.xdsandroid.common.Typable
 import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
 
 public class XButton(

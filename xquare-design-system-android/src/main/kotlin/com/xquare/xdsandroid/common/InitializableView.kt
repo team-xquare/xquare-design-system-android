@@ -1,4 +1,4 @@
-package com.xquare.xdsandroid.button
+package com.xquare.xdsandroid.common
 
 import android.content.Context
 import android.content.res.TypedArray
