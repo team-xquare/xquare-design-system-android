@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:ignore="Orientation">
 
-    <com.xquare.xds.typography.body.BodyLarge
+    <com.xquare.xdsandroid.typography.body.BodyLarge
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Default" />
@@ -17,20 +17,20 @@
         android:layout_marginTop="12dp"
         android:layout_marginStart="8dp">
 
-        <com.xquare.xds.xswitch.XSwitch
+        <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
             android:checked="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <com.xquare.xds.xswitch.XSwitch
+        <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
             android:checked="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"/>
 
-        <com.xquare.xds.xswitch.XSwitch
+        <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
             android:checked="false"
             android:enabled="false"
@@ -45,20 +45,20 @@
         android:layout_marginTop="12dp"
         android:layout_marginStart="8dp">
 
-        <com.xquare.xds.xswitch.XSwitch
+        <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
             android:checked="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <com.xquare.xds.xswitch.XSwitch
+        <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
             android:checked="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"/>
 
-        <com.xquare.xds.xswitch.XSwitch
+        <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
             android:checked="true"
             android:enabled="false"
