@@ -7,6 +7,8 @@ import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
+import com.xquare.xdsandroid.common.InitializableDrawable
+import com.xquare.xdsandroid.common.InitializableView
 import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
 
 public class XIconButton(
