@@ -26,7 +26,8 @@ public class IconXButton(
 
     override fun setAttrs() {
         setDrawable()
-        setAlphaEnabled()
+        val isEnabled = attributes.getBoolean(R.styleable.IconXButton_android_enabled, true)
+        setAlphaEnabled(isEnabled)
     }
 
     override fun setDrawable() {

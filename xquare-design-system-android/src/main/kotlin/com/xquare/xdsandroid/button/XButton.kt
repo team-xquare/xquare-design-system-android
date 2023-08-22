@@ -31,7 +31,8 @@ public class XButton(
         setTextAttrs(attributes.getText(R.styleable.XButton_android_text))
         setDrawable()
         stateListAnimator = null
-        setAlphaEnabled()
+        val isEnabled = attributes.getBoolean(R.styleable.XButton_android_enabled, true)
+        setAlphaEnabled(isEnabled)
         compoundDrawablePadding = resources.getDimension(R.dimen.padding_8).toInt()
     }
 
