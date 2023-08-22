@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/colorSecondary">
+    android:color="?attr/colorSecondary">
     <item>
         <shape>
-            <solid android:color="@color/on_secondary" />
+            <solid android:color="?attr/colorOnSecondary" />
             <corners android:radius="@dimen/corner_xsmall" />
             <stroke
                 android:width="1dp"
-                android:color="@color/secondary" />
+                android:color="?attr/colorSecondary" />
         </shape>
     </item>
 </ripple>
