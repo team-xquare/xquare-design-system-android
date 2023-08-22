@@ -1,4 +1,4 @@
-package com.xquare.xds.chip
+package com.xquare.xdsandroid.chip
 
 import android.content.Context
 import android.content.res.TypedArray
