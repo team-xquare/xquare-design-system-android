@@ -9,7 +9,7 @@ import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
-import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
+import com.xquare.xdsandroid.util.setAlphaEnabled
 
 public class IconXButton(
     context: Context,
@@ -25,8 +25,8 @@ public class IconXButton(
     }
 
     override fun setAttrs() {
-        setAlphaEnabled()
         setDrawable()
+        setAlphaEnabled()
     }
 
     override fun setDrawable() {
