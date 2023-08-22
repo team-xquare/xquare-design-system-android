@@ -2,57 +2,53 @@ package com.xquare.xds.chip
 
 import android.content.Context
 import android.content.res.TypedArray
+import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageButton
-import com.xquare.xds.constant.ChipConstants
-import com.xquare.xquare_design_system_android.R
+import androidx.core.graphics.drawable.DrawableCompat
+import com.xquare.xdsandroid.R
+import com.xquare.xdsandroid.common.InitializableDrawable
+import com.xquare.xdsandroid.common.InitializableView
+import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
 
-public class XIconChip : AppCompatImageButton {
-    public constructor(context: Context) : super(context) {
-        initView(
-            context = context,
-            attrs = null,
-        )
+public class XIconChip(
+    context: Context,
+    attrs: AttributeSet?,
+) : AppCompatImageButton(context, attrs), InitializableView, InitializableDrawable {
+
+    override lateinit var attributes: TypedArray
+
+    init {
+        initView(context, attrs, R.styleable.XIconChip)
     }
 
-    public constructor(
-        context: Context,
-        attrs: AttributeSet?,
-    ) : super(context, attrs) {
-        initView(
-            context = context,
-            attrs = attrs,
-        )
+
+    override fun setAttrs() {
+        setAlphaEnabled()
+        setDrawable()
     }
 
-    private lateinit var attributes: TypedArray
+    override fun setDrawable() {
+        val drawable: Drawable? =
+            attributes.getDrawable(R.styleable.XIconChip_android_src)?.apply {
+            val srcWidth = attributes.getDimension(
+                R.styleable.XIconChip_srcSize,
+                this.intrinsicWidth.toFloat(),
+            ).toInt()
 
-    private fun initView(
-        context: Context,
-        attrs: AttributeSet?,
-    ) {
-        attributes = context.obtainStyledAttributes(
-            attrs, R.styleable.XIconChip
-        )
-        setAttrs()
-    }
+            val srcHeight = attributes.getDimension(
+                R.styleable.XIconChip_srcSize,
+                this.intrinsicHeight.toFloat(),
+            ).toInt()
 
-    private fun setAttrs() {
-        setSrc()
-        setIconChipEnabled()
-    }
+            val srcTint = attributes.getColor(
+                R.styleable.XIconChip_android_tint,
+                androidx.appcompat.R.attr.tint,
+            )
 
-    private fun setSrc() {
-        val src = attributes.getDrawable(R.styleable.XIconChip_android_src)
-        setImageDrawable(src)
-    }
-
-    private fun setIconChipEnabled() {
-        val iconChipEnabled = attributes.getBoolean(R.styleable.XIconChip_android_enabled, true)
-        if (!iconChipEnabled) {
-            alpha = ChipConstants.CHIP_DISABLED
+            setBounds(0, 0, srcWidth, srcHeight)
+            DrawableCompat.wrap(drawable).setTint(srcTint)
         }
-
-        isEnabled = iconChipEnabled
+        setImageDrawable(drawable)
     }
 }

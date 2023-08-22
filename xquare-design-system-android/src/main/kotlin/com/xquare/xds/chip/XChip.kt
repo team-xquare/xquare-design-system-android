@@ -1,108 +1,115 @@
 package com.xquare.xds.chip
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.TypedArray
+import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
-import com.xquare.xds.constant.ChipConstants
-import com.xquare.xquare_design_system_android.R
+import androidx.core.content.res.ResourcesCompat
+import androidx.core.graphics.drawable.DrawableCompat
+import com.xquare.xdsandroid.R
+import com.xquare.xdsandroid.common.InitializableDrawable
+import com.xquare.xdsandroid.common.InitializableView
+import com.xquare.xdsandroid.common.Typable
+import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
 
-public class XChip : AppCompatButton {
-    public constructor(context: Context) : super(context) {
-        initView(
-            context = context, attrs = null
-        )
+public class XChip(
+    context: Context,
+    attrs: AttributeSet?,
+) : AppCompatButton(context, attrs), InitializableView, Typable, InitializableDrawable {
+
+    override lateinit var attributes: TypedArray
+
+    init {
+        initView(context, attrs, R.styleable.XChip)
     }
 
-    public constructor(
-        context: Context,
-        attrs: AttributeSet? = null,
-    ) : super(
-        context,
-        attrs,
+    override fun setAttrs() {
+        setTextAttrs(attributes.getText(R.styleable.XChip_android_text))
+        stateListAnimator = null
+        setDrawable()
+        setAlphaEnabled()
+        compoundDrawablePadding = resources.getDimension(R.dimen.padding_4).toInt()
+    }
+
+    override fun setTextAttrs(
+        text: CharSequence,
+        isAllCaps: Boolean,
+        includeFontPadding: Boolean,
     ) {
-        initView(
-            context = context,
-            attrs = attrs,
+        this.text = text
+
+        val textAppearance = attributes.getResourceId(
+            R.styleable.XChip_android_textAppearance, R.style.LabelMedium
         )
-    }
 
-    private lateinit var attributes: TypedArray
-
-    private fun initView(
-        context: Context,
-        attrs: AttributeSet?,
-    ) {
-        val inflater = context?.applicationContext?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        inflater.inflate(
-            /* resource = */ R.layout.chip,
-            /* root = */ this,
-        )
-        typedArray = context.obtainStyledAttributes(
-            /* set = */ attrs,
-            /* attrs = */ R.styleable.XdsChip,
-        )
-    }
-
-
-    @SuppressLint("ResourceAsColor")
-    private fun setAttrs() {
-        text = attributes.getText(R.styleable.XChip_android_text)
-        setTextAppearance(R.style.BodyMedium)
-        isAllCaps = false
-        includeFontPadding = false
-        compoundDrawablePadding = resources.getDimension(R.dimen.padding_chip_small).toInt()
-        setChipEnabled()
-        setSrc()
-
-    }
-
-    private fun setSrc() {
-        val leadingSrc = attributes.getDrawable(R.styleable.XChip_leadingSrc)
-        val trailingSrc = attributes.getDrawable(R.styleable.XChip_trailingSrc)
-
-    private fun setTextColor() {
-        textView.setTextColor(
-            typedArray.getColor(
-                R.styleable.XChip_android_textColor,
-                resources.getColor(R.color.black)
+        val textStyle = ResourcesCompat.getFont(
+            context, attributes.getResourceId(
+                R.styleable.XChip_android_textStyle, R.font.notosans_regular
             )
         )
+
+        val textColor = attributes.getColor(
+            R.styleable.XChip_android_textColor, androidx.appcompat.R.attr.colorPrimary
+        )
+
+        typeface = textStyle
+        setTextAppearance(textAppearance)
+        setTextColor(textColor)
+
+        this.isAllCaps = isAllCaps
+        this.includeFontPadding = includeFontPadding
     }
 
-    private fun setIconImage() {
-        val iconDrawable = typedArray.getDrawable(R.styleable.XChip_iconImage)
-        if (iconDrawable == null) {
-            iconImageView.visibility = View.GONE
-        } else {
-            iconImageView.setImageDrawable(iconDrawable)
-        }
-
-    private fun setBackground() {
-        background = typedArray.getDrawable(R.styleable.XChip_android_background)
-    }
-
-    private fun setEnabled() {
-        if (!typedArray.getBoolean(
-                /* index = */ R.styleable.XdsChip_android_enabled,
-                /* defValue = */ true,
-            )
-        ) {
-            alpha = 0.4f
-        }
-
+    override fun setDrawable() {
+        val leadingSrc: Drawable? = getLeadingSrc()
+        val trailingSrc: Drawable? = getTrailingSrc()
         setCompoundDrawables(leadingSrc, null, trailingSrc, null)
     }
 
-    private fun setDropDownImage() {
-        val dropDownIcon = typedArray.getDrawable(R.styleable.XChip_dropDownIcon)
-        if (dropDownIcon == null) {
-            dropDownImageView.visibility = View.GONE
-        } else {
-            dropDownImageView.setImageDrawable(dropDownIcon)
-        }
+    private fun getLeadingSrc(): Drawable? {
+        return attributes.getDrawable(R.styleable.XChip_leadingSrc)?.apply {
+            val width = attributes.getDimension(
+                R.styleable.XChip_leadingSrcSize,
+                this.intrinsicWidth.toFloat(),
+            ).toInt()
 
-        isEnabled = chipEnabled
+            val height = attributes.getDimension(
+                R.styleable.XChip_leadingSrcSize,
+                this.intrinsicHeight.toFloat(),
+            ).toInt()
+
+            val tint = attributes.getColor(
+                R.styleable.XChip_leadingSrcTint,
+                R.attr.leadingSrcTint,
+            )
+
+            this.setBounds(0, 0, width, height)
+
+            DrawableCompat.wrap(this@apply).setTint(tint)
+        }
+    }
+
+    private fun getTrailingSrc(): Drawable? {
+        return attributes.getDrawable(R.styleable.XChip_trailingSrc)?.apply {
+            val width = attributes.getDimension(
+                R.styleable.XChip_trailingSrcSize,
+                this.intrinsicWidth.toFloat(),
+            ).toInt()
+
+            val height = attributes.getDimension(
+                R.styleable.XChip_trailingSrcSize,
+                this.intrinsicHeight.toFloat(),
+            ).toInt()
+
+            val tint = attributes.getColor(
+                R.styleable.XChip_trailingSrcTint,
+                R.attr.trailingSrcTint,
+            )
+
+            this.setBounds(0, 0, width, height)
+
+            DrawableCompat.wrap(this@apply).setTint(tint)
+        }
     }
 }
