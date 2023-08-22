@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--common attrs-->
+    <attr name="leadingSrc" format="reference|integer" />
+    <attr name="trailingSrc" format="reference|integer" />
+    <attr name="leadingSrcTint" format="color" />
+    <attr name="trailingSrcTint" format="color" />
+    <attr name="leadingSrcSize" format="dimension" />
+    <attr name="trailingSrcSize" format="dimension" />
+    <attr name="srcSize" format="dimension" />
+
     <declare-styleable name="XdsTextView">
         <attr name="android:text" format="string|integer" />
         <attr name="android:textColor" format="reference|integer" />
@@ -24,7 +34,7 @@
         <attr name="android:enabled" format="boolean" />
         <attr name="android:src" format="reference|integer" />
         <attr name="android:tint" format="color" />
-        <attr name="srcSize"/>
+        <attr name="srcSize" />
     </declare-styleable>
 
     <declare-styleable name="XChip">
@@ -42,20 +52,13 @@
         <attr name="trailingSrcSize" />
     </declare-styleable>
 
-    <declare-styleable name="XIconChip">
+    <declare-styleable name="IconXChip">
         <attr name="android:enabled" format="boolean" />
+        <attr name="enabled" format="boolean" />
         <attr name="android:src" format="reference|integer" />
         <attr name="android:tint" format="color" />
-        <attr name="srcSize"/>
+        <attr name="srcSize" />
     </declare-styleable>
-
-    <attr name="leadingSrc" format="reference|integer" />
-    <attr name="trailingSrc" format="reference|integer" />
-    <attr name="leadingSrcTint" format="color" />
-    <attr name="trailingSrcTint" format="color" />
-    <attr name="leadingSrcSize" format="dimension" />
-    <attr name="trailingSrcSize" format="dimension" />
-    <attr name="srcSize" format="dimension" />
 
 
 </resources>
