@@ -32,13 +32,13 @@
                 android:gravity="end"
                 android:orientation="horizontal">
 
-                <com.xquare.xds.chip.XChip
+                <com.xquare.xdsandroid.chip.XChip
                     style="@style/FilledXChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/playground_enabled" />
 
-                <com.xquare.xds.chip.XChip
+                <com.xquare.xdsandroid.chip.XChip
                     style="@style/FilledXChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                     app:leadingSrc="@drawable/ic_test_16"
                     app:leadingSrcTint="?attr/colorOnSecondary" />
 
-                <com.xquare.xds.chip.XChip
+                <com.xquare.xdsandroid.chip.XChip
                     android:id="@+id/XChip"
                     style="@style/FilledXChip"
                     android:layout_width="wrap_content"
@@ -81,14 +81,14 @@
                     android:gravity="end"
                     android:orientation="horizontal">
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xdsandroid.chip.XChip
                         style="@style/OutlinedXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Enabled"
                         android:textColor="?attr/colorSecondary" />
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xdsandroid.chip.XChip
                         style="@style/OutlinedXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                         app:leadingSrc="@drawable/ic_test_16"
                         app:leadingSrcTint="?attr/colorSecondary" />
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xdsandroid.chip.XChip
                         style="@style/OutlinedXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -133,13 +133,13 @@
                     android:gravity="end"
                     android:orientation="horizontal">
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xdsandroid.chip.XChip
                         style="@style/TextXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Enabled" />
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xdsandroid.chip.XChip
                         style="@style/TextXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -147,7 +147,7 @@
                         android:text="Enabled"
                         app:leadingSrc="@drawable/ic_test_16" />
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xdsandroid.chip.XChip
                         style="@style/TextXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -179,14 +179,14 @@
                     android:gravity="end"
                     android:orientation="horizontal">
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xdsandroid.chip.XChip
                         style="@style/FilledXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:enabled="false"
                         android:text="@string/playground_disabled" />
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xdsandroid.chip.XChip
                         style="@style/OutlinedXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -195,7 +195,7 @@
                         android:text="@string/playground_disabled"
                         app:leadingSrc="@drawable/ic_test_16" />
 
-                    <com.xquare.xds.chip.XChip
+                    <com.xquare.xdsandroid.chip.XChip
                         style="@style/TextXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -228,13 +228,13 @@
                     android:gravity="end"
                     android:orientation="horizontal">
 
-                    <com.xquare.xds.chip.XIconChip
+                    <com.xquare.xdsandroid.chip.IconXChip
                         style="@style/FilledXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:src="@drawable/ic_test_16" />
 
-                    <com.xquare.xds.chip.XIconChip
+                    <com.xquare.xdsandroid.chip.IconXChip
                         style="@style/OutlinedXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -242,7 +242,7 @@
                         android:src="@drawable/ic_test_16"
                         android:tint="?attr/colorSecondary"/>
 
-                    <com.xquare.xds.chip.XIconChip
+                    <com.xquare.xdsandroid.chip.IconXChip
                         style="@style/TextXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -273,28 +273,28 @@
                     android:gravity="end"
                     android:orientation="horizontal">
 
-                    <com.xquare.xds.chip.XIconChip
+                    <com.xquare.xdsandroid.chip.IconXChip
                         style="@style/FilledXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:enabled="false"
+                        app:enabled="false"
                         android:src="@drawable/ic_test_16" />
 
-                    <com.xquare.xds.chip.XIconChip
+                    <com.xquare.xdsandroid.chip.IconXChip
                         style="@style/OutlinedXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:enabled="false"
+                        app:enabled="false"
                         android:src="@drawable/ic_test_16"
                         android:tint="?attr/colorSecondary"/>
 
-                    <com.xquare.xds.chip.XIconChip
+                    <com.xquare.xdsandroid.chip.IconXChip
                         style="@style/TextXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:enabled="false"
+                        app:enabled="false"
                         android:src="@drawable/ic_test_16"
                         android:tint="?attr/colorSecondary"/>
 
