@@ -19,12 +19,12 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <com.xquare.xds.typography.body.BodyLarge
+            <com.xquare.xdsandroid.typography.body.BodyLarge
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginVertical="32dp"
-                android:text="Filled Chip" />
+                android:text="@string/playground_chip_filled" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -33,31 +33,31 @@
                 android:orientation="horizontal">
 
                 <com.xquare.xds.chip.XChip
-                    style="@style/FilledChip"
-                    android:text="Enabled"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    style="@style/FilledXChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playground_enabled" />
 
                 <com.xquare.xds.chip.XChip
-                    style="@style/FilledChip"
+                    style="@style/FilledXChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="Enabled"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:leadingSrc="@drawable/baseline_arrow_drop_down_24" />
+                    android:text="@string/playground_enabled"
+                    app:leadingSrc="@drawable/ic_test_16"
+                    app:leadingSrcTint="?attr/colorOnSecondary" />
 
                 <com.xquare.xds.chip.XChip
                     android:id="@+id/XChip"
-                    style="@style/FilledChip"
+                    style="@style/FilledXChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="Enabled"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:leadingSrc="@drawable/baseline_arrow_drop_down_24"
-                    app:trailingSrc="@drawable/baseline_arrow_drop_down_24" />
+                    android:text="@string/playground_enabled"
+                    app:leadingSrc="@drawable/ic_test_16"
+                    app:leadingSrcTint="?attr/colorOnSecondary"
+                    app:trailingSrc="@drawable/ic_test_16"
+                    app:trailingSrcTint="?attr/colorOnSecondary" />
 
             </LinearLayout>
 
@@ -68,7 +68,7 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <com.xquare.xds.typography.body.BodyLarge
+                <com.xquare.xdsandroid.typography.body.BodyLarge
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
@@ -82,30 +82,33 @@
                     android:orientation="horizontal">
 
                     <com.xquare.xds.chip.XChip
-                        style="@style/OutlinedChip"
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Enabled"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:textColor="?attr/colorSecondary" />
 
                     <com.xquare.xds.chip.XChip
-                        style="@style/OutlinedChip"
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="Enabled"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:leadingSrc="@drawable/baseline_access_time_24" />
+                        android:textColor="?attr/colorSecondary"
+                        app:leadingSrc="@drawable/ic_test_16"
+                        app:leadingSrcTint="?attr/colorSecondary" />
 
                     <com.xquare.xds.chip.XChip
-                        style="@style/OutlinedChip"
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="Enabled"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:leadingSrc="@drawable/baseline_access_time_24"
-                        app:trailingSrc="@drawable/baseline_access_time_24" />
+                        android:textColor="?attr/colorSecondary"
+                        app:leadingSrc="@drawable/ic_test_16"
+                        app:leadingSrcTint="?attr/colorSecondary"
+                        app:trailingSrc="@drawable/ic_test_16"
+                        app:trailingSrcTint="?attr/colorSecondary" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -117,7 +120,7 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <com.xquare.xds.typography.body.BodyLarge
+                <com.xquare.xdsandroid.typography.body.BodyLarge
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
@@ -131,30 +134,27 @@
                     android:orientation="horizontal">
 
                     <com.xquare.xds.chip.XChip
-                        style="@style/TextChip"
-                        android:text="Enabled"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        style="@style/TextXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enabled" />
 
                     <com.xquare.xds.chip.XChip
-                        style="@style/TextChip"
+                        style="@style/TextXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="Enabled"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:leadingSrc="@drawable/baseline_access_time_24" />
+                        app:leadingSrc="@drawable/ic_test_16" />
 
                     <com.xquare.xds.chip.XChip
-                        style="@style/TextChip"
+                        style="@style/TextXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="Enabled"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:leadingSrc="@drawable/baseline_access_time_24"
-                        app:trailingSrc="@drawable/baseline_access_time_24" />
+                        app:leadingSrc="@drawable/ic_test_16"
+                        app:trailingSrc="@drawable/ic_test_16" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -166,7 +166,7 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <com.xquare.xds.typography.body.BodyLarge
+                <com.xquare.xdsandroid.typography.body.BodyLarge
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
@@ -180,33 +180,30 @@
                     android:orientation="horizontal">
 
                     <com.xquare.xds.chip.XChip
-                        style="@style/FilledChip"
+                        style="@style/FilledXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:enabled="false"
-                        android:text="Enabled"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:text="@string/playground_disabled" />
 
                     <com.xquare.xds.chip.XChip
-                        style="@style/OutlinedChip"
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:enabled="false"
-                        android:text="Enabled"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:leadingSrc="@drawable/baseline_access_time_24" />
+                        android:text="@string/playground_disabled"
+                        app:leadingSrc="@drawable/ic_test_16" />
 
                     <com.xquare.xds.chip.XChip
-                        style="@style/TextChip"
+                        style="@style/TextXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:enabled="false"
-                        android:text="Enabled"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:leadingSrc="@drawable/baseline_access_time_24"
-                        app:trailingSrc="@drawable/baseline_access_time_24" />
+                        android:text="@string/playground_disabled"
+                        app:leadingSrc="@drawable/ic_test_16"
+                        app:trailingSrc="@drawable/ic_test_16" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -218,7 +215,7 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <com.xquare.xds.typography.body.BodyLarge
+                <com.xquare.xdsandroid.typography.body.BodyLarge
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
@@ -232,27 +229,26 @@
                     android:orientation="horizontal">
 
                     <com.xquare.xds.chip.XIconChip
-                        style="@style/FilledChip"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/baseline_arrow_drop_down_24" />
+                        style="@style/FilledXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_test_16" />
 
                     <com.xquare.xds.chip.XIconChip
-                        style="@style/OutlinedChip"
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/baseline_access_time_24" />
+                        android:src="@drawable/ic_test_16"
+                        android:tint="?attr/colorSecondary"/>
 
                     <com.xquare.xds.chip.XIconChip
-                        style="@style/TextChip"
+                        style="@style/TextXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/baseline_access_time_24" />
+                        android:src="@drawable/ic_test_16"
+                        android:tint="?attr/colorSecondary"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -264,7 +260,7 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <com.xquare.xds.typography.body.BodyLarge
+                <com.xquare.xdsandroid.typography.body.BodyLarge
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
@@ -278,31 +274,29 @@
                     android:orientation="horizontal">
 
                     <com.xquare.xds.chip.XIconChip
-                        style="@style/FilledChip"
-                        android:layout_marginStart="8dp"
+                        style="@style/FilledXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:enabled="false"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/baseline_arrow_drop_down_24" />
+                        android:src="@drawable/ic_test_16" />
 
                     <com.xquare.xds.chip.XIconChip
-                        style="@style/OutlinedChip"
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:enabled="false"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/baseline_access_time_24" />
+                        android:src="@drawable/ic_test_16"
+                        android:tint="?attr/colorSecondary"/>
 
                     <com.xquare.xds.chip.XIconChip
-                        style="@style/TextChip"
+                        style="@style/TextXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:enabled="false"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/baseline_access_time_24" />
+                        android:src="@drawable/ic_test_16"
+                        android:tint="?attr/colorSecondary"/>
 
                 </LinearLayout>
             </LinearLayout>
