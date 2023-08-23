@@ -2,20 +2,25 @@
     <string name="app_name">XQUARE Design System-Android</string>
     <string name="action_settings">Settings</string>
 
-    <!--Playground-->
+    <!--playground-->
     <string name="playground_enabled">Enabled</string>
     <string name="playground_disabled">Disabled</string>
     <string name="playground_icon_button_content_description">IconXButton</string>
 
-    <!--Button-->
+    <!--button-->
     <string name="playground_button_filled">Filled Button</string>
     <string name="playground_button_outlined">Outlined Button</string>
     <string name="playground_button_text">Text Button</string>
     <string name="playground_button_floating_action">Floating Action Button</string>
     <string name="playground_button_icon">Icon Button</string>
 
-    <!--Chip-->
+    <!--chip-->
     <string name="playground_chip_filled">Filled Chip</string>
+    <string name="playground_chip_outliend">Outlined Chip</string>
+    <string name="playground_chip_text">Text Chip</string>
+    <string name="playground_chip_disabled">Disabled Chip</string>
+    <string name="playground_chip_icon">Icon Chip</string>
+    <string name="playground_chip_icon_disabled">Disabled Icon Chip</string>
 
 
 </resources>
