@@ -9,6 +9,7 @@
         <item name="android:paddingTop">@dimen/padding_4</item>
         <item name="android:paddingBottom">@dimen/padding_4</item>
         <item name="android:textAppearance">@style/LabelMedium</item>
+        <item name="android:outlineProvider">none</item>
     </style>
 
     <style name="FilledXChip" parent="BaseXChip">
@@ -26,7 +27,7 @@
         <item name="trailingSrcTint">?attr/colorSecondary</item>
     </style>
 
-    <style name="TextXChip" parent="BaseXChip">
+    <style name="XTextChip" parent="BaseXChip">
         <item name="android:background">@drawable/bg_chip_text_enabled</item>
         <item name="android:textColor">?attr/colorSecondary</item>
         <item name="leadingSrcTint">?attr/colorSecondary</item>
