@@ -19,20 +19,20 @@
         android:divider="@drawable/divider_horizontal_8"
         android:showDividers="middle">
 
-        <com.xquare.xdsandroid.xswitch.XSwitch
-            style="@style/Switch"
+        <com.xquare.xdsandroid.switch.XSwitch
+            style="@style/XSwitch"
             android:checked="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <com.xquare.xdsandroid.xswitch.XSwitch
-            style="@style/Switch"
+        <com.xquare.xdsandroid.switch.XSwitch
+            style="@style/XSwitch"
             android:checked="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <com.xquare.xdsandroid.xswitch.XSwitch
-            style="@style/Switch"
+        <com.xquare.xdsandroid.switch.XSwitch
+            style="@style/XSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
@@ -45,20 +45,20 @@
         android:divider="@drawable/divider_horizontal_8"
         android:showDividers="middle">
 
-        <com.xquare.xdsandroid.xswitch.XSwitch
-            style="@style/Switch"
+        <com.xquare.xdsandroid.switch.XSwitch
+            style="@style/XSwitch"
             android:checked="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <com.xquare.xdsandroid.xswitch.XSwitch
-            style="@style/Switch"
+        <com.xquare.xdsandroid.switch.XSwitch
+            style="@style/XSwitch"
             android:checked="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <com.xquare.xdsandroid.xswitch.XSwitch
-            style="@style/Switch"
+        <com.xquare.xdsandroid.switch.XSwitch
+            style="@style/XSwitch"
             android:checked="true"
             android:enabled="false"
             android:layout_width="wrap_content"
