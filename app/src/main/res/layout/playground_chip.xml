@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginVertical="32dp"
-                    android:text="Outlined Chip" />
+                    android:text="@string/playground_chip_outliend" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -85,7 +85,7 @@
                         style="@style/OutlinedXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Enabled"
+                        android:text="@string/playground_enabled"
                         android:textColor="?attr/colorSecondary" />
 
                     <com.xquare.xdsandroid.chip.XChip
@@ -93,7 +93,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="Enabled"
+                        android:text="@string/playground_enabled"
                         android:textColor="?attr/colorSecondary"
                         app:leadingSrc="@drawable/ic_test_16"
                         app:leadingSrcTint="?attr/colorSecondary" />
@@ -103,7 +103,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="Enabled"
+                        android:text="@string/playground_enabled"
                         android:textColor="?attr/colorSecondary"
                         app:leadingSrc="@drawable/ic_test_16"
                         app:leadingSrcTint="?attr/colorSecondary"
@@ -125,7 +125,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginVertical="32dp"
-                    android:text="Text Chip" />
+                    android:text="@string/playground_chip_text" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -137,14 +137,14 @@
                         style="@style/XTextChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Enabled" />
+                        android:text="@string/playground_enabled" />
 
                     <com.xquare.xdsandroid.chip.XChip
                         style="@style/XTextChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="Enabled"
+                        android:text="@string/playground_enabled"
                         app:leadingSrc="@drawable/ic_test_16" />
 
                     <com.xquare.xdsandroid.chip.XChip
@@ -152,7 +152,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="Enabled"
+                        android:text="@string/playground_enabled"
                         app:leadingSrc="@drawable/ic_test_16"
                         app:trailingSrc="@drawable/ic_test_16" />
 
@@ -220,7 +220,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginVertical="32dp"
-                    android:text="Icon Chip" />
+                    android:text="@string/playground_chip_icon" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -265,7 +265,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginVertical="32dp"
-                    android:text="Disabled Icon Chip" />
+                    android:text="@string/playground_chip_icon_disabled" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
