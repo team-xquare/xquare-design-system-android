@@ -8,7 +8,6 @@
     <string name="playground_icon_button_content_description">IconXButton</string>
 
     <!--button-->
-
     <string name="playground_button_filled">Filled Button</string>
     <string name="playground_button_outlined">Outlined Button</string>
     <string name="playground_button_text">Text Button</string>
