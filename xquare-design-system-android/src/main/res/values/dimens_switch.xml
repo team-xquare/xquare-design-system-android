@@ -2,12 +2,12 @@
 <resources>
 
     <!--thumb-->
-    <dimen name="thumb_height">32dp</dimen>
-    <dimen name="thumb_width">32dp</dimen>
-    <dimen name="thumb_stroke_width">2dp</dimen>
+    <dimen name="width_switch_thumb">32dp</dimen>
+    <dimen name="height_switch_thumb">32dp</dimen>
+    <dimen name="stroke_width_switch_thumb">2dp</dimen>
 
     <!--track-->
-    <dimen name="track_height">32dp</dimen>
-    <dimen name="track_width">56dp</dimen>
-    <dimen name="track_radius">16dp</dimen>
+    <dimen name="width_switch_track">56dp</dimen>
+    <dimen name="height_switch_track">32dp</dimen>
+    <dimen name="radius_switch_track">16dp</dimen>
 </resources>

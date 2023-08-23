@@ -1,14 +1,11 @@
-<shape
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle" >
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
 
-    <corners
-        android:radius="@dimen/track_radius" />
+    <corners android:radius="@dimen/radius_switch_track" />
 
     <size
-        android:width="@dimen/track_width"
-        android:height="@dimen/track_height" />
+        android:width="@dimen/width_switch_track"
+        android:height="@dimen/height_switch_track" />
 
-    <solid
-        android:color="?colorSecondary" />
+    <solid android:color="?colorSecondary" />
 </shape>
