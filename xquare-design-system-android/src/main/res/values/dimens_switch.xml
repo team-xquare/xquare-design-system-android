@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--thumb-->
+    <dimen name="thumb_height">32dp</dimen>
+    <dimen name="thumb_width">32dp</dimen>
+    <dimen name="thumb_stroke_width">2dp</dimen>
+
+    <!--track-->
+    <dimen name="track_height">32dp</dimen>
+    <dimen name="track_width">56dp</dimen>
+    <dimen name="track_radius">16dp</dimen>
+</resources>

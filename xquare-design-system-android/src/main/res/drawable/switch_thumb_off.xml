@@ -11,7 +11,7 @@
         android:color="?attr/colorOnSecondary" />
 
     <stroke
-        android:width="2dp"
+        android:width="@dimen/thumb_stroke_width"
         android:color="?attr/colorOutline"/>
 
 </shape>

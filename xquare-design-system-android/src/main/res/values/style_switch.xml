@@ -4,5 +4,8 @@
     <style name="Switch">
         <item name="android:track">@drawable/switch_track_selector</item>
         <item name="android:thumb">@drawable/switch_thumb_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:switchMinWidth">10dp</item>
     </style>
 </resources>
