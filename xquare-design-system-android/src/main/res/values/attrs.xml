@@ -52,7 +52,7 @@
         <attr name="trailingSrcSize" />
     </declare-styleable>
 
-    <declare-styleable name="IconXChip">
+    <declare-styleable name="XIconChip">
         <attr name="android:enabled" format="boolean" />
         <attr name="android:src" format="reference|integer" />
         <attr name="android:tint" format="color" />

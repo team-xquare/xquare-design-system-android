@@ -228,13 +228,13 @@
                     android:gravity="end"
                     android:orientation="horizontal">
 
-                    <com.xquare.xdsandroid.chip.IconXChip
+                    <com.xquare.xdsandroid.chip.XIconChip
                         style="@style/FilledXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:src="@drawable/ic_test_16" />
 
-                    <com.xquare.xdsandroid.chip.IconXChip
+                    <com.xquare.xdsandroid.chip.XIconChip
                         style="@style/OutlinedXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -242,7 +242,7 @@
                         android:src="@drawable/ic_test_16"
                         android:tint="?attr/colorSecondary" />
 
-                    <com.xquare.xdsandroid.chip.IconXChip
+                    <com.xquare.xdsandroid.chip.XIconChip
                         style="@style/XTextChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -273,14 +273,14 @@
                     android:gravity="end"
                     android:orientation="horizontal">
 
-                    <com.xquare.xdsandroid.chip.IconXChip
+                    <com.xquare.xdsandroid.chip.XIconChip
                         style="@style/FilledXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:enabled="false"
                         android:src="@drawable/ic_test_16" />
 
-                    <com.xquare.xdsandroid.chip.IconXChip
+                    <com.xquare.xdsandroid.chip.XIconChip
                         style="@style/OutlinedXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -289,7 +289,7 @@
                         android:src="@drawable/ic_test_16"
                         android:tint="?attr/colorSecondary" />
 
-                    <com.xquare.xdsandroid.chip.IconXChip
+                    <com.xquare.xdsandroid.chip.XIconChip
                         style="@style/XTextChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

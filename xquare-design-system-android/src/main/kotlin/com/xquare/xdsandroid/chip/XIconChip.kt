@@ -11,7 +11,7 @@ import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
 import com.xquare.xdsandroid.util.setAlphaEnabled
 
-public class IconXChip(
+public class XIconChip(
     context: Context,
     attrs: AttributeSet?,
 ) : AppCompatImageButton(context, attrs), InitializableView, InitializableDrawable {
@@ -19,29 +19,29 @@ public class IconXChip(
     override lateinit var attributes: TypedArray
 
     init {
-        initView(context, attrs, R.styleable.IconXChip)
+        initView(context, attrs, R.styleable.XIconChip)
     }
 
     override fun setAttrs() {
-        val isEnabled = attributes.getBoolean(R.styleable.IconXChip_android_enabled, true)
+        val isEnabled = attributes.getBoolean(R.styleable.XIconChip_android_enabled, true)
         setAlphaEnabled(isEnabled)
         setDrawable()
     }
 
     override fun setDrawable() {
-        val drawable: Drawable? = attributes.getDrawable(R.styleable.IconXChip_android_src)?.apply {
+        val drawable: Drawable? = attributes.getDrawable(R.styleable.XIconChip_android_src)?.apply {
             val srcWidth = attributes.getDimension(
-                R.styleable.IconXChip_srcSize,
+                R.styleable.XIconChip_srcSize,
                 this.intrinsicWidth.toFloat(),
             ).toInt()
 
             val srcHeight = attributes.getDimension(
-                R.styleable.IconXChip_srcSize,
+                R.styleable.XIconChip_srcSize,
                 this.intrinsicHeight.toFloat(),
             ).toInt()
 
             val srcTint = attributes.getColor(
-                R.styleable.IconXChip_android_tint,
+                R.styleable.XIconChip_android_tint,
                 androidx.appcompat.R.attr.tint,
             )
 
