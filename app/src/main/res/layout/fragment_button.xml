@@ -185,14 +185,14 @@
                 android:orientation="vertical"
                 android:showDividers="middle">
 
-                <com.xquare.xdsandroid.button.IconXButton
+                <com.xquare.xdsandroid.button.XIconButton
                     style="@style/FilledXButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/playground_icon_button_content_description"
                     android:src="@drawable/ic_test_24" />
 
-                <com.xquare.xdsandroid.button.IconXButton
+                <com.xquare.xdsandroid.button.XIconButton
                     style="@style/OutlinedXButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
                     android:src="@drawable/ic_test_24"
                     android:tint="?attr/colorPrimary" />
 
-                <com.xquare.xdsandroid.button.IconXButton
+                <com.xquare.xdsandroid.button.XIconButton
                     style="@style/XTextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -209,7 +209,7 @@
                     android:src="@drawable/ic_test_24"
                     android:tint="?attr/colorPrimary" />
 
-                <com.xquare.xdsandroid.button.IconXButton
+                <com.xquare.xdsandroid.button.XIconButton
                     style="@style/XFloatingActionButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

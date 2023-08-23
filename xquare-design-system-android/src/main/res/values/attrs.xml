@@ -20,7 +20,7 @@
         <attr name="trailingSrcSize" format="dimension" />
     </declare-styleable>
 
-    <declare-styleable name="IconXButton">
+    <declare-styleable name="XIconButton">
         <attr name="android:enabled" format="boolean" />
         <attr name="android:src" format="reference|integer" />
         <attr name="android:tint" format="color" />
