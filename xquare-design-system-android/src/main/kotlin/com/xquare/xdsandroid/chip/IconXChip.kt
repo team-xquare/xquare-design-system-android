@@ -9,7 +9,7 @@ import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
-import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
+import com.xquare.xdsandroid.util.setAlphaEnabled
 
 public class IconXChip(
     context: Context,
@@ -24,8 +24,10 @@ public class IconXChip(
 
 
     override fun setAttrs() {
-        setAlphaEnabled()
+        val isEnabled = attributes.getBoolean(R.styleable.IconXChip_android_enabled, true)
+        setAlphaEnabled(isEnabled)
         setDrawable()
+
     }
 
     override fun setDrawable() {

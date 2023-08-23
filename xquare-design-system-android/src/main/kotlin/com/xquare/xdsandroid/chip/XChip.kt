@@ -11,7 +11,7 @@ import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
 import com.xquare.xdsandroid.common.Typable
-import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
+import com.xquare.xdsandroid.util.setAlphaEnabled
 
 public class XChip(
     context: Context,
@@ -26,9 +26,10 @@ public class XChip(
 
     override fun setAttrs() {
         setTextAttrs(attributes.getText(R.styleable.XChip_android_text))
+        val isEnabled = attributes.getBoolean(R.styleable.XChip_android_enabled, true)
         stateListAnimator = null
         setDrawable()
-        setAlphaEnabled()
+        setAlphaEnabled(isEnabled)
         compoundDrawablePadding = resources.getDimension(R.dimen.padding_4).toInt()
     }
 
