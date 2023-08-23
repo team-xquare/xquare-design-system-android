@@ -16,7 +16,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal_playground_8"
+        android:divider="@drawable/divider_horizontal_8"
         android:showDividers="middle">
 
         <com.xquare.xdsandroid.xswitch.XSwitch
@@ -42,7 +42,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:divider="@drawable/divider_horizontal_playground_8"
+        android:divider="@drawable/divider_horizontal_8"
         android:showDividers="middle">
 
         <com.xquare.xdsandroid.xswitch.XSwitch
