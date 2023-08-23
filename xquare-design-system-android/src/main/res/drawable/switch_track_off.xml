@@ -10,5 +10,5 @@
         android:height="@dimen/track_height" />
 
     <solid
-        android:color="?attr/colorOutline" />
+        android:color="?colorOutline" />
 </shape>

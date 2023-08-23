@@ -7,7 +7,7 @@ import androidx.appcompat.widget.SwitchCompat
 import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
-import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
+import com.xquare.xdsandroid.util.setAlphaEnabled
 
 public class XSwitch(
     context: Context,
@@ -26,7 +26,8 @@ public class XSwitch(
         isAllCaps = false
         includeFontPadding = false
         stateListAnimator = null
-        setAlphaEnabled()
+        val isEnabled = attributes.getBoolean(R.styleable.XButton_android_enabled, true)
+        setAlphaEnabled(isEnabled)
         setDrawable()
     }
 
