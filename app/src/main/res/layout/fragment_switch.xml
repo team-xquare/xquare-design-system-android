@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:padding="12dp"
     tools:ignore="Orientation">
 
     <com.xquare.xdsandroid.typography.body.BodyLarge
@@ -21,13 +23,13 @@
             style="@style/Switch"
             android:checked="false"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="0dp" />
 
         <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
             android:checked="false"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"/>
 
         <com.xquare.xdsandroid.xswitch.XSwitch
@@ -35,7 +37,7 @@
             android:checked="false"
             android:enabled="false"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"/>
     </LinearLayout>
 
@@ -55,7 +57,7 @@
             style="@style/Switch"
             android:checked="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"/>
 
         <com.xquare.xdsandroid.xswitch.XSwitch
@@ -63,7 +65,7 @@
             android:checked="true"
             android:enabled="false"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"/>
     </LinearLayout>
 
