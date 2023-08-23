@@ -25,8 +25,9 @@ public class XChip(
     }
 
     override fun setAttrs() {
-        setTextAttrs(attributes.getText(R.styleable.XChip_android_text))
+        val text = attributes.getText(R.styleable.XChip_android_text)
         val isEnabled = attributes.getBoolean(R.styleable.XChip_android_enabled, true)
+        setTextAttrs(text)
         stateListAnimator = null
         setDrawable()
         setAlphaEnabled(isEnabled)
@@ -41,17 +42,21 @@ public class XChip(
         this.text = text
 
         val textAppearance = attributes.getResourceId(
-            R.styleable.XChip_android_textAppearance, R.style.LabelMedium
+            R.styleable.XChip_android_textAppearance,
+            R.style.LabelMedium,
         )
 
         val textStyle = ResourcesCompat.getFont(
-            context, attributes.getResourceId(
-                R.styleable.XChip_android_textStyle, R.font.notosans_regular
-            )
+            context,
+            attributes.getResourceId(
+                R.styleable.XChip_android_textStyle,
+                R.font.notosans_regular,
+            ),
         )
 
         val textColor = attributes.getColor(
-            R.styleable.XChip_android_textColor, androidx.appcompat.R.attr.colorPrimary
+            R.styleable.XChip_android_textColor,
+            androidx.appcompat.R.attr.colorPrimary,
         )
 
         typeface = textStyle

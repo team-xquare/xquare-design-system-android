@@ -22,12 +22,10 @@ public class IconXChip(
         initView(context, attrs, R.styleable.IconXChip)
     }
 
-
     override fun setAttrs() {
         val isEnabled = attributes.getBoolean(R.styleable.IconXChip_android_enabled, true)
         setAlphaEnabled(isEnabled)
         setDrawable()
-
     }
 
     override fun setDrawable() {
