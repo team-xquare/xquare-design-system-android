@@ -134,13 +134,13 @@
                     android:orientation="horizontal">
 
                     <com.xquare.xdsandroid.chip.XChip
-                        style="@style/TextXChip"
+                        style="@style/XTextChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Enabled" />
 
                     <com.xquare.xdsandroid.chip.XChip
-                        style="@style/TextXChip"
+                        style="@style/XTextChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -148,7 +148,7 @@
                         app:leadingSrc="@drawable/ic_test_16" />
 
                     <com.xquare.xdsandroid.chip.XChip
-                        style="@style/TextXChip"
+                        style="@style/XTextChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -196,7 +196,7 @@
                         app:leadingSrc="@drawable/ic_test_16" />
 
                     <com.xquare.xdsandroid.chip.XChip
-                        style="@style/TextXChip"
+                        style="@style/XTextChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -240,15 +240,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:src="@drawable/ic_test_16"
-                        android:tint="?attr/colorSecondary"/>
+                        android:tint="?attr/colorSecondary" />
 
                     <com.xquare.xdsandroid.chip.IconXChip
-                        style="@style/TextXChip"
+                        style="@style/XTextChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:src="@drawable/ic_test_16"
-                        android:tint="?attr/colorSecondary"/>
+                        android:tint="?attr/colorSecondary" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -277,7 +277,7 @@
                         style="@style/FilledXChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:enabled="false"
+                        android:enabled="false"
                         android:src="@drawable/ic_test_16" />
 
                     <com.xquare.xdsandroid.chip.IconXChip
@@ -285,18 +285,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        app:enabled="false"
+                        android:enabled="false"
                         android:src="@drawable/ic_test_16"
-                        android:tint="?attr/colorSecondary"/>
+                        android:tint="?attr/colorSecondary" />
 
                     <com.xquare.xdsandroid.chip.IconXChip
-                        style="@style/TextXChip"
+                        style="@style/XTextChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        app:enabled="false"
+                        android:enabled="false"
                         android:src="@drawable/ic_test_16"
-                        android:tint="?attr/colorSecondary"/>
+                        android:tint="?attr/colorSecondary" />
 
                 </LinearLayout>
             </LinearLayout>
