@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:divider="@drawable/divider_vertical_playground_16"
+    android:divider="@drawable/divider_vertical_16"
     android:gravity="center"
     android:orientation="vertical"
     android:showDividers="middle">
@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:divider="@drawable/divider_vertical_playground_16"
+            android:divider="@drawable/divider_vertical_16"
             android:orientation="vertical"
             android:showDividers="middle">
 
@@ -28,7 +28,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:divider="@drawable/divider_vertical_playground_16"
+                android:divider="@drawable/divider_vertical_16"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:showDividers="middle">
@@ -65,7 +65,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:divider="@drawable/divider_vertical_playground_16"
+                android:divider="@drawable/divider_vertical_16"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:showDividers="middle">
@@ -104,7 +104,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:divider="@drawable/divider_vertical_playground_16"
+                android:divider="@drawable/divider_vertical_16"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:showDividers="middle">
@@ -143,7 +143,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:divider="@drawable/divider_vertical_playground_16"
+                android:divider="@drawable/divider_vertical_16"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:showDividers="middle">
@@ -180,7 +180,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:divider="@drawable/divider_vertical_playground_16"
+                android:divider="@drawable/divider_vertical_16"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:showDividers="middle">
