@@ -11,7 +11,7 @@ import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
 import com.xquare.xdsandroid.common.Typable
-import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
+import com.xquare.xdsandroid.util.setAlphaEnabled
 
 public class XButton(
     context: Context,
@@ -31,7 +31,8 @@ public class XButton(
         setTextAttrs(attributes.getText(R.styleable.XButton_android_text))
         setDrawable()
         stateListAnimator = null
-        setAlphaEnabled()
+        val isEnabled = attributes.getBoolean(R.styleable.XButton_android_enabled, true)
+        setAlphaEnabled(isEnabled)
         compoundDrawablePadding = resources.getDimension(R.dimen.padding_8).toInt()
     }
 

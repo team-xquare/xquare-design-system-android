@@ -9,7 +9,7 @@ import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
-import com.xquare.xdsandroid.util.CustomViewUtil.setAlphaEnabled
+import com.xquare.xdsandroid.util.setAlphaEnabled
 
 public class XIconButton(
     context: Context,
@@ -25,31 +25,36 @@ public class XIconButton(
     }
 
     override fun setAttrs() {
-        setAlphaEnabled()
         setDrawable()
+        val isEnabled = attributes.getBoolean(R.styleable.XIconButton_android_enabled, true)
+        setAlphaEnabled(isEnabled)
     }
 
     override fun setDrawable() {
-        val drawable: Drawable? =
-            attributes.getDrawable(R.styleable.XIconButton_android_src)?.apply {
-                val srcWidth = attributes.getDimension(
-                    R.styleable.XIconButton_srcSize,
-                    this.intrinsicWidth.toFloat(),
-                ).toInt()
+        val src: Drawable? = getSrc()
+        setImageDrawable(src)
+    }
 
-                val srcHeight = attributes.getDimension(
-                    R.styleable.XIconButton_srcSize,
-                    this.intrinsicHeight.toFloat(),
-                ).toInt()
+    private fun getSrc(): Drawable? {
+        return attributes.getDrawable(R.styleable.XIconButton_android_src)?.apply {
+            val width = attributes.getDimension(
+                R.styleable.XIconButton_srcSize,
+                this.intrinsicWidth.toFloat(),
+            ).toInt()
 
-                val srcTint = attributes.getColor(
-                    R.styleable.XIconButton_android_tint,
-                    androidx.appcompat.R.attr.tint,
-                )
+            val height = attributes.getDimension(
+                R.styleable.XIconButton_srcSize,
+                this.intrinsicHeight.toFloat(),
+            ).toInt()
 
-                setBounds(0, 0, srcWidth, srcHeight)
-                DrawableCompat.wrap(drawable).setTint(srcTint)
-            }
-        setImageDrawable(drawable)
+            val tint = attributes.getColor(
+                R.styleable.XIconButton_android_tint,
+                androidx.appcompat.R.attr.tint,
+            )
+
+            this.setBounds(0, 0, width, height)
+
+            DrawableCompat.wrap(this@apply).setTint(tint)
+        }
     }
 }

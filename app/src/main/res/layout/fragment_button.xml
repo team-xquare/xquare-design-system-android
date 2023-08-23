@@ -110,13 +110,13 @@
                 android:showDividers="middle">
 
                 <com.xquare.xdsandroid.button.XButton
-                    style="@style/TextXButton"
+                    style="@style/XTextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/playground_enabled" />
 
                 <com.xquare.xdsandroid.button.XButton
-                    style="@style/TextXButton"
+                    style="@style/XTextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableTint="?attr/colorPrimary"
@@ -125,7 +125,7 @@
                     app:trailingSrc="@drawable/ic_test_24" />
 
                 <com.xquare.xdsandroid.button.XButton
-                    style="@style/TextXButton"
+                    style="@style/XTextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableTint="?attr/colorPrimary"
@@ -149,13 +149,13 @@
                 android:showDividers="middle">
 
                 <com.xquare.xdsandroid.button.XButton
-                    style="@style/FloatingActionXButton"
+                    style="@style/XFloatingActionButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/playground_enabled" />
 
                 <com.xquare.xdsandroid.button.XButton
-                    style="@style/FloatingActionXButton"
+                    style="@style/XFloatingActionButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/playground_enabled"
@@ -163,7 +163,7 @@
                     app:trailingSrc="@drawable/ic_test_24" />
 
                 <com.xquare.xdsandroid.button.XButton
-                    style="@style/FloatingActionXButton"
+                    style="@style/XFloatingActionButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:enabled="false"
@@ -201,7 +201,7 @@
                     android:tint="?attr/colorPrimary" />
 
                 <com.xquare.xdsandroid.button.XIconButton
-                    style="@style/TextXButton"
+                    style="@style/XTextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/playground_icon_button_content_description"
@@ -210,7 +210,7 @@
                     android:tint="?attr/colorPrimary" />
 
                 <com.xquare.xdsandroid.button.XIconButton
-                    style="@style/FloatingActionXButton"
+                    style="@style/XFloatingActionButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/playground_icon_button_content_description"
