@@ -26,7 +26,7 @@ public class XSwitch(
         isAllCaps = false
         includeFontPadding = false
         stateListAnimator = null
-        val isEnabled = attributes.getBoolean(R.styleable.XButton_android_enabled, true)
+        val isEnabled = attributes.getBoolean(R.styleable.XSwitch_android_enabled, true)
         setAlphaEnabled(isEnabled)
         setDrawable()
     }
