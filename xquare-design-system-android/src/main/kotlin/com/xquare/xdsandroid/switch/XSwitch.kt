@@ -1,4 +1,4 @@
-package com.xquare.xdsandroid.xswitch
+package com.xquare.xdsandroid.switch
 
 import android.content.Context
 import android.content.res.TypedArray
