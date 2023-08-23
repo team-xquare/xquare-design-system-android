@@ -91,7 +91,6 @@ public class XChip(
             )
 
             this.setBounds(0, 0, width, height)
-
             DrawableCompat.wrap(this@apply).setTint(tint)
         }
     }
@@ -114,7 +113,6 @@ public class XChip(
             )
 
             this.setBounds(0, 0, width, height)
-
             DrawableCompat.wrap(this@apply).setTint(tint)
         }
     }
