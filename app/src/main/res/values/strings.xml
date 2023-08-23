@@ -5,7 +5,7 @@
     <!--Playground-->
     <string name="playground_enabled">Enabled</string>
     <string name="playground_disabled">Disabled</string>
-    <string name="playground_icon_button_content_description">XIconButton</string>
+    <string name="playground_icon_button_content_description">IconXButton</string>
 
     <!--Button-->
 
