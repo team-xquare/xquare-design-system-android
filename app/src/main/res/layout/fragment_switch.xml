@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:padding="12dp"
+    android:showDividers="middle"
     tools:ignore="Orientation">
 
     <com.xquare.xdsandroid.typography.body.BodyLarge
@@ -16,36 +16,34 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="8dp">
+        android:divider="@drawable/divider_horizontal_playground_8"
+        android:showDividers="middle">
 
         <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
             android:checked="false"
             android:layout_width="wrap_content"
-            android:layout_height="0dp" />
+            android:layout_height="wrap_content" />
 
         <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
             android:checked="false"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="8dp"/>
+            android:layout_height="wrap_content"/>
 
         <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
-            android:checked="false"
-            android:enabled="false"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="8dp"/>
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:enabled="false" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="8dp">
+        android:divider="@drawable/divider_horizontal_playground_8"
+        android:showDividers="middle">
 
         <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
@@ -57,16 +55,14 @@
             style="@style/Switch"
             android:checked="true"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="8dp"/>
+            android:layout_height="wrap_content"/>
 
         <com.xquare.xdsandroid.xswitch.XSwitch
             style="@style/Switch"
             android:checked="true"
             android:enabled="false"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="8dp"/>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
 </LinearLayout>
