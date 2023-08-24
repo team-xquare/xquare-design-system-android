@@ -2,13 +2,12 @@
     <string name="app_name">XQUARE Design System-Android</string>
     <string name="action_settings">Settings</string>
 
-    <!--Playground-->
+    <!--playground-->
     <string name="playground_enabled">Enabled</string>
     <string name="playground_disabled">Disabled</string>
     <string name="playground_icon_button_content_description">IconXButton</string>
 
-    <!--Button-->
-
+    <!--button-->
     <string name="playground_button_filled">Filled Button</string>
     <string name="playground_button_outlined">Outlined Button</string>
     <string name="playground_button_text">Text Button</string>
