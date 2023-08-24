@@ -23,13 +23,18 @@ public class XIconChip(
     }
 
     override fun setAttrs() {
+        setDrawable()
         val isEnabled = attributes.getBoolean(R.styleable.XIconChip_android_enabled, true)
         setAlphaEnabled(isEnabled)
-        setDrawable()
     }
 
     override fun setDrawable() {
-        val drawable: Drawable? = attributes.getDrawable(R.styleable.XIconChip_android_src)?.apply {
+        val src: Drawable? = getSrc()
+        setImageDrawable(src)
+    }
+
+    private fun getSrc(): Drawable? {
+        return attributes.getDrawable(R.styleable.XIconChip_android_src)?.apply {
             val srcWidth = attributes.getDimension(
                 R.styleable.XIconChip_srcSize,
                 this.intrinsicWidth.toFloat(),
@@ -45,9 +50,8 @@ public class XIconChip(
                 androidx.appcompat.R.attr.tint,
             )
 
-            setBounds(0, 0, srcWidth, srcHeight)
+            this.setBounds(0, 0, srcWidth, srcHeight)
             DrawableCompat.wrap(drawable).setTint(srcTint)
         }
-        setImageDrawable(drawable)
     }
 }
