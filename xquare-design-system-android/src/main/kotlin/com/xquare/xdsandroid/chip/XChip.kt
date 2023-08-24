@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
@@ -70,6 +71,12 @@ public class XChip(
     override fun setDrawable() {
         val leadingSrc: Drawable? = getLeadingSrc()
         val trailingSrc: Drawable? = getTrailingSrc()
+        val backgroundSrc: Drawable? = setBackground() ?: AppCompatResources.getDrawable(
+            context,
+            R.drawable.bg_chip_filled_enabled,
+        )
+
+        background = backgroundSrc
         setCompoundDrawables(leadingSrc, null, trailingSrc, null)
     }
 
@@ -114,6 +121,12 @@ public class XChip(
 
             this.setBounds(0, 0, width, height)
             DrawableCompat.wrap(this@apply).setTint(tint)
+        }
+    }
+
+    private fun setBackground(): Drawable? {
+        return attributes.getDrawable(R.styleable.XChip_android_background)?.apply {
+            
         }
     }
 }
