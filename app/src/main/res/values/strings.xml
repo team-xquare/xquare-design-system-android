@@ -19,4 +19,9 @@
     <string name="menu_top_app_bar_second">second</string>
     <string name="menu_top_app_bar_third">third</string>
 
+    <string name="playground_top_app_bar_collapsed_filled">Collapsed Filled Top App Bar</string>
+    <string name="playground_top_app_bar_expanded_filled">Expanded Filled Top App Bar</string>
+    <string name="playground_top_app_bar_collapsed_transparent">Collapsed Transparent Top App Bar</string>
+    <string name="playground_top_app_bar_expanded_transparent">Expanded Transparent Top App Bar</string>
+
 </resources>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <attr name="navigationIconSize" format="dimension" />
+    <attr name="menu" format="reference" />
+
     <declare-styleable name="XdsTextView">
         <attr name="android:text" format="string|integer" />
         <attr name="android:textColor" />
@@ -33,7 +37,7 @@
         <attr name="android:enabled" format="boolean" />
     </declare-styleable>
 
-    <declare-styleable name="XTopAppBar">
+    <declare-styleable name="CollapsedXTopAppBar">
         <attr name="android:text" format="reference|string|integer" />
         <attr name="android:enabled" format="boolean" />
         <attr name="android:textStyle" format="reference" />
@@ -41,9 +45,24 @@
         <attr name="android:textColor" />
         <attr name="android:fontFamily" format="reference" />
         <attr name="android:navigationIcon" format="reference" />
-        <attr name="navigationIconSize" format="dimension" />
+        <attr name="navigationIconSize" />
         <attr name="navigationIconTint" />
-        <attr name="menu" format="reference" />
+        <attr name="menu" />
+        <attr name="backgroundColor" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandedXTopAppBar">
+        <attr name="android:text" format="reference|string|integer" />
+        <attr name="android:enabled" format="boolean" />
+        <attr name="android:textStyle" format="reference" />
+        <attr name="android:textAppearance" format="reference" />
+        <attr name="android:textColor" />
+        <attr name="android:fontFamily" format="reference" />
+        <attr name="android:navigationIcon" format="reference" />
+        <attr name="navigationIconSize" />
+        <attr name="navigationIconTint" />
+        <attr name="menu" />
+        <attr name="backgroundColor" />
     </declare-styleable>
 
 </resources>
