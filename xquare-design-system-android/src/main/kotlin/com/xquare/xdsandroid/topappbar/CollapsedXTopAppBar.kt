@@ -16,7 +16,7 @@ import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
 import com.xquare.xdsandroid.common.Typable
 
-public class XTopAppBar(
+public class CollapsedXTopAppBar(
     context: Context,
     attrs: AttributeSet?,
 ) : LinearLayout(context, attrs),
@@ -27,33 +27,40 @@ public class XTopAppBar(
     override lateinit var attributes: TypedArray
 
     private val toolbarTopAppBar: Toolbar by lazy {
-        findViewById(R.id.tool_bar_top_app_bar)
+        findViewById(R.id.tool_bar_top_app_bar_collapsed)
     }
 
     private val imageTopAppBar: ImageView by lazy {
-        findViewById(R.id.image_top_app_bar)
+        findViewById(R.id.image_top_app_bar_collapsed)
     }
 
     private val tvTopAppBar: TextView by lazy {
-        findViewById(R.id.tv_top_app_bar)
+        findViewById(R.id.tv_top_app_bar_collapsed)
     }
 
     init {
-        initView(context, attrs, R.styleable.XTopAppBar)
+        initView(context, attrs, R.styleable.CollapsedXTopAppBar)
     }
 
     override fun setAttrs() {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        inflater.inflate(R.layout.top_app_bar, this, true)
+        inflater.inflate(R.layout.top_app_bar_collapsed, this, true)
 
         val menu = attributes.getResourceId(
-            R.styleable.XTopAppBar_menu,
+            R.styleable.CollapsedXTopAppBar_menu,
             R.menu.menu_top_app_bar_default,
         )
+
         toolbarTopAppBar.inflateMenu(menu)
 
-        setTextAttrs(attributes.getText(R.styleable.XTopAppBar_android_text))
+        setTextAttrs(attributes.getText(R.styleable.CollapsedXTopAppBar_android_text))
         setDrawable()
+
+        val backgroundColor = attributes.getColor(
+            R.styleable.CollapsedXTopAppBar_backgroundColor,
+            com.google.android.material.R.attr.colorSurface,
+        )
+        setBackgroundColor(backgroundColor)
     }
 
     override fun setTextAttrs(
@@ -62,20 +69,20 @@ public class XTopAppBar(
         includeFontPadding: Boolean,
     ) {
         val textAppearance = attributes.getResourceId(
-            R.styleable.XTopAppBar_android_textAppearance,
+            R.styleable.CollapsedXTopAppBar_android_textAppearance,
             R.style.TitleMedium,
         )
 
         val textStyle = ResourcesCompat.getFont(
             context,
             attributes.getResourceId(
-                R.styleable.XButton_android_textStyle,
+                R.styleable.CollapsedXTopAppBar_android_textStyle,
                 R.font.notosans_medium,
             ),
         )
 
         val textColor = attributes.getColor(
-            R.styleable.XTopAppBar_android_textColor,
+            R.styleable.CollapsedXTopAppBar_android_textColor,
             androidx.appcompat.R.attr.colorPrimary,
         )
 
@@ -83,7 +90,7 @@ public class XTopAppBar(
             this.text = text
 
             typeface = textStyle
-            setTextAppearance(textAppearance)
+            this.setTextAppearance(textAppearance)
             setTextColor(textColor)
 
             this.isAllCaps = isAllCaps
@@ -97,28 +104,29 @@ public class XTopAppBar(
     }
 
     private fun getNavigationIcon(): Drawable? {
-        return attributes.getDrawable(R.styleable.XTopAppBar_android_navigationIcon)?.apply {
-            val width = attributes.getDimension(
-                R.styleable.XTopAppBar_navigationIconSize,
-                this.intrinsicWidth.toFloat(),
-            ).toInt()
+        return attributes.getDrawable(R.styleable.CollapsedXTopAppBar_android_navigationIcon)
+            ?.apply {
+                val width = attributes.getDimension(
+                    R.styleable.CollapsedXTopAppBar_navigationIconSize,
+                    this.intrinsicWidth.toFloat(),
+                ).toInt()
 
-            val height = attributes.getDimension(
-                R.styleable.XTopAppBar_navigationIconSize,
-                this.intrinsicHeight.toFloat(),
-            ).toInt()
+                val height = attributes.getDimension(
+                    R.styleable.CollapsedXTopAppBar_navigationIconSize,
+                    this.intrinsicHeight.toFloat(),
+                ).toInt()
 
-            val tint = attributes.getColor(
-                R.styleable.XTopAppBar_navigationIconTint,
-                R.attr.leadingSrcTint,
-            )
+                val tint = attributes.getColor(
+                    R.styleable.CollapsedXTopAppBar_navigationIconTint,
+                    R.attr.leadingSrcTint,
+                )
 
-            imageTopAppBar.layoutParams.width = width
-            imageTopAppBar.layoutParams.height = height
+                imageTopAppBar.layoutParams.width = width
+                imageTopAppBar.layoutParams.height = height
 
-            setBounds(0, 0, width, height)
+                setBounds(0, 0, width, height)
 
-            DrawableCompat.wrap(this@apply).setTint(tint)
-        }
+                DrawableCompat.wrap(this@apply).setTint(tint)
+            }
     }
 }

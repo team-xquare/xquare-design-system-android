@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="XTopAppBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TitleMedium</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="menu">@menu/menu_top_app_bar_default</item>
+        <item name="navigationIconSize">24dp</item>
+        <item name="navigationIconTint">?attr/colorOnBackground</item>
+
+    </style>
+
+    <style name="TransparentTopAppBar" parent="XTopAppBar">
+        <item name="backgroundColor">@color/transparent</item>
+    </style>
+
+    <style name="FilledTopAppBar" parent="XTopAppBar">
+        <item name="backgroundColor">?attr/colorSurface</item>
+    </style>
+
+</resources>
