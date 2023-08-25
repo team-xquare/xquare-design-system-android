@@ -2,7 +2,7 @@
 <resources>
     <declare-styleable name="XdsTextView">
         <attr name="android:text" format="string|integer" />
-        <attr name="android:textColor" format="reference|integer" />
+        <attr name="android:textColor" />
     </declare-styleable>
 
     <declare-styleable name="XButton">
@@ -14,7 +14,7 @@
         <attr name="trailingSrcTint" format="color" />
         <attr name="android:textStyle" format="reference" />
         <attr name="android:textAppearance" format="reference" />
-        <attr name="android:textColor" format="reference|integer" />
+        <attr name="android:textColor" />
         <attr name="android:fontFamily" format="reference" />
         <attr name="leadingSrcSize" format="dimension" />
         <attr name="trailingSrcSize" format="dimension" />
@@ -33,5 +33,17 @@
         <attr name="android:enabled" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="XTopAppBar">
+        <attr name="android:text" format="reference|string|integer" />
+        <attr name="android:enabled" format="boolean" />
+        <attr name="android:textStyle" format="reference" />
+        <attr name="android:textAppearance" format="reference" />
+        <attr name="android:textColor" />
+        <attr name="android:fontFamily" format="reference" />
+        <attr name="android:navigationIcon" format="reference" />
+        <attr name="navigationIconSize" format="dimension" />
+        <attr name="navigationIconTint" />
+        <attr name="menu" format="reference" />
+    </declare-styleable>
 
 </resources>
