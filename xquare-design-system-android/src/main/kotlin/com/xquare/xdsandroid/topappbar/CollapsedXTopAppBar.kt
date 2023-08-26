@@ -15,6 +15,7 @@ import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
 import com.xquare.xdsandroid.common.Typable
+import com.xquare.xdsandroid.util.setAlphaEnabled
 
 public class CollapsedXTopAppBar(
     context: Context,
@@ -52,6 +53,9 @@ public class CollapsedXTopAppBar(
         )
 
         toolbarTopAppBar.inflateMenu(menu)
+
+        val isEnabled = attributes.getBoolean(R.styleable.CollapsedXTopAppBar_android_enabled, true)
+        setAlphaEnabled(isEnabled)
 
         setTextAttrs(attributes.getText(R.styleable.CollapsedXTopAppBar_android_text))
         setDrawable()

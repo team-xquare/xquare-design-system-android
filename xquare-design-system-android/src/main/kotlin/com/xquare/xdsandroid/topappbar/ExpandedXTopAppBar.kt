@@ -15,6 +15,7 @@ import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
 import com.xquare.xdsandroid.common.Typable
+import com.xquare.xdsandroid.util.setAlphaEnabled
 
 public class ExpandedXTopAppBar(
     context: Context,
@@ -51,6 +52,9 @@ public class ExpandedXTopAppBar(
             R.menu.menu_top_app_bar_default,
         )
         toolbarTopAppBarExpanded.inflateMenu(menu)
+
+        val isEnabled = attributes.getBoolean(R.styleable.ExpandedXTopAppBar_android_enabled, true)
+        setAlphaEnabled(isEnabled)
 
         setTextAttrs(attributes.getText(R.styleable.ExpandedXTopAppBar_android_text))
         setDrawable()

@@ -32,6 +32,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <com.xquare.xdsandroid.topappbar.CollapsedXTopAppBar
+                android:id="@+id/top_bar_filled_collapsed_disabled"
+                style="@style/FilledTopAppBar"
+                android:enabled="false"
+                android:navigationIcon="@drawable/ic_filled_arrow_left"
+                android:text="@string/playground_disabled"
+                app:backgroundColor="?attr/colorSurfaceVariant"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <com.xquare.xdsandroid.typography.body.BodyLarge
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,6 +55,16 @@
                 android:layout_height="wrap_content"
                 android:navigationIcon="@drawable/ic_filled_arrow_left"
                 android:text="@string/playground_enabled"
+                app:backgroundColor="?attr/colorSurfaceVariant" />
+
+            <com.xquare.xdsandroid.topappbar.ExpandedXTopAppBar
+                android:id="@+id/top_bar_filled_expanded_disabled"
+                style="@style/FilledTopAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:navigationIcon="@drawable/ic_filled_arrow_left"
+                android:text="@string/playground_disabled"
                 app:backgroundColor="?attr/colorSurfaceVariant" />
 
             <com.xquare.xdsandroid.typography.body.BodyLarge
@@ -59,6 +80,15 @@
                 android:navigationIcon="@drawable/ic_filled_arrow_left"
                 android:text="@string/playground_enabled" />
 
+            <com.xquare.xdsandroid.topappbar.CollapsedXTopAppBar
+                android:id="@+id/top_bar_transparent_collapse_disabled"
+                style="@style/FilledTopAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:navigationIcon="@drawable/ic_filled_arrow_left"
+                android:text="@string/playground_disabled" />
+
             <com.xquare.xdsandroid.typography.body.BodyLarge
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -71,6 +101,15 @@
                 android:layout_height="wrap_content"
                 android:navigationIcon="@drawable/ic_filled_arrow_left"
                 android:text="@string/playground_enabled" />
+
+            <com.xquare.xdsandroid.topappbar.ExpandedXTopAppBar
+                android:id="@+id/top_bar_transparent_expanded_disabled"
+                style="@style/FilledTopAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:navigationIcon="@drawable/ic_filled_arrow_left"
+                android:text="@string/playground_disabled" />
 
         </LinearLayout>
 
