@@ -7,20 +7,20 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="12dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
             android:divider="@drawable/divider_vertical_playground_button_16"
-            android:showDividers="middle"
-            android:orientation="vertical">
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle">
 
             <com.xquare.xdsandroid.typography.body.BodyLarge
                 android:layout_width="match_parent"
@@ -31,10 +31,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
                 android:divider="@drawable/divider_horizontal_playground_button_8"
-                android:showDividers="middle"
-                android:orientation="horizontal">
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle">
 
                 <com.xquare.xdsandroid.chip.XChip
                     style="@style/FilledXChip"
@@ -54,7 +54,7 @@
                     android:id="@+id/XChip"
                     style="@style/FilledXChip"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="@string/playground_enabled"
                     app:leadingSrc="@drawable/ic_sample_16"
                     app:leadingSrcTint="?attr/colorOnSecondary"
@@ -67,10 +67,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:gravity="center_horizontal"
                 android:divider="@drawable/divider_vertical_playground_button_16"
-                android:showDividers="middle"
-                android:orientation="vertical">
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
 
                 <com.xquare.xdsandroid.typography.body.BodyLarge
                     android:layout_width="match_parent"
@@ -81,10 +81,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
                     android:divider="@drawable/divider_horizontal_playground_button_8"
-                    android:showDividers="middle"
-                    android:orientation="horizontal">
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
 
                     <com.xquare.xdsandroid.chip.XChip
                         style="@style/OutlinedXChip"
@@ -120,10 +120,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"
                 android:divider="@drawable/divider_vertical_playground_button_16"
-                android:showDividers="middle"
-                android:orientation="vertical">
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
 
                 <com.xquare.xdsandroid.typography.body.BodyLarge
                     android:layout_width="match_parent"
@@ -134,10 +134,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
                     android:divider="@drawable/divider_horizontal_playground_button_8"
-                    android:showDividers="middle"
-                    android:orientation="horizontal">
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
 
                     <com.xquare.xdsandroid.chip.XChip
                         style="@style/XTextChip"
@@ -167,10 +167,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"
                 android:divider="@drawable/divider_vertical_playground_button_16"
-                android:showDividers="middle"
-                android:orientation="vertical">
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
 
                 <com.xquare.xdsandroid.typography.body.BodyLarge
                     android:layout_width="match_parent"
@@ -181,10 +181,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
                     android:divider="@drawable/divider_horizontal_playground_button_8"
-                    android:showDividers="middle"
-                    android:orientation="horizontal">
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
 
                     <com.xquare.xdsandroid.chip.XChip
                         style="@style/FilledXChip"
@@ -217,10 +217,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"
                 android:divider="@drawable/divider_vertical_playground_button_16"
-                android:showDividers="middle"
-                android:orientation="vertical">
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
 
                 <com.xquare.xdsandroid.typography.body.BodyLarge
                     android:layout_width="match_parent"
@@ -231,10 +231,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
                     android:divider="@drawable/divider_horizontal_playground_button_8"
-                    android:showDividers="middle"
-                    android:orientation="horizontal">
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
 
                     <com.xquare.xdsandroid.chip.XIconChip
                         style="@style/FilledXChip"
@@ -263,10 +263,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"
                 android:divider="@drawable/divider_vertical_playground_button_16"
-                android:showDividers="middle"
-                android:orientation="vertical">
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
 
                 <com.xquare.xdsandroid.typography.body.BodyLarge
                     android:layout_width="match_parent"
@@ -277,10 +277,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
                     android:divider="@drawable/divider_horizontal_playground_button_8"
-                    android:showDividers="middle"
-                    android:orientation="horizontal">
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
 
                     <com.xquare.xdsandroid.chip.XIconChip
                         style="@style/FilledXChip"
