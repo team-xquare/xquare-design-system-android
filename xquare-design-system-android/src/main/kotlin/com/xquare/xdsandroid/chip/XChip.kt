@@ -57,7 +57,7 @@ public class XChip(
 
         val textColor = attributes.getColor(
             R.styleable.XChip_android_textColor,
-            androidx.appcompat.R.attr.colorPrimary,
+            com.google.android.material.R.attr.colorOnSecondary,
         )
 
         typeface = textStyle
@@ -94,7 +94,7 @@ public class XChip(
 
             val tint = attributes.getColor(
                 R.styleable.XChip_leadingSrcTint,
-                R.attr.leadingSrcTint,
+                com.google.android.material.R.attr.colorOnSecondary,
             )
 
             this.setBounds(0, 0, width, height)
@@ -116,7 +116,7 @@ public class XChip(
 
             val tint = attributes.getColor(
                 R.styleable.XChip_trailingSrcTint,
-                R.attr.trailingSrcTint,
+                com.google.android.material.R.attr.colorOnSecondary,
             )
 
             this.setBounds(0, 0, width, height)
@@ -125,8 +125,6 @@ public class XChip(
     }
 
     private fun setBackground(): Drawable? {
-        return attributes.getDrawable(R.styleable.XChip_android_background)?.apply {
-            
-        }
+        return attributes.getDrawable(R.styleable.XChip_android_background)
     }
 }

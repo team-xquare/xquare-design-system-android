@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.graphics.drawable.DrawableCompat
 import com.xquare.xdsandroid.R
@@ -31,6 +32,17 @@ public class XIconChip(
     override fun setDrawable() {
         val src: Drawable? = getSrc()
         setImageDrawable(src)
+
+        val backgroundSrc: Drawable? = setBackground() ?: AppCompatResources.getDrawable(
+            context,
+            R.drawable.bg_chip_filled_enabled,
+        )
+
+        background = backgroundSrc
+    }
+
+    private fun setBackground(): Drawable? {
+        return attributes.getDrawable(R.styleable.XIconChip_android_background)
     }
 
     private fun getSrc(): Drawable? {
