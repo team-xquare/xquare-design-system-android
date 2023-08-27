@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
+import androidx.core.view.get
 import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
@@ -39,6 +40,14 @@ public class ExpandedXTopAppBar(
         findViewById(R.id.tv_top_app_bar_expanded)
     }
 
+    private val menuImageViews: List<ImageView> by lazy {
+        listOf(
+            findViewById(R.id.image_top_app_bar_expanded_menu_first),
+            findViewById(R.id.image_top_app_bar_expanded_menu_second),
+            findViewById(R.id.image_top_app_bar_expanded_menu_third),
+        )
+    }
+
     init {
         initView(context, attrs, R.styleable.ExpandedXTopAppBar)
     }
@@ -46,12 +55,6 @@ public class ExpandedXTopAppBar(
     override fun setAttrs() {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         inflater.inflate(R.layout.top_app_bar_expanded, this, true)
-
-        val menu = attributes.getResourceId(
-            R.styleable.ExpandedXTopAppBar_menu,
-            R.menu.menu_top_app_bar_default,
-        )
-        toolbarTopAppBarExpanded.inflateMenu(menu)
 
         val isEnabled = attributes.getBoolean(R.styleable.ExpandedXTopAppBar_android_enabled, true)
         setAlphaEnabled(isEnabled)
@@ -100,6 +103,21 @@ public class ExpandedXTopAppBar(
     override fun setDrawable() {
         val navigationIcon: Drawable? = getNavigationIcon()
         imageTopAppBarExpanded.setImageDrawable(navigationIcon)
+
+        val menuResourceId = attributes.getResourceId(
+            R.styleable.ExpandedXTopAppBar_menu,
+            R.menu.menu_top_app_bar_default,
+        )
+
+        toolbarTopAppBarExpanded.inflateMenu(menuResourceId)
+
+        val menuIcons = toolbarTopAppBarExpanded.menu
+
+        repeat(menuIcons.size()) {
+            menuImageViews[it].setImageDrawable(menuIcons[it].icon)
+        }
+
+        menuIcons.clear()
     }
 
     private fun getNavigationIcon(): Drawable? {

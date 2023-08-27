@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
+import androidx.core.view.get
 import com.xquare.xdsandroid.R
 import com.xquare.xdsandroid.common.InitializableDrawable
 import com.xquare.xdsandroid.common.InitializableView
@@ -27,16 +28,24 @@ public class CollapsedXTopAppBar(
 
     override lateinit var attributes: TypedArray
 
-    private val toolbarTopAppBar: Toolbar by lazy {
+    private val toolbarTopAppBarCollapsed: Toolbar by lazy {
         findViewById(R.id.tool_bar_top_app_bar_collapsed)
     }
 
-    private val imageTopAppBar: ImageView by lazy {
+    private val imageTopAppBarCollapsed: ImageView by lazy {
         findViewById(R.id.image_top_app_bar_collapsed)
     }
 
-    private val tvTopAppBar: TextView by lazy {
+    private val tvTopAppBarCollapsed: TextView by lazy {
         findViewById(R.id.tv_top_app_bar_collapsed)
+    }
+
+    private val menuImageViews: List<ImageView> by lazy {
+        listOf(
+            findViewById(R.id.image_top_app_bar_collapsed_menu_first),
+            findViewById(R.id.image_top_app_bar_collapsed_menu_second),
+            findViewById(R.id.image_top_app_bar_collapsed_menu_third),
+        )
     }
 
     init {
@@ -46,13 +55,6 @@ public class CollapsedXTopAppBar(
     override fun setAttrs() {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         inflater.inflate(R.layout.top_app_bar_collapsed, this, true)
-
-        val menu = attributes.getResourceId(
-            R.styleable.CollapsedXTopAppBar_menu,
-            R.menu.menu_top_app_bar_default,
-        )
-
-        toolbarTopAppBar.inflateMenu(menu)
 
         val isEnabled = attributes.getBoolean(R.styleable.CollapsedXTopAppBar_android_enabled, true)
         setAlphaEnabled(isEnabled)
@@ -90,7 +92,7 @@ public class CollapsedXTopAppBar(
             androidx.appcompat.R.attr.colorPrimary,
         )
 
-        with(tvTopAppBar) {
+        with(tvTopAppBarCollapsed) {
             this.text = text
 
             typeface = textStyle
@@ -104,7 +106,22 @@ public class CollapsedXTopAppBar(
 
     override fun setDrawable() {
         val navigationIcon: Drawable? = getNavigationIcon()
-        imageTopAppBar.setImageDrawable(navigationIcon)
+        imageTopAppBarCollapsed.setImageDrawable(navigationIcon)
+
+        val menuResourceId = attributes.getResourceId(
+            R.styleable.CollapsedXTopAppBar_menu,
+            R.menu.menu_top_app_bar_default,
+        )
+
+        toolbarTopAppBarCollapsed.inflateMenu(menuResourceId)
+
+        val menuIcons = toolbarTopAppBarCollapsed.menu
+
+        repeat(menuIcons.size()) {
+            menuImageViews[it].setImageDrawable(menuIcons[it].icon)
+        }
+
+        menuIcons.clear()
     }
 
     private fun getNavigationIcon(): Drawable? {
@@ -125,8 +142,8 @@ public class CollapsedXTopAppBar(
                     R.attr.leadingSrcTint,
                 )
 
-                imageTopAppBar.layoutParams.width = width
-                imageTopAppBar.layoutParams.height = height
+                imageTopAppBarCollapsed.layoutParams.width = width
+                imageTopAppBarCollapsed.layoutParams.height = height
 
                 setBounds(0, 0, width, height)
 
