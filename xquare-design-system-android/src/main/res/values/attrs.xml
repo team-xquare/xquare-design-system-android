@@ -51,6 +51,7 @@
         <attr name="leadingSrcSize" />
         <attr name="trailingSrcSize" />
         <attr name="android:background" format="reference|integer" />
+        <attr name="android:textAlignment" />
     </declare-styleable>
 
     <declare-styleable name="XIconChip">

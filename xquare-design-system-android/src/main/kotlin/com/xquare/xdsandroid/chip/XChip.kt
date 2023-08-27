@@ -60,10 +60,13 @@ public class XChip(
             com.google.android.material.R.attr.colorOnSecondary,
         )
 
+        val textAlign = attributes.getInt(R.styleable.XChip_android_textAlignment, 0)
+
         typeface = textStyle
         setTextAppearance(textAppearance)
         setTextColor(textColor)
 
+        this.textAlignment = textAlign
         this.isAllCaps = isAllCaps
         this.includeFontPadding = includeFontPadding
     }
