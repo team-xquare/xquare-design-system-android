@@ -118,10 +118,33 @@ public class CollapsedXTopAppBar(
         val menuIcons = toolbarTopAppBarCollapsed.menu
 
         repeat(menuIcons.size()) {
-            menuImageViews[it].setImageDrawable(menuIcons[it].icon)
+            menuImageViews[it].setImageDrawable(setMenuIconAttrs(menuIcons[it].icon))
         }
 
         menuIcons.clear()
+    }
+
+    private fun setMenuIconAttrs(menuIcon: Drawable?): Drawable? {
+        return menuIcon?.apply {
+            val width = attributes.getDimension(
+                R.styleable.CollapsedXTopAppBar_menuIconSize,
+                this.intrinsicWidth.toFloat(),
+            ).toInt()
+
+            val height = attributes.getDimension(
+                R.styleable.CollapsedXTopAppBar_menuIconSize,
+                this.intrinsicHeight.toFloat(),
+            ).toInt()
+
+            val tint = attributes.getColor(
+                R.styleable.CollapsedXTopAppBar_menuIconTint,
+                R.attr.menuIconTint,
+            )
+
+            this.setBounds(0, 0, width, height)
+
+            DrawableCompat.wrap(this).setTint(tint)
+        }
     }
 
     private fun getNavigationIcon(): Drawable? {

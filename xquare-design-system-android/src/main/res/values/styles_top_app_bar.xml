@@ -9,7 +9,8 @@
         <item name="menu">@menu/menu_top_app_bar_default</item>
         <item name="navigationIconSize">24dp</item>
         <item name="navigationIconTint">?attr/colorOnBackground</item>
-
+        <item name="menuIconSize">24dp</item>
+        <item name="menuIconTint">?attr/colorOnBackground</item>
     </style>
 
     <style name="TransparentTopAppBar" parent="XTopAppBar">
