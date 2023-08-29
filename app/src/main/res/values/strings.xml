@@ -16,11 +16,10 @@
 
     <!--chip-->
     <string name="playground_chip_filled">Filled Chip</string>
-    <string name="playground_chip_outliend">Outlined Chip</string>
+    <string name="playground_chip_outlined">Outlined Chip</string>
     <string name="playground_chip_text">Text Chip</string>
     <string name="playground_chip_disabled">Disabled Chip</string>
     <string name="playground_chip_icon">Icon Chip</string>
     <string name="playground_chip_icon_disabled">Disabled Icon Chip</string>
-
 
 </resources>
