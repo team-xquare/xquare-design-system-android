@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        app:expandedTitleMarginStart="16dp"
+        app:layout_scrollFlags="scroll|enterAlways|exitUntilCollapsed">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar_top_app_bar_collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_collapseMode="pin"
+            app:title="몰라">
+
+            <ImageView
+                android:id="@+id/image_top_app_bar_collapsing"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_filled_arrow_left" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white"
+                android:divider="@drawable/divider_horizontal_8"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <ImageView
+                    android:id="@+id/image_top_app_bar_collapsing_menu_first"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+
+                <ImageView
+                    android:id="@+id/image_top_app_bar_collapsing_menu_second"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+
+                <ImageView
+                    android:id="@+id/image_top_app_bar_collapsing_menu_third"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
