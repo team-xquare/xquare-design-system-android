@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--common attrs-->
+    <attr name="leadingSrc" format="reference|integer" />
+    <attr name="trailingSrc" format="reference|integer" />
+    <attr name="leadingSrcTint" format="color" />
+    <attr name="trailingSrcTint" format="color" />
+    <attr name="leadingSrcSize" format="dimension" />
+    <attr name="trailingSrcSize" format="dimension" />
+    <attr name="srcSize" format="dimension" />
+
     <declare-styleable name="XdsTextView">
         <attr name="android:text" format="string|integer" />
         <attr name="android:textColor" format="reference|integer" />
@@ -8,23 +18,48 @@
     <declare-styleable name="XButton">
         <attr name="android:text" format="reference|string|integer" />
         <attr name="android:enabled" format="boolean" />
-        <attr name="leadingSrc" format="reference|integer" />
-        <attr name="trailingSrc" format="reference|integer" />
-        <attr name="leadingSrcTint" format="color" />
-        <attr name="trailingSrcTint" format="color" />
+        <attr name="leadingSrc" />
+        <attr name="trailingSrc" />
+        <attr name="leadingSrcTint" />
+        <attr name="trailingSrcTint" />
         <attr name="android:textStyle" format="reference" />
         <attr name="android:textAppearance" format="reference" />
         <attr name="android:textColor" format="reference|integer" />
         <attr name="android:fontFamily" format="reference" />
-        <attr name="leadingSrcSize" format="dimension" />
-        <attr name="trailingSrcSize" format="dimension" />
+        <attr name="leadingSrcSize" />
+        <attr name="trailingSrcSize" />
     </declare-styleable>
 
     <declare-styleable name="XIconButton">
         <attr name="android:enabled" format="boolean" />
         <attr name="android:src" format="reference|integer" />
         <attr name="android:tint" format="color" />
-        <attr name="srcSize" format="dimension" />
+        <attr name="srcSize" />
+    </declare-styleable>
+
+    <declare-styleable name="XChip">
+        <attr name="android:text" format="reference|string|integer" />
+        <attr name="android:enabled" format="boolean" />
+        <attr name="leadingSrc" />
+        <attr name="trailingSrc" />
+        <attr name="leadingSrcTint" />
+        <attr name="trailingSrcTint" />
+        <attr name="android:textStyle" format="reference" />
+        <attr name="android:textAppearance" format="reference" />
+        <attr name="android:textColor" format="reference|integer" />
+        <attr name="android:fontFamily" format="reference" />
+        <attr name="leadingSrcSize" />
+        <attr name="trailingSrcSize" />
+        <attr name="android:background" format="reference|integer" />
+        <attr name="android:textAlignment" />
+    </declare-styleable>
+
+    <declare-styleable name="XIconChip">
+        <attr name="android:enabled" format="boolean" />
+        <attr name="android:src" format="reference|integer" />
+        <attr name="android:tint" format="color" />
+        <attr name="srcSize" />
+        <attr name="android:background" format="reference|integer" />
     </declare-styleable>
 
     <declare-styleable name="XSwitch">
@@ -32,6 +67,5 @@
         <attr name="android:thumb" format="reference" />
         <attr name="android:enabled" format="boolean" />
     </declare-styleable>
-
 
 </resources>
