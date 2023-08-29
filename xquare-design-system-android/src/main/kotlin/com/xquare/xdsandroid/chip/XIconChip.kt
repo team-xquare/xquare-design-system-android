@@ -32,38 +32,35 @@ public class XIconChip(
     override fun setDrawable() {
         val src: Drawable? = getSrc()
         setImageDrawable(src)
-
-        val backgroundSrc: Drawable? = setBackground() ?: AppCompatResources.getDrawable(
-            context,
-            R.drawable.bg_chip_filled_enabled,
-        )
+        val backgroundSrc: Drawable? =
+            attributes.getDrawable(R.styleable.XIconChip_android_background)
+                ?: AppCompatResources.getDrawable(
+                    context,
+                    R.drawable.bg_chip_filled_enabled,
+                )
 
         background = backgroundSrc
     }
 
-    private fun setBackground(): Drawable? {
-        return attributes.getDrawable(R.styleable.XIconChip_android_background)
-    }
-
     private fun getSrc(): Drawable? {
         return attributes.getDrawable(R.styleable.XIconChip_android_src)?.apply {
-            val srcWidth = attributes.getDimension(
+            val width = attributes.getDimension(
                 R.styleable.XIconChip_srcSize,
                 this.intrinsicWidth.toFloat(),
             ).toInt()
 
-            val srcHeight = attributes.getDimension(
+            val height = attributes.getDimension(
                 R.styleable.XIconChip_srcSize,
                 this.intrinsicHeight.toFloat(),
             ).toInt()
 
-            val srcTint = attributes.getColor(
+            val tint = attributes.getColor(
                 R.styleable.XIconChip_android_tint,
                 androidx.appcompat.R.attr.tint,
             )
 
-            this.setBounds(0, 0, srcWidth, srcHeight)
-            DrawableCompat.wrap(drawable).setTint(srcTint)
+            this.setBounds(0, 0, width, height)
+            DrawableCompat.wrap(this@apply).setTint(tint)
         }
     }
 }
