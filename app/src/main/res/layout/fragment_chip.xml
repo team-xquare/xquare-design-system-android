@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:divider="@drawable/divider_vertical_playground_button_16"
+            android:divider="@drawable/divider_vertical_16"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:showDividers="middle">
@@ -31,7 +31,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:divider="@drawable/divider_horizontal_playground_button_8"
+                android:divider="@drawable/divider_horizontal_8"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
                 android:showDividers="middle">
@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:divider="@drawable/divider_vertical_16"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:showDividers="middle">
@@ -81,7 +81,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:divider="@drawable/divider_horizontal_playground_button_8"
+                    android:divider="@drawable/divider_horizontal_8"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal"
                     android:showDividers="middle">
@@ -120,7 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:divider="@drawable/divider_vertical_16"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:showDividers="middle">
@@ -134,7 +134,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:divider="@drawable/divider_horizontal_playground_button_8"
+                    android:divider="@drawable/divider_horizontal_8"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal"
                     android:showDividers="middle">
@@ -167,7 +167,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:divider="@drawable/divider_vertical_16"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:showDividers="middle">
@@ -181,7 +181,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:divider="@drawable/divider_horizontal_playground_button_8"
+                    android:divider="@drawable/divider_horizontal_8"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal"
                     android:showDividers="middle">
@@ -217,7 +217,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:divider="@drawable/divider_vertical_16"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:showDividers="middle">
@@ -231,7 +231,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:divider="@drawable/divider_horizontal_playground_button_8"
+                    android:divider="@drawable/divider_horizontal_8"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal"
                     android:showDividers="middle">
@@ -263,7 +263,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:divider="@drawable/divider_vertical_16"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:showDividers="middle">
@@ -277,7 +277,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:divider="@drawable/divider_horizontal_playground_button_8"
+                    android:divider="@drawable/divider_horizontal_8"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal"
                     android:showDividers="middle">
