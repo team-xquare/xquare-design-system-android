@@ -36,6 +36,6 @@
 
     <declare-styleable name="XCheckBox">
         <attr name="android:icon" format="reference|integer" />
-        <attr name="android:tint" format="color" />
+        <attr name="android:enabled" format="boolean" />
     </declare-styleable>
 </resources>
