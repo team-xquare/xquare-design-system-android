@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:divider="@drawable/divider_vertical_playground_button_16"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <com.xquare.xdsandroid.typography.body.BodyLarge
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/playground_chip_filled" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_horizontal_playground_button_8"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <com.xquare.xdsandroid.chip.XChip
+                    style="@style/FilledXChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playground_enabled" />
+
+                <com.xquare.xdsandroid.chip.XChip
+                    style="@style/FilledXChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playground_enabled"
+                    app:leadingSrc="@drawable/ic_sample_16"
+                    app:leadingSrcTint="?attr/colorOnSecondary" />
+
+                <com.xquare.xdsandroid.chip.XChip
+                    android:id="@+id/XChip"
+                    style="@style/FilledXChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playground_enabled"
+                    app:leadingSrc="@drawable/ic_sample_16"
+                    app:leadingSrcTint="?attr/colorOnSecondary"
+                    app:trailingSrc="@drawable/ic_sample_16"
+                    app:trailingSrcTint="?attr/colorOnSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <com.xquare.xdsandroid.typography.body.BodyLarge
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/playground_chip_outlined" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_horizontal_playground_button_8"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <com.xquare.xdsandroid.chip.XChip
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playground_enabled"
+                        android:textColor="?attr/colorSecondary" />
+
+                    <com.xquare.xdsandroid.chip.XChip
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playground_enabled"
+                        android:textColor="?attr/colorSecondary"
+                        app:leadingSrc="@drawable/ic_sample_16"
+                        app:leadingSrcTint="?attr/colorSecondary" />
+
+                    <com.xquare.xdsandroid.chip.XChip
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playground_enabled"
+                        android:textColor="?attr/colorSecondary"
+                        app:leadingSrc="@drawable/ic_sample_16"
+                        app:leadingSrcTint="?attr/colorSecondary"
+                        app:trailingSrc="@drawable/ic_sample_16"
+                        app:trailingSrcTint="?attr/colorSecondary" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <com.xquare.xdsandroid.typography.body.BodyLarge
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/playground_chip_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_horizontal_playground_button_8"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <com.xquare.xdsandroid.chip.XChip
+                        style="@style/XTextChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playground_enabled" />
+
+                    <com.xquare.xdsandroid.chip.XChip
+                        style="@style/XTextChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playground_enabled"
+                        app:leadingSrc="@drawable/ic_sample_16" />
+
+                    <com.xquare.xdsandroid.chip.XChip
+                        style="@style/XTextChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playground_enabled"
+                        app:leadingSrc="@drawable/ic_sample_16"
+                        app:trailingSrc="@drawable/ic_sample_16" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <com.xquare.xdsandroid.typography.body.BodyLarge
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/playground_chip_disabled" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_horizontal_playground_button_8"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <com.xquare.xdsandroid.chip.XChip
+                        style="@style/FilledXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="@string/playground_disabled" />
+
+                    <com.xquare.xdsandroid.chip.XChip
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="@string/playground_disabled"
+                        app:leadingSrc="@drawable/ic_sample_16" />
+
+                    <com.xquare.xdsandroid.chip.XChip
+                        style="@style/XTextChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="@string/playground_disabled"
+                        app:leadingSrc="@drawable/ic_sample_16"
+                        app:trailingSrc="@drawable/ic_sample_16" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <com.xquare.xdsandroid.typography.body.BodyLarge
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/playground_chip_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_horizontal_playground_button_8"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <com.xquare.xdsandroid.chip.XIconChip
+                        style="@style/FilledXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_sample_16" />
+
+                    <com.xquare.xdsandroid.chip.XIconChip
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sample_16"
+                        android:tint="?attr/colorSecondary" />
+
+                    <com.xquare.xdsandroid.chip.XIconChip
+                        style="@style/XTextChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sample_16"
+                        android:tint="?attr/colorSecondary" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:divider="@drawable/divider_vertical_playground_button_16"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <com.xquare.xdsandroid.typography.body.BodyLarge
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/playground_chip_icon_disabled" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_horizontal_playground_button_8"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <com.xquare.xdsandroid.chip.XIconChip
+                        style="@style/FilledXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:src="@drawable/ic_sample_16" />
+
+                    <com.xquare.xdsandroid.chip.XIconChip
+                        style="@style/OutlinedXChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:src="@drawable/ic_sample_16"
+                        android:tint="?attr/colorSecondary" />
+
+                    <com.xquare.xdsandroid.chip.XIconChip
+                        style="@style/XTextChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:src="@drawable/ic_sample_16"
+                        android:tint="?attr/colorSecondary" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

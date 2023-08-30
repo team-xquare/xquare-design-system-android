@@ -2,6 +2,7 @@
 <resources>
 
     <!--padding-->
+    <dimen name="padding_4">4dp</dimen>
     <dimen name="padding_8">8dp</dimen>
     <dimen name="padding_12">12dp</dimen>
     <dimen name="padding_16">16dp</dimen>
