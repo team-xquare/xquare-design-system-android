@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.xquare.xquare_design_system_android'
+    namespace 'com.xquare.xdsandroid'
     compileSdk 33
 
     defaultConfig {
@@ -44,14 +44,14 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.xquare.android'
                 artifactId = 'xdsandroid'
-                version = '0.4.0'
+                version = '0.4.1'
             }
             debug(MavenPublication) {
                 from components.debug
 
                 groupId = 'com.xquare.android'
                 artifactId = 'xdsandroid'
-                version = '0.4.0'
+                version = '0.4.1'
             }
         }
     }

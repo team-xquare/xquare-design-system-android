@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--thumb-->
+    <dimen name="width_switch_thumb">32dp</dimen>
+    <dimen name="height_switch_thumb">32dp</dimen>
+    <dimen name="stroke_width_switch_thumb">2dp</dimen>
+
+    <!--track-->
+    <dimen name="width_switch_track">56dp</dimen>
+    <dimen name="height_switch_track">32dp</dimen>
+    <dimen name="radius_switch_track">16dp</dimen>
+</resources>
