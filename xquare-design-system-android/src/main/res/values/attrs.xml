@@ -68,4 +68,9 @@
         <attr name="android:enabled" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="XCheckBox">
+        <attr name="android:icon" format="reference|integer" />
+        <attr name="android:enabled" format="boolean" />
+    </declare-styleable>
+  
 </resources>

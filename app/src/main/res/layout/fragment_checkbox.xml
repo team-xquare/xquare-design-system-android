@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    android:divider="@drawable/divider_vertical_16">
+
+    <com.xquare.xdsandroid.typography.body.BodyLarge
+        android:text="Selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_horizontal_8">
+
+        <com.xquare.xdsandroid.checkbox.XCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedState="checked"/>
+
+        <com.xquare.xdsandroid.checkbox.XCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedState="checked"/>
+
+        <com.xquare.xdsandroid.checkbox.XCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            app:checkedState="checked"/>
+    </LinearLayout>
+
+    <com.xquare.xdsandroid.typography.body.BodyLarge
+        android:text="Indeterminate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_horizontal_8">
+
+        <com.xquare.xdsandroid.checkbox.XCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedState="indeterminate"/>
+
+        <com.xquare.xdsandroid.checkbox.XCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedState="indeterminate"/>
+
+        <com.xquare.xdsandroid.checkbox.XCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            app:checkedState="indeterminate"/>
+    </LinearLayout>
+
+    <com.xquare.xdsandroid.typography.body.BodyLarge
+        android:text="Unselected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_horizontal_8">
+
+        <com.xquare.xdsandroid.checkbox.XCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedState="unchecked"/>
+
+        <com.xquare.xdsandroid.checkbox.XCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedState="unchecked"/>
+
+        <com.xquare.xdsandroid.checkbox.XCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            app:checkedState="unchecked"/>
+    </LinearLayout>
+</LinearLayout>
