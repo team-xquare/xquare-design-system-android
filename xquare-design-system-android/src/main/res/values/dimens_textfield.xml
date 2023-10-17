@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="padding_text_field_small">8dp</dimen>
+    <dimen name="padding_text_field_medium">12dp</dimen>
+    <dimen name="padding_text_field_large">16dp</dimen>
+
+    <dimen name="stroke_text_field_width_xsmall">1dp</dimen>
+</resources>
